@@ -1,0 +1,23 @@
+name: Data or species update
+description: Propose new Pokémon/forms or an upstream calculator-data refresh
+title: "[Data] "
+labels: [data]
+body:
+  - type: input
+    id: source
+    attributes:
+      label: Source URL and exact commit/date
+    validations:
+      required: true
+  - type: textarea
+    id: changes
+    attributes:
+      label: Data/forms affected
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Sanitized evidence and expected behavior
+    validations:
+      required: true

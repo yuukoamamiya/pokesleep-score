@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ポケモンスリープ ボックスビューア</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/handsontable/14.6.1/handsontable.full.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handsontable/14.6.1/handsontable.full.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif;
+    background: #f0f4f8;
+    color: #333;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  header {
+    background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    height: 52px;
+  }
+  header h1 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+  }
+  header .info {
+    font-size: 13px;
+    color: rgba(255,255,255,0.8);
+    margin-left: auto;
+  }
+  #col-toggle-btn, #daifuku-btn, #daifuku-iv-btn {
+    background: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.4);
+    color: #fff;
+    padding: 5px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  #col-toggle-btn:hover, #daifuku-btn:hover, #daifuku-iv-btn:hover { background: rgba(255,255,255,0.3); }
+  #toast {
+    position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%);
+    background: #333; color: #fff; padding: 10px 24px; border-radius: 8px;
+    font-size: 14px; z-index: 99999; display: none; box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+  #toast.show { display: block; animation: fadeInOut 5s ease; }
+  @keyframes fadeInOut {
+    0% { opacity: 0; transform: translateX(-50%) translateY(10px); }
+    10% { opacity: 1; transform: translateX(-50%) translateY(0); }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  #daifuku-modal {
+    display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.5); z-index: 99998;
+    justify-content: center; align-items: center;
+  }
+  #daifuku-modal.open { display: flex; }
+  #daifuku-modal .modal-content {
+    background: #fff; border-radius: 12px; padding: 24px; max-width: 520px; width: 90%;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  }
+  #daifuku-modal h3 { color: #2e7d32; margin-bottom: 12px; }
+  #daifuku-modal .steps { line-height: 2; font-size: 14px; color: #444; }
+  #daifuku-modal .steps a { color: #1565c0; }
+  #daifuku-modal .warn { background: #fff3e0; padding: 8px 12px; border-radius: 6px; margin: 10px 0; font-size: 13px; color: #e65100; border-left: 3px solid #e65100; }
+  #daifuku-modal .btn-row { display: flex; gap: 8px; margin-top: 16px; }
+  #daifuku-modal button { padding: 8px 20px; border-radius: 6px; font-size: 14px; cursor: pointer; border: none; }
+  #daifuku-modal .btn-close { background: #eee; color: #666; }
+  #daifuku-modal .btn-open { background: #2ecc71; color: #fff; }
+  #col-panel {
+    display: none;
+    position: fixed;
+    top: 52px;
+    right: 0;
+    width: 280px;
+    max-height: calc(100vh - 52px);
+    overflow-y: auto;
+    background: #fff;
+    border-left: 1px solid #ddd;
+    box-shadow: -4px 0 12px rgba(0,0,0,0.1);
+    z-index: 9999;
+    padding: 12px;
+  }
+  #col-panel.open { display: block; }
+  #col-panel h3 {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #2ecc71;
+  }
+  #col-panel .col-actions {
+    display: flex; gap: 8px; margin-bottom: 10px;
+  }
+  #col-panel .col-actions button {
+    flex: 1; padding: 4px 8px; font-size: 12px;
+    border: 1px solid #ccc; border-radius: 4px;
+    background: #f5f5f5; cursor: pointer;
+  }
+  #col-panel .col-actions button:hover { background: #e0e0e0; }
+  #col-panel label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 6px;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+    user-select: none;
+  }
+  #col-panel label:hover { background: #f0f4f8; }
+  #col-panel input[type="checkbox"] {
+    accent-color: #2ecc71;
+    width: 16px; height: 16px;
+  }
+  #drop-zone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 52px);
+    border: 3px dashed #b0c4de;
+    border-radius: 16px;
+    margin: 24px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: #fff;
+  }
+  #drop-zone.dragover {
+    border-color: #2ecc71;
+    background: rgba(46, 204, 113, 0.05);
+  }
+  #drop-zone .icon { font-size: 64px; margin-bottom: 16px; }
+  #drop-zone .text { font-size: 18px; color: #666; }
+  #drop-zone .sub { font-size: 13px; color: #999; margin-top: 8px; }
+  #table-container {
+    display: none;
+    height: calc(100vh - 52px);
+    width: 100vw;
+  }
+  /* Light theme for Handsontable */
+  .handsontable { font-size: 13px; }
+  .handsontable th {
+    background: #e8f5e9 !important;
+    color: #2e7d32 !important;
+    font-weight: 600;
+    border-color: #c8e6c9 !important;
+  }
+  .handsontable td {
+    border-color: #e0e0e0 !important;
+  }
+  .handsontable tr:nth-child(even) td {
+    background: #f9fbe7 !important;
+  }
+  .handsontable td.current,
+  .handsontable td.area {
+    background: #c8e6c9 !important;
+  }
+  .handsontable .ht__highlight {
+    background: #e8f5e9 !important;
+  }
+  /* Column colors (light-friendly) */
+  .col-name { color: #e65100 !important; font-weight: 700; }
+  .col-skill { color: #1565c0 !important; }
+  .col-ingredient { color: #2e7d32 !important; }
+  .col-berry { color: #bf360c !important; }
+  input[type="file"] { display: none; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🌙 ポケモンスリープ ボックスビューア</h1>
+  <button id="col-toggle-btn" style="display:none" onclick="toggleColPanel()">📋 列の表示</button>
+  <button id="daifuku-btn" style="display:none" onclick="copyDaifukuJS('expected')">📊 期待値</button>
+  <button id="daifuku-iv-btn" style="display:none" onclick="copyDaifukuJS('iv')">🔍 個体値</button>
+  <span class="info" id="status-text">CSVファイルをドラッグ＆ドロップしてください</span>
+</header>
+<div id="col-panel">
+  <h3>表示する列</h3>
+  <div class="col-actions">
+    <button onclick="setAllCols(true)">すべて表示</button>
+    <button onclick="setAllCols(false)">すべて非表示</button>
+  </div>
+  <div id="col-checkboxes"></div>
+</div>
+
+<div id="drop-zone">
+  <div class="icon">📂</div>
+  <div class="text">CSVファイルをここにドラッグ＆ドロップ</div>
+  <div class="sub">またはクリックしてファイルを選択</div>
+</div>
+<input type="file" id="file-input" accept=".csv" />
+
+<div id="table-container"></div>
+<div id="toast"></div>
+<div id="daifuku-modal" onclick="if(event.target===this)closeDaifukuModal()">
+  <div class="modal-content">
+    <h3 id="daifuku-modal-title">📊 期待値チェッカー自動入力</h3>
+    <div id="daifuku-pokemon-name" style="font-size:16px;font-weight:700;color:#e65100;margin-bottom:8px;"></div>
+    <div class="steps">
+      <b>コードをクリップボードにコピーしました ✅</b><br>
+      次の手順で大福サイトに自動入力します：<br>
+      ① <a id="daifuku-modal-link" href="https://www.pokemonsleepdaifuku.com/checker/expected/" target="_blank">大福サイトチェッカー</a> を開く<br>
+      ② URLバー（アドレスバー）に <code>Ctrl+V</code> でペースト<br>
+      ③ <code>Enter</code> で実行 → フォームが自動入力されます
+    </div>
+    <div class="warn">
+      ⚠️ Chromeでは URLバーにペーストすると先頭の <code>javascript:</code> が自動削除されます。ペースト後に先頭に <code>javascript:</code> を手入力してください。
+    </div>
+    <div class="btn-row">
+      <button class="btn-close" onclick="closeDaifukuModal()">閉じる</button>
+      <button class="btn-open" id="daifuku-modal-open-btn" onclick="window.open('https://www.pokemonsleepdaifuku.com/checker/expected/','_blank')">🔗 大福サイトを開く</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const dropZone = document.getElementById('drop-zone');
+const fileInput = document.getElementById('file-input');
+const tableContainer = document.getElementById('table-container');
+const statusText = document.getElementById('status-text');
+let hot = null;
+let allHeaders = [];
+let allData = [];
+let hiddenCols = new Set();
+
+const COLUMN_STYLES = {
+  'ポケモン名': 'col-name',
+  'メインスキル': 'col-skill',
+  'サブスキル1': 'col-skill', 'サブスキル2': 'col-skill', 'サブスキル3': 'col-skill',
+  'サブスキル4': 'col-skill', 'サブスキル5': 'col-skill',
+  '食材A': 'col-ingredient', '食材B': 'col-ingredient', '食材C': 'col-ingredient',
+  'きのみ': 'col-berry',
+};
+
+const FREEZE_COLS = 2;
+
+dropZone.addEventListener('click', () => fileInput.click());
+fileInput.addEventListener('change', (e) => {
+  if (e.target.files[0]) loadCSV(e.target.files[0]);
+});
+dropZone.addEventListener('dragover', (e) => { e.preventDefault(); dropZone.classList.add('dragover'); });
+dropZone.addEventListener('dragleave', () => dropZone.classList.remove('dragover'));
+dropZone.addEventListener('drop', (e) => {
+  e.preventDefault();
+  dropZone.classList.remove('dragover');
+  const file = e.dataTransfer.files[0];
+  if (file && file.name.endsWith('.csv')) loadCSV(file);
+  else alert('CSVファイルをドロップしてください');
+});
+
+function loadCSV(file) {
+  Papa.parse(file, {
+    header: true,
+    encoding: 'UTF-8',
+    skipEmptyLines: true,
+    complete: function(results) {
+      if (!results.data.length) { alert('データが空です'); return; }
+      renderTable(results.meta.fields, results.data);
+      statusText.textContent = `${file.name} — ${results.data.length}匹`;
+    },
+    error: function(err) { alert('CSV読み込みエラー: ' + err.message); }
+  });
+}
+
+function renderTable(headers, data) {
+  dropZone.style.display = 'none';
+  tableContainer.style.display = 'block';
+  document.getElementById('col-toggle-btn').style.display = '';
+
+  allHeaders = headers;
+  allData = data;
+  hiddenCols = new Set();
+
+  // Load saved hidden columns from localStorage
+  try {
+    const saved = JSON.parse(localStorage.getItem('pokesleep_hidden_cols') || '[]');
+    saved.forEach(c => { if (headers.includes(c)) hiddenCols.add(c); });
+  } catch(e) {}
+
+  buildColPanel(headers);
+  requestAnimationFrame(() => rebuildTable());
+}
+
+function toggleColPanel() {
+  document.getElementById('col-panel').classList.toggle('open');
+}
+
+function buildColPanel(headers) {
+  const container = document.getElementById('col-checkboxes');
+  container.innerHTML = '';
+  headers.forEach(h => {
+    const label = document.createElement('label');
+    const cb = document.createElement('input');
+    cb.type = 'checkbox';
+    cb.checked = !hiddenCols.has(h);
+    cb.dataset.col = h;
+    cb.addEventListener('change', () => {
+      if (cb.checked) hiddenCols.delete(h);
+      else hiddenCols.add(h);
+      saveHiddenCols();
+      rebuildTable();
+    });
+    label.appendChild(cb);
+    label.appendChild(document.createTextNode(h));
+    container.appendChild(label);
+  });
+}
+
+function setAllCols(show) {
+  if (show) hiddenCols.clear();
+  else {
+    // Keep at least 図鑑No and ポケモン名 visible
+    allHeaders.forEach(h => { if (h !== '図鑑No' && h !== 'ポケモン名') hiddenCols.add(h); });
+  }
+  saveHiddenCols();
+  buildColPanel(allHeaders);
+  rebuildTable();
+}
+
+function saveHiddenCols() {
+  localStorage.setItem('pokesleep_hidden_cols', JSON.stringify([...hiddenCols]));
+}
+
+function rebuildTable() {
+  const visHeaders = allHeaders.filter(h => !hiddenCols.has(h));
+  const visData = allData.map(row => visHeaders.map(h => row[h] || ''));
+  buildTable(visHeaders, allData, visData);
+}
+
+function buildTable(headers, data, tableData) {
+  if (!tableData) tableData = data.map(row => headers.map(h => row[h] || ''));
+
+  const colWidths = headers.map(h => {
+    if (h === '個体ID') return 60;
+    if (['図鑑No','Lv','性別','リボンランク'].includes(h)) return 50;
+    if (['SP','げんき','メインスキルLv','進化回数'].includes(h)) return 55;
+    if (['きのみSP','料理SP','スキルSP','最大所持数'].includes(h)) return 65;
+    if (h === 'ポケモン名') return 110;
+    if (h === 'メインスキル') return 140;
+    if (h.startsWith('サブスキル')) return 130;
+    if (h.startsWith('食材')) return 140;
+    if (h === 'きのみ') return 90;
+    if (h === 'せいかく') return 80;
+    if (h === '出会った日') return 120;
+    if (h === '出会ったフィールド') return 110;
+    if (h === 'とくい') return 60;
+    if (h === 'お気に入り') return 55;
+    return 100;
+  });
+
+  const columns = headers.map((h, i) => {
+    const col = { data: i, readOnly: true };
+    if (['図鑑No','Lv','SP','げんき','メインスキルLv','きのみSP','料理SP','スキルSP','進化回数','最大所持数','リボンランク'].includes(h)) {
+      col.type = 'numeric';
+    }
+    return col;
+  });
+
+  function cellRenderer(instance, td, row, col, prop, value, cellProperties) {
+    Handsontable.renderers.TextRenderer.apply(this, arguments);
+    const header = headers[col];
+    const cls = COLUMN_STYLES[header];
+    if (cls) td.classList.add(cls);
+    if (header === 'とくい') {
+      if (value === 'きのみ') { td.style.color = '#388e3c'; td.style.fontWeight = '700'; }
+      else if (value === '食材') { td.style.color = '#e65100'; td.style.fontWeight = '700'; }
+      else if (value === 'スキル') { td.style.color = '#1565c0'; td.style.fontWeight = '700'; }
+    }
+    if (header === 'お気に入り' && value === '★') {
+      td.style.color = '#f9a825';
+      td.style.fontSize = '16px';
+      td.style.textAlign = 'center';
+    }
+  }
+
+  if (hot) hot.destroy();
+
+  const h = tableContainer.offsetHeight;
+  const w = tableContainer.offsetWidth;
+
+  hot = new Handsontable(tableContainer, {
+    data: tableData,
+    colHeaders: headers,
+    columns: columns,
+    colWidths: colWidths,
+    rowHeaders: true,
+    readOnly: true,
+    fixedColumnsStart: FREEZE_COLS,
+    columnSorting: true,
+    manualColumnResize: true,
+    stretchH: 'none',
+    autoWrapRow: false,
+    autoWrapCol: false,
+    height: h,
+    width: w,
+    viewportColumnRenderingOffset: 50,
+    cells: function(row, col) {
+      return { renderer: cellRenderer };
+    },
+    licenseKey: 'non-commercial-and-evaluation',
+    afterSelection: function(row) {
+      lastSelectedPhysRow = hot.toPhysicalRow(row);
+    },
+  });
+
+  window.addEventListener('resize', () => {
+    if (!hot) return;
+    hot.updateSettings({
+      height: tableContainer.offsetHeight,
+      width: tableContainer.offsetWidth,
+    });
+  });
+}
+
+document.body.addEventListener('dragover', (e) => e.preventDefault());
+document.body.addEventListener('drop', (e) => {
+  e.preventDefault();
+  const file = e.dataTransfer.files[0];
+  if (file && file.name.endsWith('.csv')) loadCSV(file);
+});
+
+// ========================================================
+// 大福サイト期待値チェッカー連携
+// ========================================================
+const DAIFUKU_SUBSKILL_ID = {
+  "げんき回復ボーナス":"11","ゆめのかけらボーナス":"12","リサーチEXPボーナス":"13",
+  "睡眠EXPボーナス":"14","おてつだいボーナス":"15","きのみの数S":"16",
+  "スキルレベルアップM":"17","スキル確率アップM":"21","食材確率アップM":"22",
+  "スキルレベルアップS":"23","最大所持数アップL":"24","最大所持数アップM":"25",
+  "おてつだいスピードM":"26","スキル確率アップS":"31","食材確率アップS":"32",
+  "最大所持数アップS":"33","おてつだいスピードS":"34",
+};
+const DAIFUKU_NATURE_ID = {
+  "さみしがり":"40","いじっぱり":"41","やんちゃ":"42","ゆうかん":"43",
+  "ずぶとい":"44","わんぱく":"45","のうてんき":"46","のんき":"47",
+  "ひかえめ":"48","おっとり":"49","うっかりや":"50","れいせい":"51",
+  "おだやか":"52","おとなしい":"53","しんちょう":"54","なまいき":"55",
+  "おくびょう":"56","せっかち":"57","ようき":"58","むじゃき":"59",
+  "てれや":"60","がんばりや":"61","すなお":"62","きまぐれ":"63","まじめ":"64",
+};
+
+// 進化前 → 最終進化形マッピング（大福サイトには最終進化形のみ存在）
+const DAIFUKU_EVOLUTION_MAP = {
+  "フシギダネ":"フシギバナ","フシギソウ":"フシギバナ",
+  "ヒトカゲ":"リザードン","リザード":"リザードン",
+  "ゼニガメ":"カメックス","カメール":"カメックス",
+  "キャタピー":"バタフリー","トランセル":"バタフリー",
+  "コラッタ":"ラッタ","アーボ":"アーボック",
+  "ピチュー":"ライチュウ","ピカチュウ":"ライチュウ",
+  "ピィ":"ピクシー","ピッピ":"ピクシー",
+  "ロコン":"キュウコン","ププリン":"プクリン","プリン":"プクリン",
+  "サンド":"サンドパン","ディグダ":"ダグトリオ","ニャース":"ペルシアン",
+  "コダック":"ゴルダック","マンキー":"オコリザル","ガーディ":"ウインディ",
+  "マダツボミ":"ウツボット","ウツドン":"ウツボット",
+  "イシツブテ":"ゴローニャ","ゴローン":"ゴローニャ",
+  "ヤドン":"ヤドラン", // ヤドキングの場合は手動選択
+  "コイル":"ジバコイル","レアコイル":"ジバコイル",
+  "ドードー":"ドードリオ","シェルダー":"パルシェン",
+  "ゴース":"ゲンガー","ゴースト":"ゲンガー",
+  "カラカラ":"ガラガラ","ベロリンガ":"ベロベルト",
+  "サイホーン":"ドサイドン","サイドン":"ドサイドン",
+  "ミニリュウ":"カイリュー","ハクリュー":"カイリュー",
+  "チコリータ":"メガニウム","ベイリーフ":"メガニウム",
+  "ヒノアラシ":"バクフーン","マグマラシ":"バクフーン",
+  "ワニノコ":"オーダイル","アリゲイツ":"オーダイル",
+  "トゲピー":"トゲキッス","トゲチック":"トゲキッス",
+  "メリープ":"デンリュウ","モココ":"デンリュウ",
+  "ウソハチ":"ウソッキー","ネイティ":"ネイティオ",
+  "ウパー":"ヌオー","パルデアウパー":"ドオー",
+  "ソーナノ":"ソーナンス","ニューラ":"マニューラ",
+  "デルビル":"ヘルガー","ヤミカラス":"ドンカラス",
+  "ヨーギラス":"バンギラス","サナギラス":"バンギラス",
+  "ラルトス":"サーナイト","キルリア":"サーナイト", // エルレイドの場合は手動選択
+  "ナマケロ":"ケッキング","ヤルキモノ":"ケッキング",
+  "キモリ":"ジュカイン","ジュプトル":"ジュカイン",
+  "アチャモ":"バシャーモ","ワカシャモ":"バシャーモ",
+  "ミズゴロウ":"ラグラージ","ヌマクロー":"ラグラージ",
+  "ココドラ":"ボスゴドラ","コドラ":"ボスゴドラ",
+  "チルット":"チルタリス","カゲボウズ":"ジュペッタ",
+  "ゴクリン":"マルノーム",
+  "ナックラー":"フライゴン","ビブラーバ":"フライゴン",
+  "タツベイ":"ボーマンダ","コモルー":"ボーマンダ",
+  "タマザラシ":"トドゼルガ","トドグラー":"トドゼルガ",
+  "コリンク":"レントラー","ルクシオ":"レントラー",
+  "フワンテ":"フワライド","マネネ":"バリヤード",
+  "ピンプク":"ハピナス","ラッキー":"ハピナス",
+  "ユキカブリ":"ユキノオー","リオル":"ルカリオ",
+  "グレッグル":"ドクロッグ","ムンナ":"ムシャーナ",
+  "イシズマイ":"イワパレス","ワシボン":"ウォーグル",
+  "チゴラス":"ガチゴラス","バケッチャ":"パンプジン",
+  "オンバット":"オンバーン","ヤングース":"デカグース",
+  "アブリー":"アブリボン","アゴジムシ":"クワガノン","デンヂムシ":"クワガノン",
+  "ヌイコグマ":"キテルグマ","エレズン":"ストリンダー",
+  "ミブリム":"ブリムオン","テブリム":"ブリムオン",
+  "マホミル":"マホイップ",
+  "ニャオハ":"マスカーニャ","ニャローテ":"マスカーニャ",
+  "ホゲータ":"ラウドボーン","アチゲータ":"ラウドボーン",
+  "クワッス":"ウェーニバル","ウェルカモ":"ウェーニバル",
+  "パモ":"パーモット","パモット":"パーモット",
+  "ウミディグダ":"ウミトリオ",
+  "アローラロコン":"アローラキュウコン",
+  "アルクジラ":"ハルクジラ",
+  "ナエトル":"ドダイトス","ハヤシガメ":"ドダイトス",
+  "ヒコザル":"ゴウカザル","モウカザル":"ゴウカザル",
+  "ポッチャマ":"エンペルト","ポッタイシ":"エンペルト",
+  "カヌチャン":"デカヌチャン","ナカヌチャン":"デカヌチャン",
+  // イーブイは進化先が多いのでマッピングしない（手動選択）
+};
+
+let lastSelectedPhysRow = null;
+
+function getSelectedRow() {
+  if (!hot || lastSelectedPhysRow == null) return null;
+  if (lastSelectedPhysRow >= allData.length) return null;
+  return allData[lastSelectedPhysRow];
+}
+
+function cleanIngredient(s) {
+  return s ? s.replace(/ x\d+$/, '') : '';
+}
+
+function generateDaifukuJS(row) {
+  const origName = row['ポケモン名'] || '';
+  const name = DAIFUKU_EVOLUTION_MAP[origName] || origName;
+  const lv = row['Lv'] || 1;
+  const ing1 = cleanIngredient(row['食材A']);
+  const ing2 = cleanIngredient(row['食材B']);
+  const ing3 = cleanIngredient(row['食材C']);
+  const ss1 = DAIFUKU_SUBSKILL_ID[row['サブスキル1']] || '';
+  const ss2 = DAIFUKU_SUBSKILL_ID[row['サブスキル2']] || '';
+  const ss3 = DAIFUKU_SUBSKILL_ID[row['サブスキル3']] || '';
+  const ss4 = DAIFUKU_SUBSKILL_ID[row['サブスキル4']] || '';
+  const ss5 = DAIFUKU_SUBSKILL_ID[row['サブスキル5']] || '';
+  const nat = DAIFUKU_NATURE_ID[row['せいかく']] || '';
+  const skillLv = row['メインスキルLv'] || 1;
+  const evo = row['進化回数'] || 0;
+
+  const pokemonPart = [
+    `$('#pokemonNameSelect').val('${name}').trigger('change').trigger('select2:select')`,
+    `$('#levelSlider').val(${lv}).trigger('input')`,
+    `$('#levelDisplay').val(${lv})`,
+  ].join(';');
+
+  const ingFn = (n, v) => `(function(){var s=document.querySelector('[name=pokemon_ingredient${n}]');for(var i=0;i<s.options.length;i++){if(s.options[i].text==='${v}'){s.value=s.options[i].value;$(s).trigger('change');break}}})()`;
+
+  const restPart = [
+    ingFn(1, ing1), ingFn(2, ing2), ingFn(3, ing3),
+    `$('[name=pokemon_subskill1]').val('${ss1}').trigger('change')`,
+    `$('[name=pokemon_subskill2]').val('${ss2}').trigger('change')`,
+    `$('[name=pokemon_subskill3]').val('${ss3}').trigger('change')`,
+    `$('[name=pokemon_subskill4]').val('${ss4}').trigger('change')`,
+    `$('[name=pokemon_subskill5]').val('${ss5}').trigger('change')`,
+    `$('[name=pokemon_personality]').val('${nat}').trigger('change')`,
+    `$('input[name="mainskill_level"][value="${skillLv}"]').prop('checked',true).trigger('change').trigger('click')`,
+    `$('input[name="num_evolved"][value="${evo}"]').prop('checked',true).trigger('change').trigger('click')`,
+  ].join(';');
+
+  return `javascript:${pokemonPart};setTimeout(function(){${restPart}},1000);void(0);`;
+}
+
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.remove('show');
+  void t.offsetWidth; // reflow
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 5000);
+}
+
+function closeDaifukuModal() {
+  document.getElementById('daifuku-modal').classList.remove('open');
+}
+
+const DAIFUKU_URLS = {
+  expected: 'https://www.pokemonsleepdaifuku.com/checker/expected/',
+  iv: 'https://www.pokemonsleepdaifuku.com/checker/',
+};
+const DAIFUKU_LABELS = {
+  expected: { icon: '📊', title: '期待値チェッカー自動入力', linkText: '大福サイト期待値チェッカー' },
+  iv: { icon: '🔍', title: '個体値チェッカー自動入力', linkText: '大福サイト個体値チェッカー' },
+};
+
+function copyDaifukuJS(mode) {
+  const row = getSelectedRow();
+  if (!row || !row['ポケモン名']) {
+    showToast('⚠️ 行を選択してください');
+    return;
+  }
+  const js = generateDaifukuJS(row);
+  const origName = row['ポケモン名'];
+  const finalName = DAIFUKU_EVOLUTION_MAP[origName] || origName;
+  const url = DAIFUKU_URLS[mode] || DAIFUKU_URLS.expected;
+  const lbl = DAIFUKU_LABELS[mode] || DAIFUKU_LABELS.expected;
+
+  navigator.clipboard.writeText(js).then(() => {
+    let label = `${origName} Lv.${row['Lv'] || '?'}`;
+    if (finalName !== origName) {
+      label += ` → ${finalName} として入力`;
+    }
+    document.getElementById('daifuku-modal-title').textContent = `${lbl.icon} ${lbl.title}`;
+    document.getElementById('daifuku-pokemon-name').textContent = label;
+    const link = document.getElementById('daifuku-modal-link');
+    link.href = url;
+    link.textContent = lbl.linkText;
+    const openBtn = document.getElementById('daifuku-modal-open-btn');
+    openBtn.onclick = () => window.open(url, '_blank');
+    document.getElementById('daifuku-modal').classList.add('open');
+  });
+}
+
+// Show daifuku buttons when table is loaded
+const origRenderTable = renderTable;
+renderTable = function(headers, data) {
+  origRenderTable(headers, data);
+  document.getElementById('daifuku-btn').style.display = '';
+  document.getElementById('daifuku-iv-btn').style.display = '';
+};
+</script>
+</body>
+</html>

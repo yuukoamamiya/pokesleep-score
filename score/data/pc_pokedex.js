@@ -1,0 +1,4960 @@
+const evoLine = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+  [10, 11, 12],
+  [19, 20],
+  [23, 24],
+  [172, 9001, 9002, 25, 26, 9007],
+  [173, 35, 36],
+  [174, 39, 40],
+  [50, 51],
+  [52, 53],
+  [54, 55],
+  [56, 57],
+  [58, 59],
+  [69, 70, 71],
+  [74, 75, 76],
+  [79, 80, 199],
+  [81, 82, 462],
+  [84, 85],
+  [92, 93, 94],
+  [95, 208],
+  [194, 195],
+  [104, 105],
+  [439, 122],
+  [133, 134, 135, 136, 196, 197, 470, 471, 700, 9004],
+  [147, 148, 149],
+  [152, 153, 154],
+  [155, 156, 157],
+  [158, 159, 160],
+  [175, 176, 468],
+  [179, 180, 181],
+  [438, 185],
+  [360, 202],
+  [228, 229],
+  [246, 247, 248],
+  [280, 281, 282, 475],
+  [287, 288, 289],
+  [316, 317],
+  [333, 334],
+  [353, 354],
+  [363, 364, 365],
+  [447, 448],
+  [453, 454],
+  [459, 460],
+  [759, 760],
+  [37, 38],
+  [906, 907, 908],
+  [909, 910, 911],
+  [912, 913, 914],
+  [304, 305, 306],
+  [403, 404, 405],
+  [736, 737, 738],
+  [425, 426],
+  [215, 461],
+  [921, 922, 923],
+  [7006, 7007],
+  [627, 628],
+  [7054, 980],
+  [517, 518],
+  [440, 113, 242],
+  [198, 430],
+  [252, 253, 254],
+  [255, 256, 257],
+  [258, 259, 260],
+  [848, 849, 8001],
+  [177, 178],
+  [710, 711, '710-2', '711-2', '710-3', '711-3', '710-4', '711-4'],
+  [328, 329, 330],
+  [371, 372, 373],
+  [557, 558],
+  [974, 975],
+  [213],
+  [742, 743],
+  [714, 715],
+  [27, 28],
+  [696, 697],
+  [387, 388, 389],
+  [390, 391, 392],
+  [393, 394, 395],
+  [957, 958, 959]
+]
+const pokedex = {
+  1: {
+    id: 1,
+    // name: '妙蛙種子',
+    friendship: 5,
+    sleepType: 1,
+    skillType: 10,
+    pokeType: 2,
+    berryType: 4,
+    maxcarry: 11,
+    helpSpeed: 4400,
+    foodPer: 25.7,
+    skillPer: 1.9,
+    food: {
+      type: [9, 12, 4],
+      count: {
+        9: {
+          num: [2, 5, 7]
+        },
+        12: {
+          num: [0, 4, 7]
+        },
+        4: {
+          num: [0, 0, 6]
+        }
+      }
+    }
+  },
+  2: {
+    id: 2,
+    // name: '妙蛙草',
+    friendship: 12,
+    sleepType: 1,
+    skillType: 10,
+    pokeType: 2,
+    berryType: 4,
+    maxcarry: 19,
+    helpSpeed: 3300,
+    foodPer: 25.5,
+    skillPer: 1.9
+  },
+  3: {
+    id: 3,
+    // name: '妙蛙花',
+    friendship: 20,
+    sleepType: 1,
+    skillType: 10,
+    pokeType: 2,
+    berryType: 4,
+    maxcarry: 27,
+    helpSpeed: 2800,
+    foodPer: 26.6,
+    skillPer: 2.1
+  },
+  4: {
+    id: 4,
+    // name: '小火龍',
+    friendship: 5,
+    sleepType: 2,
+    skillType: 10,
+    pokeType: 2,
+    berryType: 10,
+    maxcarry: 12,
+    helpSpeed: 3500,
+    foodPer: 20.1,
+    skillPer: 1.1,
+    food: {
+      type: [7, 11, 6],
+      count: {
+        7: {
+          num: [2, 5, 7]
+        },
+        11: {
+          num: [0, 4, 7]
+        },
+        6: {
+          num: [0, 0, 6]
+        }
+      }
+    }
+  },
+  5: {
+    id: 5,
+    // name: '火恐龍',
+    friendship: 12,
+    sleepType: 2,
+    skillType: 10,
+    pokeType: 2,
+    berryType: 10,
+    maxcarry: 20,
+    helpSpeed: 3000,
+    foodPer: 22.7,
+    skillPer: 1.6
+  },
+  6: {
+    id: 6,
+    // name: '噴火龍',
+    friendship: 20,
+    sleepType: 2,
+    skillType: 10,
+    pokeType: 2,
+    berryType: 10,
+    maxcarry: 29,
+    helpSpeed: 2400,
+    foodPer: 22.4,
+    skillPer: 1.6
+  },
+  7: {
+    id: 7,
+    // name: '傑尼龜',
+    friendship: 5,
+    sleepType: 3,
+    skillType: 10,
+    pokeType: 2,
+    berryType: 1,
+    maxcarry: 10,
+    helpSpeed: 4500,
+    foodPer: 27.1,
+    skillPer: 2,
+    food: {
+      type: [8, 13, 7],
+      count: {
+        8: {
+          num: [2, 5, 7]
+        },
+        13: {
+          num: [0, 3, 5]
+        },
+        7: {
+          num: [0, 0, 7]
+        }
+      }
+    }
+  },
+  8: {
+    id: 8,
+    // name: '卡咪龜',
+    friendship: 12,
+    sleepType: 3,
+    skillType: 10,
+    pokeType: 2,
+    berryType: 1,
+    maxcarry: 19,
+    helpSpeed: 3400,
+    foodPer: 27.1,
+    skillPer: 2
+  },
+  9: {
+    id: 9,
+    // name: '水箭龜',
+    friendship: 20,
+    sleepType: 3,
+    skillType: 10,
+    pokeType: 2,
+    berryType: 1,
+    maxcarry: 27,
+    helpSpeed: 2800,
+    foodPer: 27.5,
+    skillPer: 2.1
+  },
+  10: {
+    id: 10,
+    // name: '綠毛蟲',
+    friendship: 5,
+    sleepType: 1,
+    skillType: 10,
+    pokeType: 1,
+    berryType: 9,
+    maxcarry: 11,
+    helpSpeed: 4400,
+    foodPer: 17.9,
+    skillPer: 0.8,
+    food: {
+      type: [9, 12, 15],
+      count: {
+        9: {
+          num: [1, 2, 4]
+        },
+        12: {
+          num: [0, 2, 3]
+        },
+        15: {
+          num: [0, 0, 4]
+        }
+      }
+    }
+  },
+  11: {
+    id: 11,
+    // name: '鐵甲蛹',
+    friendship: 7,
+    sleepType: 1,
+    skillType: 10,
+    pokeType: 1,
+    berryType: 9,
+    maxcarry: 18,
+    helpSpeed: 4200,
+    foodPer: 20.8,
+    skillPer: 1.8
+  },
+  12: {
+    id: 12,
+    // name: '巴大蝶',
+    friendship: 15,
+    sleepType: 1,
+    skillType: 10,
+    pokeType: 1,
+    berryType: 9,
+    maxcarry: 31,
+    helpSpeed: 2500,
+    foodPer: 19.7,
+    skillPer: 1.4
+  },
+  19: {
+    id: 19,
+    // name: '小拉達',
+    friendship: 5,
+    sleepType: 2,
+    skillType: 7,
+    pokeType: 1,
+    berryType: 11,
+    maxcarry: 10,
+    helpSpeed: 4900,
+    foodPer: 23.7,
+    skillPer: 3,
+    food: {
+      type: [5, 15, 7],
+      count: {
+        5: {
+          num: [1, 2, 4]
+        },
+        15: {
+          num: [0, 2, 3]
+        },
+        7: {
+          num: [0, 0, 3]
+        }
+      }
+    }
+  },
+  20: {
+    id: 20,
+    // name: '拉達',
+    friendship: 12,
+    sleepType: 2,
+    skillType: 7,
+    pokeType: 1,
+    berryType: 11,
+    maxcarry: 21,
+    helpSpeed: 2950,
+    foodPer: 23.7,
+    skillPer: 3
+  },
+  23: {
+    id: 23,
+    // name: '阿柏蛇',
+    friendship: 5,
+    sleepType: 1,
+    skillType: 7,
+    pokeType: 1,
+    berryType: 5,
+    maxcarry: 10,
+    helpSpeed: 5000,
+    foodPer: 23.5,
+    skillPer: 3.3,
+    food: {
+      type: [7, 3, 6],
+      count: {
+        7: {
+          num: [1, 2, 4]
+        },
+        3: {
+          num: [0, 2, 3]
+        },
+        6: {
+          num: [0, 0, 3]
+        }
+      }
+    }
+  },
+  24: {
+    id: 24,
+    // name: '阿柏怪',
+    friendship: 12,
+    sleepType: 1,
+    skillType: 7,
+    pokeType: 1,
+    berryType: 5,
+    maxcarry: 19,
+    helpSpeed: 3400,
+    foodPer: 26.4,
+    skillPer: 5.7
+  },
+  25: {
+    id: 25,
+    // name: '皮卡丘',
+    friendship: 7,
+    sleepType: 2,
+    skillType: 1,
+    pokeType: 1,
+    berryType: 13,
+    maxcarry: 22,
+    helpSpeed: 2700,
+    foodPer: 20.7,
+    skillPer: 2.1
+  },
+  9001: {
+    id: 9001,
+    // name: '皮卡丘（萬聖節）',
+    friendship: 7,
+    sleepType: 2,
+    skillType: 5,
+    pokeType: 1,
+    berryType: 13,
+    maxcarry: 18,
+    helpSpeed: 2500,
+    berryType: 13,
+    foodPer: 21.8,
+    skillPer: 2.8
+  },
+  9002: {
+    id: 9002,
+    // name: '皮卡丘（佳節）',
+    friendship: 7,
+    sleepType: 2,
+    skillType: 3,
+    pokeType: 3,
+    berryType: 13,
+    maxcarry: 20,
+    helpSpeed: 2500,
+    foodPer: 13.1,
+    skillPer: 4.2
+  },
+  9007: {
+    id: 9007,
+    // name: '皮卡丘（船長）',
+    friendship: 7,
+    sleepType: 2,
+    skillType: 10,
+    pokeType: 1,
+    berryType: 13,
+    maxcarry: 21,
+    helpSpeed: 2500,
+    foodPer: 17.5,
+    skillPer: 1.8
+  },
+  26: {
+    id: 26,
+    // name: '雷丘',
+    friendship: 18,
+    sleepType: 2,
+    skillType: 1,
+    pokeType: 1,
+    berryType: 13,
+    maxcarry: 31,
+    helpSpeed: 2200,
+    foodPer: 22.4,
+    skillPer: 3.2
+  },
+  27: {
+    id: 27,
+    // name: '穿山鼠',
+    friendship: 5,
+    sleepType: 3,
+    skillType: 28,
+    pokeType: 3,
+    berryType: 15,
+    maxcarry: 11,
+    helpSpeed: 5300,
+    foodPer: 10,
+    skillPer: 4.6,
+    food: {
+      type: [18, 16, 4],
+      count: {
+        18: {
+          num: [1, 2, 4]
+        },
+        16: {
+          num: [0, 4, 6]
+        },
+        4: {
+          num: [0, 0, 7]
+        }
+      }
+    },
+    skillFood: [4, 16, 18]
+  },
+  28: {
+    id: 28,
+    // name: '穿山王',
+    friendship: 12,
+    sleepType: 3,
+    skillType: 28,
+    pokeType: 3,
+    berryType: 15,
+    maxcarry: 22,
+    helpSpeed: 2800,
+    foodPer: 10.8,
+    skillPer: 4.3
+  },
+  35: {
+    id: 35,
+    // name: '皮皮',
+    friendship: 7,
+    sleepType: 2,
+    skillType: 13,
+    pokeType: 1,
+    berryType: 12,
+    maxcarry: 21,
+    helpSpeed: 4000,
+    foodPer: 16.8,
+    skillPer: 3.6
+  },
+  36: {
+    id: 36,
+    // name: '皮可西',
+    friendship: 20,
+    sleepType: 2,
+    skillType: 13,
+    pokeType: 1,
+    berryType: 12,
+    maxcarry: 34,
+    helpSpeed: 2800,
+    foodPer: 16.8,
+    skillPer: 4
+  },
+  37: {
+    id: 37,
+    // name: '六尾',
+    friendship: 5,
+    sleepType: 2,
+    skillType: 4,
+    pokeType: 1,
+    berryType: 10,
+    maxcarry: 13,
+    helpSpeed: 4700,
+    foodPer: 16.8,
+    skillPer: 3.2,
+    food: {
+      type: [15, 16, 4],
+      count: {
+        15: {
+          num: [1, 2, 4]
+        },
+        16: {
+          num: [0, 2, 3]
+        },
+        4: {
+          num: [0, 0, 3]
+        }
+      }
+    }
+  },
+
+  7006: {
+    id: 7006,
+    // name: '六尾（阿羅拉的樣子）',
+    friendship: 5,
+    sleepType: 3,
+    skillType: 9,
+    pokeType: 1,
+    maxcarry: 10,
+    helpSpeed: 5600,
+    berryType: 7,
+    foodPer: 23,
+    skillPer: 2.8,
+    food: {
+      type: [15, 16, 4],
+      count: {
+        15: {
+          num: [1, 2, 4]
+        },
+        16: {
+          num: [0, 2, 3]
+        },
+        4: {
+          num: [0, 0, 3]
+        }
+      }
+    }
+  },
+  38: {
+    id: 38,
+    // name: '九尾',
+    friendship: 20,
+    sleepType: 2,
+    skillType: 4,
+    pokeType: 1,
+    berryType: 10,
+    maxcarry: 28,
+    helpSpeed: 2600,
+    foodPer: 16.4,
+    skillPer: 2.9
+  },
+  7007: {
+    id: 7007,
+    // name: '九尾（阿羅拉的樣子）',
+    friendship: 20,
+    sleepType: 3,
+    skillType: 9,
+    pokeType: 1,
+    maxcarry: 25,
+    helpSpeed: 2900,
+    berryType: 7,
+    foodPer: 23.2,
+    skillPer: 2.8
+  },
+  39: {
+    id: 39,
+    // name: '胖丁',
+    friendship: 7,
+    sleepType: 2,
+    skillType: 8,
+    pokeType: 3,
+    berryType: 12,
+    maxcarry: 14,
+    helpSpeed: 3900,
+    foodPer: 18.2,
+    skillPer: 4.3
+  },
+  40: {
+    id: 40,
+    // name: '胖可丁',
+    friendship: 16,
+    sleepType: 2,
+    skillType: 8,
+    pokeType: 3,
+    berryType: 12,
+    maxcarry: 32,
+    helpSpeed: 2750,
+    foodPer: 19.1,
+    skillPer: 4
+  },
+  50: {
+    id: 50,
+    // name: '地鼠',
+    friendship: 5,
+    sleepType: 2,
+    skillType: 1,
+    pokeType: 2,
+    berryType: 15,
+    maxcarry: 10,
+    helpSpeed: 4300,
+    foodPer: 19.2,
+    skillPer: 2.1,
+    food: {
+      type: [12, 1, 15],
+      count: {
+        12: {
+          num: [2, 5, 7]
+        },
+        1: {
+          num: [0, 3, 4]
+        },
+        15: {
+          num: [0, 0, 8]
+        }
+      }
+    }
+  },
+  51: {
+    id: 51,
+    // name: '三地鼠',
+    friendship: 12,
+    sleepType: 2,
+    skillType: 1,
+    pokeType: 2,
+    berryType: 15,
+    maxcarry: 21,
+    helpSpeed: 2650,
+    foodPer: 19,
+    skillPer: 2
+  },
+  52: {
+    id: 52,
+    // name: '喵喵',
+    friendship: 5,
+    sleepType: 2,
+    skillType: 3,
+    pokeType: 3,
+    berryType: 11,
+    maxcarry: 9,
+    helpSpeed: 4400,
+    foodPer: 16.3,
+    skillPer: 4.2,
+    food: {
+      type: [8, 7],
+      count: {
+        8: {
+          num: [1, 2, 4]
+        },
+        7: {
+          num: [0, 2, 3]
+        }
+      }
+    }
+  },
+  53: {
+    id: 53,
+    // name: '貓老大',
+    friendship: 12,
+    sleepType: 2,
+    skillType: 3,
+    pokeType: 3,
+    berryType: 11,
+    maxcarry: 17,
+    helpSpeed: 2800,
+    foodPer: 16.9,
+    skillPer: 4.4
+  },
+  54: {
+    id: 54,
+    // name: '可達鴨',
+    friendship: 5,
+    sleepType: 1,
+    skillType: 5,
+    pokeType: 3,
+    berryType: 1,
+    maxcarry: 8,
+    helpSpeed: 5400,
+    foodPer: 13.6,
+    skillPer: 12.6,
+    food: {
+      type: [13, 5, 7],
+      count: {
+        13: {
+          num: [1, 2, 4]
+        },
+        5: {
+          num: [0, 4, 6]
+        },
+        7: {
+          num: [0, 0, 5]
+        }
+      }
+    }
+  },
+  55: {
+    id: 55,
+    // name: '哥達鴨',
+    friendship: 12,
+    sleepType: 3,
+    skillType: 5,
+    pokeType: 3,
+    berryType: 1,
+    maxcarry: 19,
+    helpSpeed: 3400,
+    foodPer: 16.2,
+    skillPer: 12.5
+  },
+  56: {
+    id: 56,
+    // name: '猴怪',
+    friendship: 5,
+    sleepType: 1,
+    skillType: 5,
+    pokeType: 1,
+    berryType: 18,
+    maxcarry: 12,
+    helpSpeed: 4200,
+    foodPer: 19.7,
+    skillPer: 2.2,
+    food: {
+      type: [7, 2, 9],
+      count: {
+        7: {
+          num: [1, 2, 4]
+        },
+        2: {
+          num: [0, 1, 2]
+        },
+        9: {
+          num: [0, 0, 4]
+        }
+      }
+    }
+  },
+  57: {
+    id: 57,
+    // name: '火爆猴',
+    friendship: 12,
+    sleepType: 1,
+    skillType: 5,
+    pokeType: 1,
+    berryType: 18,
+    maxcarry: 22,
+    helpSpeed: 2800,
+    foodPer: 20,
+    skillPer: 2.4
+  },
+  58: {
+    id: 58,
+    // name: '卡蒂狗',
+    friendship: 5,
+    sleepType: 2,
+    skillType: 9,
+    pokeType: 3,
+    berryType: 10,
+    maxcarry: 8,
+    helpSpeed: 4300,
+    foodPer: 13.8,
+    skillPer: 5,
+    food: {
+      type: [6, 7, 8],
+      count: {
+        6: {
+          num: [1, 2, 4]
+        },
+        7: {
+          num: [0, 3, 5]
+        },
+        8: {
+          num: [0, 0, 5]
+        }
+      }
+    }
+  },
+  59: {
+    id: 59,
+    // name: '風速狗',
+    friendship: 20,
+    sleepType: 2,
+    skillType: 9,
+    pokeType: 3,
+    berryType: 10,
+    maxcarry: 21,
+    helpSpeed: 2500,
+    foodPer: 13.6,
+    skillPer: 4.9
+  },
+  69: {
+    id: 69,
+    // name: '喇叭芽',
+    friendship: 5,
+    sleepType: 1,
+    skillType: 7,
+    pokeType: 2,
+    berryType: 4,
+    maxcarry: 8,
+    helpSpeed: 5200,
+    foodPer: 23.3,
+    skillPer: 3.9,
+    food: {
+      type: [12, 4, 1],
+      count: {
+        12: {
+          num: [2, 5, 7]
+        },
+        4: {
+          num: [0, 4, 6]
+        },
+        1: {
+          num: [0, 0, 4]
+        }
+      }
+    }
+  },
+  70: {
+    id: 70,
+    // name: '口呆花',
+    friendship: 12,
+    sleepType: 1,
+    skillType: 7,
+    pokeType: 2,
+    berryType: 4,
+    maxcarry: 17,
+    helpSpeed: 3800,
+    foodPer: 23.5,
+    skillPer: 4
+  },
+  71: {
+    id: 71,
+    // name: '大食花',
+    friendship: 20,
+    sleepType: 1,
+    skillType: 7,
+    pokeType: 2,
+    berryType: 4,
+    maxcarry: 27,
+    helpSpeed: 2800,
+    foodPer: 23.3,
+    skillPer: 3.9
+  },
+  74: {
+    id: 74,
+    // name: '小拳石',
+    friendship: 5,
+    sleepType: 3,
+    skillType: 5,
+    pokeType: 2,
+    berryType: 14,
+    maxcarry: 9,
+    helpSpeed: 5700,
+    foodPer: 28.1,
+    skillPer: 5.2,
+    food: {
+      type: [15, 4, 2],
+      count: {
+        15: {
+          num: [2, 5, 7]
+        },
+        4: {
+          num: [0, 4, 6]
+        },
+        2: {
+          num: [0, 0, 4]
+        }
+      }
+    }
+  },
+  75: {
+    id: 75,
+    // name: '隆隆石',
+    friendship: 12,
+    sleepType: 3,
+    skillType: 5,
+    pokeType: 2,
+    berryType: 14,
+    maxcarry: 17,
+    helpSpeed: 4000,
+    foodPer: 27.2,
+    skillPer: 4.8
+  },
+  76: {
+    id: 76,
+    // name: '隆隆岩',
+    friendship: 22,
+    sleepType: 3,
+    skillType: 5,
+    pokeType: 2,
+    berryType: 14,
+    maxcarry: 26,
+    helpSpeed: 3100,
+    foodPer: 28,
+    skillPer: 5.2
+  },
+  79: {
+    id: 79,
+    // name: '呆呆獸',
+    friendship: 5,
+    sleepType: 2,
+    skillType: 4,
+    pokeType: 3,
+    berryType: 1,
+    maxcarry: 9,
+    helpSpeed: 5700,
+    foodPer: 15.1,
+    skillPer: 7.8,
+    food: {
+      type: [13, 14, 12],
+      count: {
+        13: {
+          num: [1, 2, 4]
+        },
+        14: {
+          num: [0, 1, 2]
+        },
+        12: {
+          num: [0, 0, 5]
+        }
+      }
+    }
+  },
+  80: {
+    id: 80,
+    // name: '呆殼獸',
+    friendship: 12,
+    sleepType: 2,
+    skillType: 4,
+    pokeType: 3,
+    berryType: 1,
+    maxcarry: 21,
+    helpSpeed: 3800,
+    foodPer: 19.7,
+    skillPer: 8
+  },
+  81: {
+    id: 81,
+    // name: '小磁怪',
+    friendship: 5,
+    sleepType: 3,
+    skillType: 11,
+    pokeType: 3,
+    berryType: 2,
+    maxcarry: 8,
+    helpSpeed: 5800,
+    foodPer: 18.2,
+    skillPer: 6.4,
+    food: {
+      type: [10, 6],
+      count: {
+        10: {
+          num: [1, 2, 4]
+        },
+        6: {
+          num: [0, 2, 3]
+        }
+      }
+    }
+  },
+  82: {
+    id: 82,
+    // name: '三合一磁怪',
+    friendship: 12,
+    sleepType: 3,
+    skillType: 11,
+    pokeType: 3,
+    berryType: 2,
+    maxcarry: 16,
+    helpSpeed: 4000,
+    foodPer: 18.2,
+    skillPer: 6.3
+  },
+  83: {
+    id: 83,
+    // name: '大蔥鴨',
+    friendship: 16,
+    sleepType: 3,
+    skillType: 1,
+    pokeType: 2,
+    berryType: 16,
+    maxcarry: 18,
+    helpSpeed: 3000,
+    foodPer: 16,
+    skillPer: 4.3,
+    food: {
+      type: [1, 7, 11],
+      count: {
+        1: {
+          num: [2, 5, 7]
+        },
+        7: {
+          num: [0, 8, 13]
+        },
+        11: {
+          num: [0, 0, 12]
+        }
+      }
+    }
+  },
+  84: {
+    id: 84,
+    // name: '嘟嘟',
+    friendship: 5,
+    sleepType: 3,
+    skillType: 7,
+    pokeType: 1,
+    berryType: 16,
+    maxcarry: 13,
+    helpSpeed: 3800,
+    foodPer: 18.4,
+    skillPer: 2,
+    food: {
+      type: [15, 13, 7],
+      count: {
+        15: {
+          num: [1, 2, 4]
+        },
+        13: {
+          num: [0, 1, 2]
+        },
+        7: {
+          num: [0, 0, 3]
+        }
+      }
+    }
+  },
+  85: {
+    id: 85,
+    // name: '嘟嘟利',
+    friendship: 12,
+    sleepType: 3,
+    skillType: 7,
+    pokeType: 1,
+    berryType: 16,
+    maxcarry: 26,
+    helpSpeed: 2300,
+    foodPer: 18.4,
+    skillPer: 2
+  },
+  92: {
+    id: 92,
+    // name: '鬼斯',
+    friendship: 5,
+    sleepType: 1,
+    skillType: 5,
+    pokeType: 2,
+    berryType: 8,
+    maxcarry: 10,
+    helpSpeed: 3800,
+    foodPer: 14.4,
+    skillPer: 1.5,
+    food: {
+      type: [6, 2, 10],
+      count: {
+        6: {
+          num: [2, 5, 7]
+        },
+        2: {
+          num: [0, 4, 6]
+        },
+        10: {
+          num: [0, 0, 8]
+        }
+      }
+    }
+  },
+  93: {
+    id: 93,
+    // name: '鬼斯通',
+    friendship: 12,
+    sleepType: 1,
+    skillType: 5,
+    pokeType: 2,
+    berryType: 8,
+    maxcarry: 19,
+    helpSpeed: 3000,
+    foodPer: 15.7,
+    skillPer: 2.2
+  },
+  94: {
+    id: 94,
+    // name: '耿鬼',
+    friendship: 22,
+    sleepType: 1,
+    skillType: 5,
+    pokeType: 2,
+    berryType: 8,
+    maxcarry: 28,
+    helpSpeed: 2200,
+    foodPer: 16.1,
+    skillPer: 2.4
+  },
+  95: {
+    id: 95,
+    // name: '大岩蛇',
+    friendship: 16,
+    sleepType: 3,
+    skillType: 10,
+    pokeType: 1,
+    maxcarry: 22,
+    helpSpeed: 3100,
+    berryType: 14,
+    foodPer: 13.2,
+    skillPer: 2.3,
+    food: {
+      type: [12, 7, 4],
+      count: {
+        12: {
+          num: [1, 2, 4]
+        },
+        7: {
+          num: [0, 2, 4]
+        },
+        4: {
+          num: [0, 0, 3]
+        }
+      }
+    }
+  },
+  104: {
+    id: 104,
+    // name: '卡拉卡拉',
+    friendship: 5,
+    sleepType: 3,
+    skillType: 7,
+    pokeType: 1,
+    berryType: 15,
+    maxcarry: 10,
+    helpSpeed: 4800,
+    foodPer: 22.3,
+    skillPer: 4.4,
+    food: {
+      type: [11, 13],
+      count: {
+        11: {
+          num: [1, 2, 4]
+        },
+        13: {
+          num: [0, 2, 3]
+        }
+      }
+    }
+  },
+  105: {
+    id: 105,
+    // name: '嘎啦嘎啦',
+    friendship: 12,
+    sleepType: 3,
+    skillType: 7,
+    pokeType: 1,
+    berryType: 15,
+    maxcarry: 20,
+    helpSpeed: 3300,
+    foodPer: 22.5,
+    skillPer: 4.5
+  },
+  113: {
+    id: 113,
+    // name: '吉利蛋',
+    friendship: 16,
+    sleepType: 2,
+    skillType: 8,
+    pokeType: 2,
+    berryType: 11,
+    maxcarry: 20,
+    helpSpeed: 3300,
+    foodPer: 23.6,
+    skillPer: 2.3
+  },
+  115: {
+    id: 115,
+    // name: '袋獸',
+    friendship: 16,
+    sleepType: 2,
+    skillType: 10,
+    pokeType: 2,
+    berryType: 11,
+    maxcarry: 21,
+    helpSpeed: 2650,
+    foodPer: 22.2,
+    skillPer: 3.2,
+    food: {
+      type: [11, 4, 15],
+      count: {
+        11: {
+          num: [2, 5, 7]
+        },
+        4: {
+          num: [0, 4, 6]
+        },
+        15: {
+          num: [0, 0, 8]
+        }
+      }
+    }
+  },
+  122: {
+    id: 122,
+    // name: '魔牆人偶',
+    friendship: 12,
+    sleepType: 2,
+    skillType: 20,
+    pokeType: 2,
+    berryType: 6,
+    maxcarry: 22,
+    helpSpeed: 2800,
+    foodPer: 21.6,
+    skillPer: 3.9
+  },
+  127: {
+    id: 127,
+    // name: '凱羅斯',
+    friendship: 16,
+    sleepType: 1,
+    skillType: 2,
+    pokeType: 2,
+    berryType: 9,
+    maxcarry: 24,
+    helpSpeed: 2400,
+    foodPer: 21.6,
+    skillPer: 3.1,
+    food: {
+      type: [9, 5, 7],
+      count: {
+        9: {
+          num: [2, 5, 7]
+        },
+        5: {
+          num: [0, 5, 8]
+        },
+        7: {
+          num: [0, 0, 7]
+        }
+      }
+    }
+  },
+  132: {
+    id: 132,
+    // name: '百變怪',
+    friendship: 16,
+    sleepType: 2,
+    skillType: 19,
+    pokeType: 2,
+    berryType: 11,
+    maxcarry: 17,
+    helpSpeed: 3500,
+    foodPer: 20.1,
+    skillPer: 3.6,
+    food: {
+      type: [10, 1, 14],
+      count: {
+        10: {
+          num: [2, 5, 7]
+        },
+        1: {
+          num: [0, 3, 5]
+        },
+        14: {
+          num: [0, 0, 3]
+        }
+      }
+    }
+  },
+  133: {
+    id: 133,
+    // name: '伊布',
+    friendship: 5,
+    sleepType: 2,
+    skillType: 10,
+    pokeType: 3,
+    berryType: 11,
+    maxcarry: 12,
+    helpSpeed: 3700,
+    foodPer: 19.2,
+    skillPer: 5.5,
+    food: {
+      type: [8, 13, 7],
+      count: {
+        8: {
+          num: [1, 2, 4]
+        },
+        13: {
+          num: [0, 1, 2]
+        },
+        7: {
+          num: [0, 0, 3]
+        }
+      }
+    }
+  },
+  9004: {
+    id: 9004,
+    // name: '伊布（佳節）',
+    friendship: 5,
+    sleepType: 2,
+    skillType: 3,
+    pokeType: 1,
+    berryType: 11,
+    maxcarry: 20,
+    helpSpeed: 3100,
+    foodPer: 15.6,
+    skillPer: 3.2
+  },
+  9005: {
+    id: 9005,
+    // name: '伊布（萬聖節）',
+    friendship: 5,
+    sleepType: 2,
+    skillType: 10,
+    pokeType: 3,
+    berryType: 11,
+    maxcarry: 18,
+    helpSpeed: 3200,
+    foodPer: 12,
+    skillPer: 4.6,
+    food: {
+      type: [18, 13, 8],
+      count: {
+        18: {
+          num: [1, 2, 4]
+        },
+        13: {
+          num: [0, 4, 6]
+        },
+        8: {
+          num: [0, 0, 9]
+        }
+      }
+    }
+  },
+  134: {
+    id: 134,
+    // name: '水伊布',
+    friendship: 20,
+    sleepType: 3,
+    skillType: 10,
+    pokeType: 3,
+    berryType: 1,
+    maxcarry: 18,
+    helpSpeed: 3100,
+    foodPer: 21.2,
+    skillPer: 6.1
+  },
+  135: {
+    id: 135,
+    // name: '雷伊布',
+    friendship: 20,
+    sleepType: 2,
+    skillType: 9,
+    pokeType: 3,
+    berryType: 13,
+    maxcarry: 22,
+    helpSpeed: 2200,
+    foodPer: 15.1,
+    skillPer: 3.9
+  },
+  136: {
+    id: 136,
+    // name: '火伊布',
+    friendship: 20,
+    sleepType: 2,
+    skillType: 11,
+    pokeType: 3,
+    berryType: 10,
+    maxcarry: 19,
+    helpSpeed: 2700,
+    foodPer: 18.5,
+    skillPer: 5.2
+  },
+  147: {
+    id: 147,
+    // name: '迷你龍',
+    friendship: 5,
+    sleepType: 1,
+    skillType: 7,
+    pokeType: 2,
+    berryType: 3,
+    maxcarry: 9,
+    helpSpeed: 5000,
+    foodPer: 25,
+    skillPer: 2,
+    food: {
+      type: [6, 16, 10],
+      count: {
+        6: {
+          num: [2, 5, 7]
+        },
+        16: {
+          num: [0, 4, 7]
+        },
+        10: {
+          num: [0, 0, 8]
+        }
+      }
+    }
+  },
+  148: {
+    id: 148,
+    // name: '哈克龍',
+    friendship: 12,
+    sleepType: 1,
+    skillType: 7,
+    pokeType: 2,
+    berryType: 3,
+    maxcarry: 17,
+    helpSpeed: 3800,
+    foodPer: 26.2,
+    skillPer: 2.5
+  },
+  149: {
+    id: 149,
+    // name: '快龍',
+    friendship: 25,
+    sleepType: 1,
+    skillType: 7,
+    pokeType: 2,
+    berryType: 3,
+    maxcarry: 30,
+    helpSpeed: 2600,
+    foodPer: 26.4,
+    skillPer: 2.6
+  },
+  151: {
+    id: 151,
+    // name: '夢幻',
+    friendship: 25,
+    sleepType: 2,
+    skillType: 33,
+    pokeType: 4,
+    berryType: 6,
+    maxcarry: 26,
+    helpSpeed: 2900,
+    foodPer: 20,
+    skillPer: 4,
+    food: {
+      type: [1, 3, 6, 7, 10, 15, 19, 14],
+      count: {
+        1: {
+          num: [2, 3, 4]
+        },
+        3: {
+          num: [2, 4, 6]
+        },
+        6: {
+          num: [2, 4, 5]
+        },
+        7: {
+          num: [2, 4, 7]
+        },
+        10: {
+          num: [2, 4, 6]
+        },
+        14: {
+          num: [0, 0, 2]
+        },
+        15: {
+          num: [2, 5, 7]
+        },
+        19: {
+          num: [2, 3, 4]
+        }
+      }
+    }
+  },
+  152: {
+    id: 152,
+    // name: '菊草葉',
+    friendship: 5,
+    sleepType: 1,
+    skillType: 5,
+    pokeType: 1,
+    berryType: 4,
+    maxcarry: 12,
+    helpSpeed: 4400,
+    foodPer: 16.9,
+    skillPer: 3.9,
+    food: {
+      type: [13, 9, 1],
+      count: {
+        13: {
+          num: [1, 2, 4]
+        },
+        9: {
+          num: [0, 3, 5]
+        },
+        1: {
+          num: [0, 0, 3]
+        }
+      }
+    }
+  },
+  153: {
+    id: 153,
+    // name: '月桂葉',
+    friendship: 12,
+    sleepType: 1,
+    skillType: 5,
+    pokeType: 1,
+    berryType: 4,
+    maxcarry: 22,
+    helpSpeed: 3300,
+    foodPer: 16.8,
+    skillPer: 3.8
+  },
+  154: {
+    id: 154,
+    // name: '大竺葵',
+    friendship: 20,
+    sleepType: 1,
+    skillType: 5,
+    pokeType: 1,
+    berryType: 4,
+    maxcarry: 30,
+    helpSpeed: 2800,
+    foodPer: 17.5,
+    skillPer: 4.6
+  },
+  155: {
+    id: 155,
+    // name: '火球鼠',
+    friendship: 5,
+    sleepType: 2,
+    skillType: 5,
+    pokeType: 1,
+    berryType: 10,
+    maxcarry: 14,
+    helpSpeed: 3500,
+    foodPer: 18.6,
+    skillPer: 2.1,
+    food: {
+      type: [11, 6, 10],
+      count: {
+        11: {
+          num: [1, 2, 4]
+        },
+        6: {
+          num: [0, 2, 3]
+        },
+        10: {
+          num: [0, 0, 3]
+        }
+      }
+    }
+  },
+  156: {
+    id: 156,
+    // name: '火岩鼠',
+    friendship: 12,
+    sleepType: 2,
+    skillType: 5,
+    pokeType: 1,
+    berryType: 10,
+    maxcarry: 23,
+    helpSpeed: 3000,
+    foodPer: 21.1,
+    skillPer: 4.1
+  },
+  157: {
+    id: 157,
+    // name: '火爆獸',
+    friendship: 20,
+    sleepType: 2,
+    skillType: 5,
+    pokeType: 1,
+    berryType: 10,
+    maxcarry: 33,
+    helpSpeed: 2400,
+    foodPer: 20.8,
+    skillPer: 3.9
+  },
+  158: {
+    id: 158,
+    // name: '小鋸鱷',
+    friendship: 5,
+    sleepType: 3,
+    skillType: 5,
+    pokeType: 1,
+    berryType: 1,
+    maxcarry: 11,
+    helpSpeed: 4500,
+    foodPer: 25.3,
+    skillPer: 5.2,
+    food: {
+      type: [7, 10],
+      count: {
+        7: {
+          num: [1, 2, 4]
+        },
+        10: {
+          num: [0, 2, 3]
+        }
+      }
+    }
+  },
+  159: {
+    id: 159,
+    // name: '藍鱷',
+    friendship: 12,
+    sleepType: 3,
+    skillType: 5,
+    pokeType: 1,
+    berryType: 1,
+    maxcarry: 20,
+    helpSpeed: 3400,
+    foodPer: 25.3,
+    skillPer: 5.2
+  },
+  160: {
+    id: 160,
+    // name: '大力鱷',
+    friendship: 20,
+    sleepType: 3,
+    skillType: 5,
+    pokeType: 1,
+    berryType: 1,
+    maxcarry: 29,
+    helpSpeed: 2800,
+    foodPer: 25.7,
+    skillPer: 5.5
+  },
+  172: {
+    id: 172,
+    // name: '皮丘',
+    friendship: 5,
+    sleepType: 3,
+    skillType: 1,
+    pokeType: 1,
+    berryType: 13,
+    maxcarry: 10,
+    helpSpeed: 4300,
+    foodPer: 21,
+    skillPer: 2.3,
+    food: {
+      type: [5, 11, 3],
+      count: {
+        5: {
+          num: [1, 2, 4]
+        },
+        11: {
+          num: [0, 2, 3]
+        },
+        3: {
+          num: [0, 0, 3]
+        }
+      }
+    }
+  },
+  173: {
+    id: 173,
+    // name: '皮寶寶',
+    friendship: 5,
+    sleepType: 3,
+    skillType: 13,
+    pokeType: 1,
+    berryType: 12,
+    maxcarry: 10,
+    helpSpeed: 5600,
+    foodPer: 16.4,
+    skillPer: 3.4,
+    food: {
+      type: [5, 9, 15],
+      count: {
+        5: {
+          num: [1, 2, 4]
+        },
+        9: {
+          num: [0, 2, 3]
+        },
+        15: {
+          num: [0, 0, 3]
+        }
+      }
+    }
+  },
+  174: {
+    id: 174,
+    // name: '寶寶丁',
+    friendship: 5,
+    sleepType: 3,
+    skillType: 8,
+    pokeType: 3,
+    berryType: 12,
+    maxcarry: 8,
+    helpSpeed: 5200,
+    foodPer: 17,
+    skillPer: 3.8,
+    food: {
+      type: [9, 10, 13],
+      count: {
+        9: {
+          num: [1, 2, 4]
+        },
+        10: {
+          num: [0, 2, 3]
+        },
+        13: {
+          num: [0, 0, 2]
+        }
+      }
+    }
+  },
+  175: {
+    id: 175,
+    // name: '波克比',
+    friendship: 5,
+    sleepType: 3,
+    skillType: 13,
+    pokeType: 3,
+    berryType: 12,
+    maxcarry: 8,
+    helpSpeed: 4800,
+    foodPer: 15.1,
+    skillPer: 4.9,
+    food: {
+      type: [3, 11, 13],
+      count: {
+        3: {
+          num: [1, 2, 4]
+        },
+        11: {
+          num: [0, 2, 4]
+        },
+        13: {
+          num: [0, 0, 3]
+        }
+      }
+    }
+  },
+  176: {
+    id: 176,
+    // name: '波克基古',
+    friendship: 12,
+    sleepType: 2,
+    skillType: 13,
+    pokeType: 3,
+    berryType: 12,
+    maxcarry: 15,
+    helpSpeed: 3800,
+    foodPer: 16.3,
+    skillPer: 5.6
+  },
+  177: {
+    id: 177,
+    // name: '天然雀',
+    friendship: 5,
+    sleepType: 2,
+    skillType: 10,
+    pokeType: 1,
+    berryType: 6,
+    maxcarry: 11,
+    helpSpeed: 4500,
+    foodPer: 18.5,
+    skillPer: 1.6,
+    food: {
+      type: [3, 13, 5],
+      count: {
+        3: {
+          num: [1, 2, 4]
+        },
+        13: {
+          num: [0, 2, 3]
+        },
+        5: {
+          num: [0, 0, 5]
+        }
+      }
+    }
+  },
+  178: {
+    id: 178,
+    // name: '天然鳥',
+    friendship: 12,
+    sleepType: 2,
+    skillType: 10,
+    pokeType: 1,
+    berryType: 6,
+    maxcarry: 24,
+    helpSpeed: 2500,
+    foodPer: 19.1,
+    skillPer: 2.5
+  },
+  179: {
+    id: 179,
+    // name: '咩利羊',
+    friendship: 5,
+    sleepType: 2,
+    skillType: 2,
+    pokeType: 3,
+    berryType: 13,
+    maxcarry: 9,
+    helpSpeed: 4600,
+    foodPer: 12.8,
+    skillPer: 4.7,
+    food: {
+      type: [6, 3],
+      count: {
+        6: {
+          num: [1, 2, 4]
+        },
+        3: {
+          num: [0, 3, 4]
+        }
+      }
+    }
+  },
+  180: {
+    id: 180,
+    // name: '茸茸羊',
+    friendship: 12,
+    sleepType: 2,
+    skillType: 2,
+    pokeType: 3,
+    berryType: 13,
+    maxcarry: 16,
+    helpSpeed: 3300,
+    foodPer: 12.7,
+    skillPer: 4.6
+  },
+  181: {
+    id: 181,
+    // name: '電龍',
+    friendship: 20,
+    sleepType: 2,
+    skillType: 2,
+    pokeType: 3,
+    berryType: 13,
+    maxcarry: 25,
+    helpSpeed: 2500,
+    foodPer: 13,
+    skillPer: 4.7
+  },
+  185: {
+    id: 185,
+    // name: '樹才怪',
+    friendship: 7,
+    sleepType: 3,
+    skillType: 2,
+    pokeType: 3,
+    berryType: 14,
+    maxcarry: 21,
+    helpSpeed: 4000,
+    foodPer: 21.7,
+    skillPer: 7.2
+  },
+  194: {
+    id: 194,
+    // name: '烏波',
+    friendship: 5,
+    sleepType: 3,
+    skillType: 7,
+    pokeType: 2,
+    berryType: 1,
+    maxcarry: 10,
+    helpSpeed: 5900,
+    foodPer: 20.1,
+    skillPer: 3.8,
+    food: {
+      type: [2, 4, 7],
+      count: {
+        2: {
+          num: [2, 5, 7]
+        },
+        4: {
+          num: [0, 6, 10]
+        },
+        7: {
+          num: [0, 0, 12]
+        }
+      }
+    }
+  },
+  7054: {
+    id: 7054,
+    // name: '烏波（帕底亞的樣子）',
+    friendship: 5,
+    sleepType: 1,
+    skillType: 7,
+    pokeType: 2,
+    maxcarry: 9,
+    helpSpeed: 6400,
+    berryType: 5,
+    foodPer: 20.9,
+    skillPer: 5.6,
+    food: {
+      type: [13, 17, 4],
+      count: {
+        13: {
+          num: [2, 5, 7]
+        },
+        17: {
+          num: [0, 4, 7]
+        },
+        4: {
+          num: [0, 0, 9]
+        }
+      }
+    }
+  },
+  195: {
+    id: 195,
+    // name: '沼王',
+    friendship: 12,
+    sleepType: 3,
+    skillType: 7,
+    pokeType: 2,
+    berryType: 1,
+    maxcarry: 21,
+    helpSpeed: 3400,
+    foodPer: 19,
+    skillPer: 3.2
+  },
+  196: {
+    id: 196,
+    // name: '太陽伊布',
+    friendship: 20,
+    sleepType: 2,
+    skillType: 2,
+    berryType: 6,
+    pokeType: 3,
+    maxcarry: 21,
+    helpSpeed: 2400,
+    foodPer: 16.4,
+    skillPer: 4.4
+  },
+  197: {
+    id: 197,
+    // name: '月亮伊布',
+    friendship: 20,
+    sleepType: 1,
+    skillType: 18,
+    pokeType: 3,
+    berryType: 17,
+    maxcarry: 19,
+    helpSpeed: 3200,
+    foodPer: 21.9,
+    skillPer: 10.1
+  },
+  198: {
+    id: 198,
+    // name: '黑暗鴉',
+    friendship: 16,
+    sleepType: 1,
+    skillType: 24,
+    pokeType: 3,
+    maxcarry: 13,
+    helpSpeed: 3600,
+    berryType: 17,
+    foodPer: 14.1,
+    skillPer: 6.2,
+    food: {
+      type: [17, 15, 6],
+      count: {
+        17: {
+          num: [1, 2, 4]
+        },
+        15: {
+          num: [0, 3, 6]
+        },
+        6: {
+          num: [0, 0, 4]
+        }
+      }
+    }
+  },
+  199: {
+    id: 199,
+    // name: '呆呆王',
+    friendship: 20,
+    sleepType: 2,
+    skillType: 4,
+    pokeType: 3,
+    berryType: 1,
+    maxcarry: 22,
+    helpSpeed: 3400,
+    foodPer: 16.6,
+    skillPer: 8.7
+  },
+  202: {
+    id: 202,
+    // name: '果然翁',
+    friendship: 7,
+    sleepType: 2,
+    skillType: 4,
+    pokeType: 3,
+    berryType: 6,
+    maxcarry: 21,
+    helpSpeed: 3500,
+    foodPer: 21.1,
+    skillPer: 8.2
+  },
+  208: {
+    id: 208,
+    // name: '大鋼蛇',
+    friendship: 20,
+    sleepType: 3,
+    skillType: 10,
+    pokeType: 1,
+    berryType: 2,
+    maxcarry: 30,
+    helpSpeed: 3000,
+    foodPer: 15.4,
+    skillPer: 3.2
+  },
+  213: {
+    id: 213,
+    // name: '壺壺',
+    friendship: 16,
+    sleepType: 1,
+    skillType: 31,
+    pokeType: 3,
+    berryType: 9,
+    maxcarry: 16,
+    helpSpeed: 3600,
+    foodPer: 20.5,
+    skillPer: 5.9,
+    food: {
+      type: [10, 17, 9],
+      count: {
+        10: {
+          num: [1, 2, 4]
+        },
+        17: {
+          num: [0, 2, 3]
+        },
+        9: {
+          num: [0, 0, 4]
+        }
+      }
+    }
+  },
+  214: {
+    id: 214,
+    // name: '赫拉克羅斯',
+    friendship: 16,
+    sleepType: 1,
+    skillType: 32,
+    pokeType: 3,
+    berryType: 9,
+    maxcarry: 20,
+    helpSpeed: 2300,
+    foodPer: 15.8,
+    skillPer: 4.7,
+    food: {
+      type: [9, 2, 7],
+      count: {
+        9: {
+          num: [1, 2, 4]
+        },
+        2: {
+          num: [0, 1, 2]
+        },
+        7: {
+          num: [0, 0, 4]
+        }
+      }
+    }
+  },
+  215: {
+    id: 215,
+    // name: '狃拉',
+    friendship: 16,
+    sleepType: 1,
+    skillType: 14,
+    pokeType: 1,
+    berryType: 17,
+    maxcarry: 17,
+    helpSpeed: 3200,
+    foodPer: 25.5,
+    skillPer: 1.9,
+    food: {
+      type: [7, 3, 15],
+      count: {
+        7: {
+          num: [1, 2, 4]
+        },
+        3: {
+          num: [0, 2, 3]
+        },
+        15: {
+          num: [0, 0, 4]
+        }
+      }
+    }
+  },
+  225: {
+    id: 225,
+    // name: '信使鳥',
+    friendship: 16,
+    sleepType: 1,
+    skillType: 29,
+    pokeType: 2,
+    berryType: 16,
+    maxcarry: 20,
+    helpSpeed: 2500,
+    foodPer: 18.8,
+    skillPer: 3,
+    food: {
+      type: [3, 5, 13],
+      count: {
+        3: {
+          num: [2, 5, 7]
+        },
+        5: {
+          num: [0, 6, 9]
+        },
+        13: {
+          num: [0, 0, 5]
+        }
+      }
+    }
+  },
+  228: {
+    id: 228,
+    // name: '戴魯比',
+    friendship: 5,
+    sleepType: 1,
+    skillType: 2,
+    pokeType: 1,
+    berryType: 17,
+    maxcarry: 10,
+    helpSpeed: 4900,
+    foodPer: 20.1,
+    skillPer: 3.7,
+    food: {
+      type: [6, 11, 1],
+      count: {
+        6: {
+          num: [1, 2, 4]
+        },
+        11: {
+          num: [0, 3, 4]
+        },
+        1: {
+          num: [0, 0, 3]
+        }
+      }
+    }
+  },
+  229: {
+    id: 229,
+    // name: '黑魯加',
+    friendship: 12,
+    sleepType: 1,
+    skillType: 2,
+    pokeType: 1,
+    berryType: 17,
+    maxcarry: 21,
+    helpSpeed: 3300,
+    foodPer: 20.3,
+    skillPer: 4
+  },
+  242: {
+    id: 242,
+    // name: '幸福蛋',
+    friendship: 20,
+    sleepType: 2,
+    skillType: 8,
+    pokeType: 2,
+    berryType: 11,
+    maxcarry: 31,
+    helpSpeed: 3100,
+    foodPer: 23.8,
+    skillPer: 2.3
+  },
+  243: {
+    id: 243,
+    // name: '雷公',
+    friendship: 30,
+    sleepType: 2,
+    skillType: 15,
+    pokeType: 3,
+    berryType: 13,
+    maxcarry: 22,
+    helpSpeed: 2100,
+    foodPer: 19.2,
+    skillPer: 1.9,
+    food: {
+      type: [7, 6, 1],
+      count: {
+        7: {
+          num: [1, 2, 4]
+        },
+        6: {
+          num: [0, 2, 3]
+        },
+        1: {
+          num: [0, 0, 2]
+        }
+      }
+    }
+  },
+  244: {
+    id: 244,
+    // name: '炎帝',
+    friendship: 30,
+    sleepType: 2,
+    skillType: 15,
+    pokeType: 3,
+    berryType: 10,
+    maxcarry: 19,
+    helpSpeed: 2400,
+    foodPer: 18.7,
+    skillPer: 2.3,
+    food: {
+      type: [10, 12, 2],
+      count: {
+        10: {
+          num: [1, 2, 4]
+        },
+        12: {
+          num: [0, 2, 4]
+        },
+        2: {
+          num: [0, 0, 3]
+        }
+      }
+    }
+  },
+  245: {
+    id: 245,
+    // name: '水君',
+    friendship: 30,
+    sleepType: 3,
+    skillType: 15,
+    pokeType: 3,
+    berryType: 1,
+    maxcarry: 17,
+    helpSpeed: 2700,
+    foodPer: 27.7,
+    skillPer: 2.6,
+    food: {
+      type: [5, 10, 16],
+      count: {
+        5: {
+          num: [1, 2, 4]
+        },
+        10: {
+          num: [0, 2, 3]
+        },
+        16: {
+          num: [0, 0, 2]
+        }
+      }
+    }
+  },
+  246: {
+    id: 246,
+    // name: '幼基拉斯',
+    friendship: 5,
+    sleepType: 3,
+    skillType: 7,
+    pokeType: 2,
+    berryType: 14,
+    maxcarry: 9,
+    helpSpeed: 4800,
+    foodPer: 23.8,
+    skillPer: 4.1,
+    food: {
+      type: [11, 15, 7],
+      count: {
+        11: {
+          num: [2, 5, 7]
+        },
+        15: {
+          num: [0, 5, 8]
+        },
+        7: {
+          num: [0, 0, 8]
+        }
+      }
+    }
+  },
+  247: {
+    id: 247,
+    // name: '沙基拉斯',
+    friendship: 12,
+    sleepType: 3,
+    skillType: 7,
+    pokeType: 2,
+    berryType: 14,
+    maxcarry: 18,
+    helpSpeed: 3600,
+    foodPer: 24.7,
+    skillPer: 4.5
+  },
+  248: {
+    id: 248,
+    // name: '班基拉斯',
+    friendship: 25,
+    sleepType: 1,
+    skillType: 7,
+    pokeType: 2,
+    berryType: 17,
+    maxcarry: 29,
+    helpSpeed: 2700,
+    foodPer: 26.6,
+    skillPer: 5.2
+  },
+  252: {
+    id: 252,
+    // name: '木守宮',
+    friendship: 5,
+    sleepType: 1,
+    skillType: 21,
+    pokeType: 3,
+    berryType: 4,
+    maxcarry: 8,
+    helpSpeed: 4500,
+    foodPer: 17.2,
+    skillPer: 3.5,
+    food: {
+      type: [3, 17, 1],
+      count: {
+        3: {
+          num: [1, 2, 4]
+        },
+        17: {
+          num: [0, 2, 3]
+        },
+        1: {
+          num: [0, 0, 2]
+        }
+      }
+    }
+  },
+  253: {
+    id: 253,
+    // name: '森林蜥蜴',
+    friendship: 12,
+    sleepType: 1,
+    skillType: 21,
+    pokeType: 3,
+    berryType: 4,
+    maxcarry: 16,
+    helpSpeed: 3300,
+    foodPer: 15,
+    skillPer: 3.5
+  },
+  254: {
+    id: 254,
+    // name: '蜥蜴王',
+    friendship: 20,
+    sleepType: 1,
+    skillType: 21,
+    pokeType: 3,
+    berryType: 4,
+    maxcarry: 27,
+    helpSpeed: 2300,
+    foodPer: 10.7,
+    skillPer: 3
+  },
+  255: {
+    id: 255,
+    // name: '火稚雞',
+    friendship: 5,
+    sleepType: 2,
+    skillType: 7,
+    pokeType: 1,
+    berryType: 10,
+    maxcarry: 12,
+    helpSpeed: 4300,
+    foodPer: 16,
+    skillPer: 4.4,
+    food: {
+      type: [2, 15, 10],
+      count: {
+        2: {
+          num: [1, 2, 4]
+        },
+        15: {
+          num: [0, 4, 6]
+        },
+        10: {
+          num: [0, 0, 5]
+        }
+      }
+    }
+  },
+  256: {
+    id: 256,
+    // name: '力壯雞',
+    friendship: 12,
+    sleepType: 3,
+    skillType: 7,
+    pokeType: 1,
+    berryType: 18,
+    maxcarry: 21,
+    helpSpeed: 3400,
+    foodPer: 17,
+    skillPer: 5.2
+  },
+  257: {
+    id: 257,
+    // name: '火焰雞',
+    friendship: 20,
+    sleepType: 3,
+    skillType: 7,
+    pokeType: 1,
+    berryType: 18,
+    maxcarry: 32,
+    helpSpeed: 2600,
+    foodPer: 15.3,
+    skillPer: 4.9
+  },
+  258: {
+    id: 258,
+    // name: '水躍魚',
+    friendship: 5,
+    sleepType: 3,
+    skillType: 14,
+    pokeType: 1,
+    berryType: 1,
+    maxcarry: 11,
+    helpSpeed: 4700,
+    foodPer: 19.2,
+    skillPer: 2.4,
+    food: {
+      type: [16, 8, 2],
+      count: {
+        16: {
+          num: [1, 2, 4]
+        },
+        8: {
+          num: [0, 3, 5]
+        },
+        2: {
+          num: [0, 0, 3]
+        }
+      }
+    }
+  },
+  259: {
+    id: 259,
+    // name: '沼躍魚',
+    friendship: 12,
+    sleepType: 3,
+    skillType: 14,
+    pokeType: 1,
+    berryType: 15,
+    maxcarry: 21,
+    helpSpeed: 3500,
+    foodPer: 16.8,
+    skillPer: 2.8
+  },
+  260: {
+    id: 260,
+    // name: '巨沼怪',
+    friendship: 20,
+    sleepType: 3,
+    skillType: 14,
+    pokeType: 1,
+    berryType: 15,
+    maxcarry: 30,
+    helpSpeed: 2800,
+    foodPer: 14.6,
+    skillPer: 3.4
+  },
+  280: {
+    id: 280,
+    // name: '拉魯拉絲',
+    friendship: 5,
+    sleepType: 2,
+    skillType: 8,
+    pokeType: 3,
+    berryType: 6,
+    maxcarry: 9,
+    helpSpeed: 4800,
+    foodPer: 14.5,
+    skillPer: 4.3,
+    food: {
+      type: [5, 16, 1],
+      count: {
+        5: {
+          num: [1, 2, 4]
+        },
+        16: {
+          num: [0, 1, 2]
+        },
+        1: {
+          num: [0, 0, 2]
+        }
+      }
+    }
+  },
+  281: {
+    id: 281,
+    // name: '奇魯莉安',
+    friendship: 12,
+    sleepType: 2,
+    skillType: 8,
+    pokeType: 3,
+    berryType: 6,
+    maxcarry: 18,
+    helpSpeed: 3500,
+    foodPer: 14.6,
+    skillPer: 4.3
+  },
+  282: {
+    id: 282,
+    // name: '沙奈朵',
+    friendship: 20,
+    sleepType: 2,
+    skillType: 8,
+    pokeType: 3,
+    berryType: 6,
+    maxcarry: 28,
+    helpSpeed: 2400,
+    foodPer: 14.4,
+    skillPer: 4.2
+  },
+  287: {
+    id: 287,
+    // name: '懶人獺',
+    friendship: 5,
+    sleepType: 2,
+    skillType: 10,
+    pokeType: 1,
+    berryType: 11,
+    maxcarry: 7,
+    helpSpeed: 4900,
+    foodPer: 21.6,
+    skillPer: 1.9,
+    food: {
+      type: [12, 9, 5],
+      count: {
+        12: {
+          num: [1, 2, 4]
+        },
+        9: {
+          num: [0, 2, 4]
+        },
+        5: {
+          num: [0, 0, 4]
+        }
+      }
+    }
+  },
+  288: {
+    id: 288,
+    // name: '過動猿',
+    friendship: 12,
+    sleepType: 1,
+    skillType: 10,
+    pokeType: 1,
+    berryType: 11,
+    maxcarry: 14,
+    helpSpeed: 3200,
+    foodPer: 20.4,
+    skillPer: 1.5
+  },
+  289: {
+    id: 289,
+    // name: '請假王',
+    friendship: 22,
+    sleepType: 2,
+    skillType: 10,
+    pokeType: 1,
+    berryType: 11,
+    maxcarry: 26,
+    helpSpeed: 3600,
+    foodPer: 33.9,
+    skillPer: 6.7
+  },
+  302: {
+    id: 302,
+    // name: '勾魂眼',
+    friendship: 16,
+    sleepType: 1,
+    skillType: 6,
+    pokeType: 3,
+    berryType: 17,
+    maxcarry: 16,
+    helpSpeed: 3600,
+    foodPer: 18.8,
+    skillPer: 6.8,
+    food: {
+      type: [10, 2, 13],
+      count: {
+        10: {
+          num: [1, 2, 4]
+        },
+        2: {
+          num: [0, 2, 3]
+        },
+        13: {
+          num: [0, 0, 3]
+        }
+      }
+    }
+  },
+  303: {
+    id: 303,
+    // name: '大嘴娃',
+    friendship: 16,
+    sleepType: 3,
+    skillType: 25,
+    pokeType: 2,
+    berryType: 2,
+    maxcarry: 17,
+    helpSpeed: 3200,
+    foodPer: 20.4,
+    skillPer: 3.8,
+    food: {
+      type: [10, 16, 12],
+      count: {
+        10: {
+          num: [2, 5, 7]
+        },
+        16: {
+          num: [0, 4, 6]
+        },
+        12: {
+          num: [0, 0, 8]
+        }
+      }
+    }
+  },
+  304: {
+    id: 304,
+    // name: '可可多拉',
+    friendship: 5,
+    sleepType: 3,
+    skillType: 7,
+    pokeType: 2,
+    berryType: 2,
+    maxcarry: 10,
+    helpSpeed: 5700,
+    foodPer: 27.3,
+    skillPer: 4.6,
+    food: {
+      type: [7, 17, 15],
+      count: {
+        7: {
+          num: [2, 5, 7]
+        },
+        17: {
+          num: [0, 3, 5]
+        },
+        15: {
+          num: [0, 0, 7]
+        }
+      }
+    }
+  },
+  305: {
+    id: 305,
+    // name: '可多拉',
+    friendship: 12,
+    sleepType: 3,
+    skillType: 7,
+    pokeType: 2,
+    berryType: 2,
+    maxcarry: 18,
+    helpSpeed: 4200,
+    foodPer: 27.7,
+    skillPer: 4.8
+  },
+  306: {
+    id: 306,
+    // name: '波士可多拉',
+    friendship: 20,
+    sleepType: 3,
+    skillType: 7,
+    pokeType: 2,
+    berryType: 2,
+    maxcarry: 28,
+    helpSpeed: 3000,
+    foodPer: 28.5,
+    skillPer: 5.2
+  },
+  311: {
+    id: 311,
+    // name: '正電拍拍',
+    friendship: 10,
+    sleepType: 2,
+    skillType: 26,
+    pokeType: 3,
+    berryType: 13,
+    maxcarry: 16,
+    helpSpeed: 2400,
+    foodPer: 10.3,
+    skillPer: 4.9,
+    food: {
+      type: [17, 1, 8],
+      count: {
+        17: {
+          num: [1, 2, 4]
+        },
+        1: {
+          num: [0, 2, 3]
+        },
+        8: {
+          num: [0, 0, 6]
+        }
+      }
+    }
+  },
+  312: {
+    id: 312,
+    // name: '負電拍拍',
+    friendship: 10,
+    sleepType: 2,
+    skillType: 27,
+    pokeType: 3,
+    berryType: 13,
+    maxcarry: 16,
+    helpSpeed: 2400,
+    foodPer: 17.4,
+    skillPer: 4.9,
+    food: {
+      type: [9, 3, 8],
+      count: {
+        9: {
+          num: [1, 2, 4]
+        },
+        3: {
+          num: [0, 2, 3]
+        },
+        8: {
+          num: [0, 0, 4]
+        }
+      }
+    }
+  },
+  316: {
+    id: 316,
+    // name: '溶食獸',
+    friendship: 5,
+    sleepType: 1,
+    skillType: 6,
+    pokeType: 3,
+    berryType: 5,
+    maxcarry: 8,
+    helpSpeed: 5900,
+    foodPer: 21.4,
+    skillPer: 6.3,
+    food: {
+      type: [15, 2, 9],
+      count: {
+        15: {
+          num: [1, 2, 4]
+        },
+        2: {
+          num: [0, 1, 2]
+        },
+        9: {
+          num: [0, 0, 4]
+        }
+      }
+    }
+  },
+  317: {
+    id: 317,
+    // name: '吞食獸',
+    friendship: 12,
+    sleepType: 1,
+    skillType: 6,
+    pokeType: 3,
+    berryType: 5,
+    maxcarry: 24,
+    helpSpeed: 3500,
+    foodPer: 21,
+    skillPer: 7
+  },
+  328: {
+    id: 328,
+    // name: '大顎蟻',
+    friendship: 5,
+    sleepType: 3,
+    skillType: 1,
+    pokeType: 2,
+    berryType: 15,
+    maxcarry: 8,
+    helpSpeed: 5000,
+    foodPer: 15.2,
+    skillPer: 3.1,
+    food: {
+      type: [19, 6, 15],
+      count: {
+        19: {
+          num: [2, 5, 7]
+        },
+        6: {
+          num: [0, 6, 9]
+        },
+        15: {
+          num: [0, 0, 12]
+        }
+      }
+    }
+  },
+  329: {
+    id: 329,
+    // name: '超音波幼蟲',
+    friendship: 12,
+    sleepType: 3,
+    skillType: 1,
+    pokeType: 2,
+    berryType: 15,
+    maxcarry: 17,
+    helpSpeed: 3700,
+    foodPer: 15.5,
+    skillPer: 3.4
+  },
+  330: {
+    id: 330,
+    // name: '沙漠蜻蜓',
+    friendship: 20,
+    sleepType: 3,
+    skillType: 1,
+    pokeType: 2,
+    berryType: 15,
+    maxcarry: 27,
+    helpSpeed: 2700,
+    foodPer: 17.2,
+    skillPer: 3.9
+  },
+  333: {
+    id: 333,
+    // name: '青綿鳥',
+    friendship: 5,
+    sleepType: 3,
+    skillType: 7,
+    pokeType: 1,
+    berryType: 16,
+    maxcarry: 12,
+    helpSpeed: 4200,
+    foodPer: 17.7,
+    skillPer: 3.2,
+    food: {
+      type: [3, 15, 5],
+      count: {
+        3: {
+          num: [1, 2, 4]
+        },
+        15: {
+          num: [0, 3, 4]
+        },
+        5: {
+          num: [0, 0, 5]
+        }
+      }
+    }
+  },
+  334: {
+    id: 334,
+    // name: '七夕青鳥',
+    friendship: 12,
+    sleepType: 1,
+    skillType: 7,
+    pokeType: 1,
+    berryType: 3,
+    maxcarry: 19,
+    helpSpeed: 3500,
+    foodPer: 25.8,
+    skillPer: 6.1
+  },
+  353: {
+    id: 353,
+    // name: '怨影娃娃',
+    friendship: 5,
+    sleepType: 1,
+    skillType: 5,
+    pokeType: 1,
+    berryType: 8,
+    maxcarry: 11,
+    helpSpeed: 3900,
+    berryType: 8,
+    foodPer: 17.1,
+    skillPer: 2.6,
+    food: {
+      type: [10, 11, 2],
+      count: {
+        10: {
+          num: [1, 2, 4]
+        },
+        11: {
+          num: [0, 2, 4]
+        },
+        2: {
+          num: [0, 0, 3]
+        }
+      }
+    }
+  },
+  354: {
+    id: 354,
+    // name: '詛咒娃娃',
+    friendship: 16,
+    sleepType: 1,
+    skillType: 5,
+    pokeType: 1,
+    berryType: 8,
+    maxcarry: 24,
+    helpSpeed: 2600,
+    berryType: 8,
+    foodPer: 17.9,
+    skillPer: 3.3
+  },
+  359: {
+    id: 359,
+    // name: '阿勃梭魯',
+    friendship: 16,
+    sleepType: 1,
+    skillType: 2,
+    pokeType: 2,
+    berryType: 17,
+    maxcarry: 21,
+    helpSpeed: 2950,
+    foodPer: 17.8,
+    skillPer: 3.8,
+    food: {
+      type: [13, 5, 2],
+      count: {
+        13: {
+          num: [2, 5, 7]
+        },
+        5: {
+          num: [0, 8, 12]
+        },
+        2: {
+          num: [0, 0, 7]
+        }
+      }
+    }
+  },
+  360: {
+    id: 360,
+    // name: '小果然',
+    friendship: 5,
+    sleepType: 3,
+    skillType: 4,
+    pokeType: 3,
+    maxcarry: 7,
+    helpSpeed: 5800,
+    berryType: 6,
+    foodPer: 21.3,
+    skillPer: 6.9,
+    food: {
+      type: [5, 2, 10],
+      count: {
+        5: {
+          num: [1, 2, 4]
+        },
+        2: {
+          num: [0, 1, 2]
+        },
+        10: {
+          num: [0, 0, 3]
+        }
+      }
+    }
+  },
+  363: {
+    id: 363,
+    // name: '海豹球',
+    friendship: 5,
+    sleepType: 3,
+    skillType: 10,
+    pokeType: 1,
+    maxcarry: 9,
+    helpSpeed: 5600,
+    berryType: 7,
+    foodPer: 22.4,
+    skillPer: 2.3,
+    food: {
+      type: [10, 7, 11],
+      count: {
+        10: {
+          num: [1, 2, 4]
+        },
+        7: {
+          num: [0, 3, 4]
+        },
+        11: {
+          num: [0, 0, 4]
+        }
+      }
+    }
+  },
+  9006: {
+    id: 9006,
+    // name: '海豹球（佳節）',
+    friendship: 5,
+    sleepType: 3,
+    skillType: 14,
+    pokeType: 3,
+    berryType: 7,
+    maxcarry: 20,
+    helpSpeed: 3300,
+    foodPer: 21.4,
+    skillPer: 5,
+    food: {
+      type: [10, 7, 11],
+      count: {
+        10: {
+          num: [1, 2, 4]
+        },
+        7: {
+          num: [0, 3, 4]
+        },
+        11: {
+          num: [0, 0, 4]
+        }
+      }
+    }
+  },
+  364: {
+    id: 364,
+    // name: '海魔獅',
+    friendship: 12,
+    sleepType: 3,
+    skillType: 10,
+    pokeType: 1,
+    maxcarry: 18,
+    helpSpeed: 4000,
+    berryType: 7,
+    foodPer: 22.1,
+    skillPer: 2.1
+  },
+  365: {
+    id: 365,
+    // name: '帝牙海獅',
+    friendship: 20,
+    sleepType: 3,
+    skillType: 10,
+    pokeType: 1,
+    maxcarry: 28,
+    helpSpeed: 3000,
+    berryType: 7,
+    foodPer: 22.3,
+    skillPer: 2.2
+  },
+  371: {
+    id: 371,
+    // name: '寶貝龍',
+    friendship: 5,
+    sleepType: 1,
+    skillType: 11,
+    pokeType: 1,
+    berryType: 3,
+    maxcarry: 9,
+    helpSpeed: 5300,
+    foodPer: 20.9,
+    skillPer: 2.7,
+    food: {
+      type: [4, 11, 7],
+      count: {
+        4: {
+          num: [1, 2, 4]
+        },
+        11: {
+          num: [0, 3, 4]
+        },
+        7: {
+          num: [0, 0, 4]
+        }
+      }
+    }
+  },
+  372: {
+    id: 372,
+    // name: '甲殼龍',
+    friendship: 12,
+    sleepType: 1,
+    skillType: 11,
+    pokeType: 1,
+    berryType: 3,
+    maxcarry: 19,
+    helpSpeed: 3800,
+    foodPer: 20.6,
+    skillPer: 2.7
+  },
+  373: {
+    id: 373,
+    // name: '暴飛龍',
+    friendship: 25,
+    sleepType: 1,
+    skillType: 11,
+    pokeType: 1,
+    berryType: 3,
+    maxcarry: 32,
+    helpSpeed: 2800,
+    foodPer: 21.7,
+    skillPer: 3.4
+  },
+  380: {
+    id: 380,
+    // name: '拉帝亞斯',
+    friendship: 30,
+    sleepType: 1,
+    skillType: 34,
+    pokeType: 3,
+    berryType: 3,
+    maxcarry: 19,
+    helpSpeed: 2800,
+    foodPer: 11.4,
+    skillPer: 4.9,
+    food: {
+      type: [12, 18, 2],
+      count: {
+        12: {
+          num: [1, 2, 4]
+        },
+        18: {
+          num: [0, 1, 2]
+        },
+        2: {
+          num: [0, 0, 2]
+        }
+      }
+    }
+  },
+  381: {
+    id: 381,
+    // name: '拉帝歐斯',
+    friendship: 30,
+    sleepType: 1,
+    skillType: 35,
+    pokeType: 3,
+    berryType: 3,
+    maxcarry: 19,
+    helpSpeed: 2800,
+    foodPer: 19.8,
+    skillPer: 3,
+    food: {
+      type: [12, 3, 8],
+      count: {
+        12: {
+          num: [1, 2, 4]
+        },
+        3: {
+          num: [0, 2, 3]
+        },
+        8: {
+          num: [0, 0, 4]
+        }
+      }
+    }
+  },
+  387: {
+    id: 387,
+    // name: '草苗龜',
+    friendship: 5,
+    sleepType: 1,
+    skillType: 8,
+    pokeType: 3,
+    berryType: 4,
+    maxcarry: 12,
+    helpSpeed: 4500,
+    foodPer: 13.2,
+    skillPer: 4.1,
+    food: {
+      type: [2, 4, 11],
+      count: {
+        2: {
+          num: [1, 2, 4]
+        },
+        4: {
+          num: [0, 3, 5]
+        },
+        11: {
+          num: [0, 0, 6]
+        }
+      }
+    }
+  },
+  388: {
+    id: 388,
+    // name: '樹林龜',
+    friendship: 12,
+    sleepType: 1,
+    skillType: 8,
+    pokeType: 3,
+    berryType: 4,
+    maxcarry: 19,
+    helpSpeed: 3700,
+    foodPer: 15,
+    skillPer: 4.6
+  },
+  389: {
+    id: 389,
+    // name: '土台龜',
+    friendship: 20,
+    sleepType: 3,
+    skillType: 8,
+    pokeType: 3,
+    berryType: 15,
+    maxcarry: 27,
+    helpSpeed: 2900,
+    foodPer: 15.6,
+    skillPer: 4.8
+  },
+  390: {
+    id: 390,
+    // name: '小火焰猴',
+    friendship: 5,
+    sleepType: 2,
+    skillType: 21,
+    pokeType: 3,
+    berryType: 10,
+    maxcarry: 10,
+    helpSpeed: 4100,
+    foodPer: 11.4,
+    skillPer: 3.3,
+    food: {
+      type: [6, 11, 17],
+      count: {
+        6: {
+          num: [1, 2, 4]
+        },
+        11: {
+          num: [0, 3, 4]
+        },
+        17: {
+          num: [0, 0, 3]
+        }
+      }
+    }
+  },
+  391: {
+    id: 391,
+    // name: '猛火猴',
+    friendship: 12,
+    sleepType: 3,
+    skillType: 21,
+    pokeType: 3,
+    berryType: 18,
+    maxcarry: 19,
+    helpSpeed: 3100,
+    foodPer: 11.4,
+    skillPer: 3.3
+  },
+  392: {
+    id: 392,
+    // name: '烈焰猴',
+    friendship: 20,
+    sleepType: 3,
+    skillType: 21,
+    pokeType: 3,
+    berryType: 18,
+    maxcarry: 28,
+    helpSpeed: 2400,
+    foodPer: 10.6,
+    skillPer: 3.3
+  },
+  393: {
+    id: 393,
+    // name: '波加曼',
+    friendship: 5,
+    sleepType: 3,
+    skillType: 9,
+    pokeType: 1,
+    berryType: 1,
+    maxcarry: 11,
+    helpSpeed: 4500,
+    foodPer: 15.9,
+    skillPer: 2.6,
+    food: {
+      type: [3, 1, 9],
+      count: {
+        3: {
+          num: [1, 2, 4]
+        },
+        1: {
+          num: [0, 1, 2]
+        },
+        9: {
+          num: [0, 0, 4]
+        }
+      }
+    }
+  },
+  394: {
+    id: 394,
+    // name: '波皇子',
+    friendship: 12,
+    sleepType: 3,
+    skillType: 9,
+    pokeType: 1,
+    berryType: 1,
+    maxcarry: 20,
+    helpSpeed: 3700,
+    foodPer: 16.3,
+    skillPer: 3.5
+  },
+  395: {
+    id: 395,
+    // name: '帝王拿波',
+    friendship: 20,
+    sleepType: 3,
+    skillType: 9,
+    pokeType: 1,
+    berryType: 2,
+    maxcarry: 28,
+    helpSpeed: 3200,
+    foodPer: 16.8,
+    skillPer: 3.8
+  },
+  403: {
+    id: 403,
+    // name: '小貓怪',
+    friendship: 5,
+    sleepType: 2,
+    skillType: 11,
+    pokeType: 2,
+    berryType: 13,
+    maxcarry: 11,
+    helpSpeed: 4400,
+    foodPer: 18.1,
+    skillPer: 1.8,
+    food: {
+      type: [12, 10, 17],
+      count: {
+        12: {
+          num: [2, 5, 7]
+        },
+        10: {
+          num: [0, 4, 7]
+        },
+        17: {
+          num: [0, 0, 5]
+        }
+      }
+    }
+  },
+  404: {
+    id: 404,
+    // name: '勒克貓',
+    friendship: 12,
+    sleepType: 2,
+    skillType: 11,
+    pokeType: 2,
+    berryType: 13,
+    maxcarry: 21,
+    helpSpeed: 3200,
+    foodPer: 18.2,
+    skillPer: 1.8
+  },
+  405: {
+    id: 405,
+    // name: '倫琴貓',
+    friendship: 20,
+    sleepType: 2,
+    skillType: 11,
+    pokeType: 2,
+    berryType: 13,
+    maxcarry: 31,
+    helpSpeed: 2400,
+    foodPer: 20,
+    skillPer: 2.3
+  },
+  425: {
+    id: 425,
+    // name: '飄飄球',
+    friendship: 5,
+    sleepType: 1,
+    skillType: 16,
+    pokeType: 3,
+    maxcarry: 9,
+    helpSpeed: 4800,
+    berryType: 8,
+    foodPer: 13.7,
+    skillPer: 7.1,
+    food: {
+      type: [16, 10, 4],
+      count: {
+        16: {
+          num: [1, 2, 4]
+        },
+        10: {
+          num: [0, 3, 4]
+        },
+        4: {
+          num: [0, 0, 4]
+        }
+      }
+    }
+  },
+  426: {
+    id: 426,
+    // name: '隨風球',
+    friendship: 12,
+    sleepType: 1,
+    skillType: 16,
+    pokeType: 3,
+    maxcarry: 22,
+    helpSpeed: 2500,
+    berryType: 8,
+    foodPer: 12.8,
+    skillPer: 6.3
+  },
+  430: {
+    id: 430,
+    // name: '烏鴉頭頭',
+    friendship: 20,
+    sleepType: 1,
+    skillType: 24,
+    pokeType: 3,
+    maxcarry: 23,
+    helpSpeed: 3200,
+    berryType: 17,
+    foodPer: 14.3,
+    skillPer: 6.7
+  },
+  438: {
+    id: 438,
+    // name: '盆才怪',
+    friendship: 5,
+    sleepType: 3,
+    skillType: 2,
+    pokeType: 3,
+    maxcarry: 8,
+    helpSpeed: 6300,
+    berryType: 14,
+    foodPer: 18.9,
+    skillPer: 6.1,
+    food: {
+      type: [12, 15, 2],
+      count: {
+        12: {
+          num: [1, 2, 4]
+        },
+        15: {
+          num: [0, 2, 4]
+        },
+        2: {
+          num: [0, 0, 2]
+        }
+      }
+    }
+  },
+  439: {
+    id: 439,
+    // name: '魔尼尼',
+    friendship: 5,
+    sleepType: 3,
+    skillType: 20,
+    pokeType: 2,
+    berryType: 6,
+    maxcarry: 10,
+    helpSpeed: 4300,
+    foodPer: 20.1,
+    skillPer: 3.2,
+    food: {
+      type: [12, 4, 1],
+      count: {
+        12: {
+          num: [2, 5, 7]
+        },
+        4: {
+          num: [0, 4, 6]
+        },
+        1: {
+          num: [0, 0, 4]
+        }
+      }
+    }
+  },
+  440: {
+    id: 440,
+    // name: '小福蛋',
+    friendship: 5,
+    sleepType: 3,
+    skillType: 8,
+    pokeType: 2,
+    berryType: 11,
+    maxcarry: 7,
+    helpSpeed: 5400,
+    foodPer: 21,
+    skillPer: 1.3,
+    food: {
+      type: [3, 4, 9],
+      count: {
+        3: {
+          num: [2, 5, 7]
+        },
+        4: {
+          num: [0, 4, 7]
+        },
+        9: {
+          num: [0, 0, 8]
+        }
+      }
+    }
+  },
+  442: {
+    id: 442,
+    // name: '花岩怪',
+    friendship: 16,
+    sleepType: 1,
+    skillType: 9,
+    pokeType: 2,
+    berryType: 17,
+    maxcarry: 27,
+    helpSpeed: 3500,
+    foodPer: 19.8,
+    skillPer: 3.6,
+    food: {
+      type: [2, 18, 1],
+      count: {
+        2: {
+          num: [2, 5, 7]
+        },
+        18: {
+          num: [0, 3, 5]
+        },
+        1: {
+          num: [0, 0, 6]
+        }
+      }
+    }
+  },
+  447: {
+    id: 447,
+    // name: '利歐路',
+    friendship: 5,
+    sleepType: 3,
+    skillType: 3,
+    pokeType: 3,
+    maxcarry: 9,
+    helpSpeed: 4200,
+    berryType: 18,
+    foodPer: 12.6,
+    skillPer: 3.8,
+    food: {
+      type: [10, 4, 3],
+      count: {
+        10: {
+          num: [1, 2, 4]
+        },
+        4: {
+          num: [0, 2, 4]
+        },
+        3: {
+          num: [0, 0, 4]
+        }
+      }
+    }
+  },
+  448: {
+    id: 448,
+    // name: '路卡利歐',
+    friendship: 20,
+    sleepType: 3,
+    skillType: 36,
+    pokeType: 3,
+    maxcarry: 19,
+    helpSpeed: 2600,
+    berryType: 18,
+    foodPer: 15,
+    skillPer: 5.1
+  },
+  453: {
+    id: 453,
+    // name: '不良蛙',
+    friendship: 5,
+    sleepType: 1,
+    skillType: 1,
+    pokeType: 2,
+    berryType: 5,
+    maxcarry: 10,
+    helpSpeed: 5600,
+    foodPer: 22.8,
+    skillPer: 4.2,
+    food: {
+      type: [10, 7],
+      count: {
+        10: {
+          num: [2, 5, 7]
+        },
+        7: {
+          num: [0, 5, 8]
+        }
+      }
+    }
+  },
+  454: {
+    id: 454,
+    // name: '毒骷蛙',
+    friendship: 12,
+    sleepType: 1,
+    skillType: 1,
+    pokeType: 2,
+    berryType: 5,
+    maxcarry: 19,
+    helpSpeed: 3400,
+    foodPer: 22.9,
+    skillPer: 4.3
+  },
+  459: {
+    id: 459,
+    // name: '雪笠怪',
+    friendship: 5,
+    sleepType: 3,
+    skillType: 5,
+    pokeType: 2,
+    berryType: 7,
+    maxcarry: 10,
+    helpSpeed: 5600,
+    foodPer: 25.1,
+    skillPer: 4.4,
+    food: {
+      type: [12, 3, 2],
+      count: {
+        12: {
+          num: [2, 5, 7]
+        },
+        3: {
+          num: [0, 4, 7]
+        },
+        2: {
+          num: [0, 0, 5]
+        }
+      }
+    }
+  },
+  460: {
+    id: 460,
+    // name: '暴雪王',
+    friendship: 12,
+    sleepType: 3,
+    skillType: 5,
+    pokeType: 2,
+    berryType: 7,
+    maxcarry: 26,
+    helpSpeed: 3000,
+    foodPer: 25,
+    skillPer: 4.4
+  },
+  461: {
+    id: 461,
+    // name: '瑪狃拉',
+    friendship: 20,
+    sleepType: 1,
+    skillType: 14,
+    pokeType: 1,
+    berryType: 17,
+    maxcarry: 26,
+    helpSpeed: 2700,
+    foodPer: 25.1,
+    skillPer: 1.8
+  },
+  462: {
+    id: 462,
+    // name: '自爆磁怪',
+    friendship: 22,
+    sleepType: 3,
+    skillType: 11,
+    pokeType: 3,
+    berryType: 2,
+    maxcarry: 23,
+    helpSpeed: 3100,
+    foodPer: 17.9,
+    skillPer: 6.2
+  },
+  468: {
+    id: 468,
+    // name: '波克基斯',
+    friendship: 22,
+    sleepType: 2,
+    skillType: 13,
+    pokeType: 3,
+    berryType: 12,
+    maxcarry: 26,
+    helpSpeed: 2600,
+    foodPer: 15.8,
+    skillPer: 5.3
+  },
+  470: {
+    id: 470,
+    // name: '葉伊布',
+    friendship: 20,
+    sleepType: 1,
+    skillType: 4,
+    pokeType: 3,
+    berryType: 4,
+    maxcarry: 18,
+    helpSpeed: 3000,
+    foodPer: 20.5,
+    skillPer: 6.9
+  },
+  471: {
+    id: 471,
+    // name: '冰伊布',
+    friendship: 20,
+    sleepType: 3,
+    skillType: 11,
+    pokeType: 3,
+    berryType: 7,
+    maxcarry: 17,
+    helpSpeed: 3200,
+    foodPer: 21.9,
+    skillPer: 6.3
+  },
+  475: {
+    id: 475,
+    // name: '艾路雷朵',
+    friendship: 22,
+    sleepType: 3,
+    skillType: 9,
+    pokeType: 3,
+    berryType: 18,
+    maxcarry: 29,
+    helpSpeed: 2400,
+    foodPer: 14.7,
+    skillPer: 5.4
+  },
+  488: {
+    id: 488,
+    // name: '克雷色利亞',
+    friendship: 30,
+    sleepType: 2,
+    skillType: 22,
+    pokeType: 3,
+    berryType: 6,
+    maxcarry: 22,
+    helpSpeed: 2300,
+    foodPer: 23.9,
+    skillPer: 4.1,
+    food: {
+      type: [11, 13, 12],
+      count: {
+        11: {
+          num: [1, 2, 4]
+        },
+        13: {
+          num: [0, 2, 3]
+        },
+        12: {
+          num: [0, 0, 4]
+        }
+      }
+    }
+  },
+  491: {
+    id: 491,
+    // name: '達克萊伊',
+    friendship: 25,
+    sleepType: 1,
+    skillType: 23,
+    pokeType: 4,
+    berryType: 17,
+    maxcarry: 28,
+    helpSpeed: 2900,
+    foodPer: 19.2,
+    skillPer: 2.3,
+    food: {
+      type: [7, 17, 5, 6, 8, 9, 15, 16],
+      count: {
+        5: {
+          num: [2, 5, 7]
+        },
+        6: {
+          num: [2, 3, 5]
+        },
+        7: {
+          num: [2, 4, 6]
+        },
+        8: {
+          num: [2, 4, 6]
+        },
+        9: {
+          num: [2, 4, 6]
+        },
+        15: {
+          num: [2, 4, 6]
+        },
+        16: {
+          num: [2, 3, 4]
+        },
+        17: {
+          num: [2, 3, 4]
+        }
+      }
+    }
+  },
+  517: {
+    id: 517,
+    // name: '食夢夢',
+    friendship: 5,
+    sleepType: 2,
+    skillType: 6,
+    pokeType: 1,
+    berryType: 6,
+    maxcarry: 12,
+    helpSpeed: 5700,
+    foodPer: 19.7,
+    skillPer: 4.3,
+    food: {
+      type: [8, 9, 17],
+      count: {
+        8: {
+          num: [1, 2, 4]
+        },
+        9: {
+          num: [0, 2, 3]
+        },
+        17: {
+          num: [0, 0, 2]
+        }
+      }
+    }
+  },
+  518: {
+    id: 518,
+    // name: '夢夢蝕',
+    friendship: 20,
+    sleepType: 2,
+    skillType: 6,
+    pokeType: 1,
+    berryType: 6,
+    maxcarry: 29,
+    helpSpeed: 2800,
+    foodPer: 18.8,
+    skillPer: 4.1
+  },
+  557: {
+    id: 557,
+    // name: '石居蟹',
+    friendship: 5,
+    sleepType: 1,
+    skillType: 28,
+    pokeType: 3,
+    berryType: 9,
+    maxcarry: 8,
+    helpSpeed: 4300,
+    foodPer: 17.5,
+    skillPer: 5.4,
+    food: {
+      type: [19, 4, 10],
+      count: {
+        19: {
+          num: [1, 2, 4]
+        },
+        4: {
+          num: [0, 3, 5]
+        },
+        10: {
+          num: [0, 0, 5]
+        }
+      }
+    },
+    skillFood: [4, 10, 19]
+  },
+  558: {
+    id: 558,
+    // name: '岩殿居蟹',
+    friendship: 12,
+    sleepType: 1,
+    skillType: 28,
+    pokeType: 3,
+    berryType: 9,
+    maxcarry: 22,
+    helpSpeed: 3200,
+    foodPer: 23.9,
+    skillPer: 6.4
+  },
+  627: {
+    id: 627,
+    // name: '毛頭小鷹',
+    friendship: 5,
+    sleepType: 3,
+    skillType: 21,
+    pokeType: 3,
+    berryType: 16,
+    maxcarry: 10,
+    helpSpeed: 3800,
+    foodPer: 12.5,
+    skillPer: 3.1,
+    food: {
+      type: [7, 16, 17],
+      count: {
+        7: {
+          num: [1, 2, 4]
+        },
+        16: {
+          num: [0, 2, 3]
+        },
+        17: {
+          num: [0, 0, 2]
+        }
+      }
+    }
+  },
+  628: {
+    id: 628,
+    // name: '勇士雄鷹',
+    friendship: 12,
+    sleepType: 3,
+    skillType: 21,
+    pokeType: 3,
+    berryType: 16,
+    maxcarry: 23,
+    helpSpeed: 2400,
+    foodPer: 12.1,
+    skillPer: 3.5
+  },
+  696: {
+    id: 696,
+    // name: '寶寶暴龍',
+    friendship: 5,
+    sleepType: 3,
+    skillType: 11,
+    pokeType: 1,
+    berryType: 14,
+    maxcarry: 11,
+    helpSpeed: 5200,
+    foodPer: 20.3,
+    skillPer: 2.4,
+    food: {
+      type: [7, 5, 4],
+      count: {
+        7: {
+          num: [1, 2, 4]
+        },
+        5: {
+          num: [0, 3, 4]
+        },
+        4: {
+          num: [0, 0, 3]
+        }
+      }
+    }
+  },
+  697: {
+    id: 697,
+    // name: '怪顎龍',
+    friendship: 20,
+    sleepType: 3,
+    skillType: 11,
+    pokeType: 1,
+    berryType: 14,
+    maxcarry: 28,
+    helpSpeed: 2800,
+    foodPer: 17.8,
+    skillPer: 2.9
+  },
+  700: {
+    id: 700,
+    // name: '仙子伊布',
+    friendship: 20,
+    sleepType: 2,
+    skillType: 8,
+    pokeType: 3,
+    berryType: 12,
+    maxcarry: 20,
+    helpSpeed: 2600,
+    foodPer: 17.8,
+    skillPer: 4
+  },
+  701: {
+    id: 701,
+    // name: '摔角鷹人',
+    friendship: 16,
+    sleepType: 3,
+    skillType: 28,
+    pokeType: 3,
+    berryType: 16,
+    maxcarry: 21,
+    helpSpeed: 2400,
+    foodPer: 19.2,
+    skillPer: 5.2,
+    food: {
+      type: [6, 11, 7],
+      count: {
+        6: {
+          num: [1, 2, 4]
+        },
+        11: {
+          num: [0, 3, 4]
+        },
+        7: {
+          num: [0, 0, 5]
+        }
+      }
+    },
+    skillFood: [6, 11, 7]
+  },
+  702: {
+    id: 702,
+    // name: '咚咚鼠',
+    friendship: 16,
+    sleepType: 2,
+    skillType: 14,
+    pokeType: 3,
+    berryType: 13,
+    maxcarry: 19,
+    helpSpeed: 2500,
+    foodPer: 17.7,
+    skillPer: 4.5,
+    food: {
+      type: [5, 13, 16],
+      count: {
+        5: {
+          num: [1, 2, 4]
+        },
+        13: {
+          num: [0, 1, 2]
+        },
+        16: {
+          num: [0, 0, 2]
+        }
+      }
+    }
+  },
+  710: {
+    id: 710,
+    // name: '南瓜精(中顆種)',
+    friendship: 5,
+    sleepType: 1,
+    skillType: 1,
+    pokeType: 2,
+    berryType: 8,
+    maxcarry: 11,
+    helpSpeed: 5400,
+    foodPer: 12,
+    skillPer: 4.9,
+    food: {
+      type: [18, 15, 4],
+      count: {
+        18: {
+          num: [2, 5, 7]
+        },
+        15: {
+          num: [0, 11, 18]
+        },
+        4: {
+          num: [0, 0, 15]
+        }
+      }
+    }
+  },
+  '710-2': {
+    id: '710-2',
+    // name: '南瓜精(小顆種)',
+    friendship: 5,
+    sleepType: 1,
+    skillType: 1,
+    pokeType: 2,
+    berryType: 8,
+    maxcarry: 7,
+    helpSpeed: 5300,
+    foodPer: 12,
+    skillPer: 4.9
+  },
+  '710-3': {
+    id: '710-3',
+    // name: '南瓜精(大顆種)',
+    friendship: 5,
+    sleepType: 1,
+    skillType: 1,
+    pokeType: 2,
+    berryType: 8,
+    maxcarry: 15,
+    helpSpeed: 5500,
+    foodPer: 12,
+    skillPer: 4.9
+  },
+  '710-4': {
+    id: '710-4',
+    // name: '南瓜精(巨顆種)',
+    friendship: 5,
+    sleepType: 1,
+    skillType: 1,
+    pokeType: 2,
+    berryType: 8,
+    maxcarry: 21,
+    helpSpeed: 5600,
+    foodPer: 12,
+    skillPer: 4.9
+  },
+  711: {
+    id: 711,
+    // name: '南瓜怪人(中顆種)',
+    friendship: 20,
+    sleepType: 1,
+    skillType: 1,
+    pokeType: 2,
+    berryType: 8,
+    maxcarry: 19,
+    helpSpeed: 3200,
+    foodPer: 13,
+    skillPer: 4.9
+  },
+  '711-2': {
+    id: '711-2',
+    // name: '南瓜怪人(小顆種)',
+    friendship: 20,
+    sleepType: 1,
+    skillType: 1,
+    pokeType: 2,
+    berryType: 8,
+    maxcarry: 15,
+    helpSpeed: 3100,
+    foodPer: 13,
+    skillPer: 4.9
+  },
+  '711-3': {
+    id: '711-3',
+    // name: '南瓜怪人(大顆種)',
+    friendship: 20,
+    sleepType: 1,
+    skillType: 1,
+    pokeType: 2,
+    berryType: 8,
+    maxcarry: 24,
+    helpSpeed: 3300,
+    foodPer: 13,
+    skillPer: 4.9
+  },
+  '711-4': {
+    id: '711-4',
+    // name: '南瓜怪人(巨顆種)',
+    friendship: 20,
+    sleepType: 1,
+    skillType: 1,
+    pokeType: 2,
+    berryType: 8,
+    maxcarry: 30,
+    helpSpeed: 3400,
+    foodPer: 13,
+    skillPer: 4.9
+  },
+  714: {
+    id: 714,
+    // name: '嗡蝠',
+    friendship: 5,
+    sleepType: 1,
+    skillType: 2,
+    pokeType: 3,
+    berryType: 3,
+    maxcarry: 7,
+    helpSpeed: 5100,
+    foodPer: 19.8,
+    skillPer: 4.8,
+    food: {
+      type: [5, 1, 7],
+      count: {
+        5: {
+          num: [1, 2, 4]
+        },
+        1: {
+          num: [0, 1, 2]
+        },
+        7: {
+          num: [0, 0, 3]
+        }
+      }
+    }
+  },
+  715: {
+    id: 715,
+    // name: '音波龍',
+    friendship: 12,
+    sleepType: 1,
+    skillType: 2,
+    pokeType: 3,
+    berryType: 3,
+    maxcarry: 23,
+    helpSpeed: 2700,
+    foodPer: 19.5,
+    skillPer: 4.8
+  },
+  736: {
+    id: 736,
+    // name: '強顎雞母蟲',
+    friendship: 5,
+    sleepType: 1,
+    skillType: 1,
+    pokeType: 2,
+    berryType: 9,
+    maxcarry: 11,
+    helpSpeed: 4600,
+    foodPer: 15.5,
+    skillPer: 2.9,
+    food: {
+      type: [17, 2, 9],
+      count: {
+        17: {
+          num: [2, 5, 7]
+        },
+        2: {
+          num: [0, 4, 7]
+        },
+        9: {
+          num: [0, 0, 11]
+        }
+      }
+    }
+  },
+  737: {
+    id: 737,
+    // name: '蟲電寶',
+    friendship: 12,
+    sleepType: 1,
+    skillType: 1,
+    pokeType: 2,
+    berryType: 9,
+    maxcarry: 20,
+    helpSpeed: 3300,
+    foodPer: 15.4,
+    skillPer: 2.8
+  },
+  738: {
+    id: 738,
+    // name: '鍬農炮蟲',
+    friendship: 22,
+    sleepType: 1,
+    skillType: 1,
+    pokeType: 2,
+    berryType: 9,
+    maxcarry: 29,
+    helpSpeed: 2800,
+    foodPer: 19.4,
+    skillPer: 5.1
+  },
+  742: {
+    id: 742,
+    // name: '萌虻',
+    friendship: 5,
+    sleepType: 2,
+    skillType: 28,
+    pokeType: 2,
+    maxcarry: 9,
+    helpSpeed: 4500,
+    berryType: 12,
+    foodPer: 19.9,
+    skillPer: 1.9,
+    food: {
+      type: [9, 10, 16],
+      count: {
+        9: {
+          num: [2, 5, 7]
+        },
+        10: {
+          num: [0, 4, 6]
+        },
+        16: {
+          num: [0, 0, 5]
+        }
+      }
+    },
+    skillFood: [9, 10, 16]
+  },
+  743: {
+    id: 743,
+    // name: '蝶結萌虻',
+    friendship: 12,
+    sleepType: 2,
+    skillType: 28,
+    pokeType: 2,
+    maxcarry: 24,
+    helpSpeed: 2300,
+    berryType: 12,
+    foodPer: 19.4,
+    skillPer: 2.5
+  },
+  759: {
+    id: 759,
+    // name: '童偶熊',
+    friendship: 5,
+    sleepType: 3,
+    skillType: 5,
+    pokeType: 2,
+    maxcarry: 13,
+    helpSpeed: 4100,
+    berryType: 18,
+    foodPer: 22.5,
+    skillPer: 1.1,
+    food: {
+      type: [16, 7, 3],
+      count: {
+        16: {
+          num: [2, 5, 7]
+        },
+        7: {
+          num: [0, 6, 10]
+        },
+        3: {
+          num: [0, 0, 9]
+        }
+      }
+    }
+  },
+  760: {
+    id: 760,
+    // name: '穿著熊',
+    friendship: 12,
+    sleepType: 3,
+    skillType: 5,
+    pokeType: 2,
+    maxcarry: 25,
+    helpSpeed: 2800,
+    berryType: 18,
+    foodPer: 22.9,
+    skillPer: 1.3
+  },
+  764: {
+    id: 764,
+    // name: '花療環環',
+    friendship: 16,
+    sleepType: 2,
+    skillType: 4,
+    pokeType: 2,
+    maxcarry: 20,
+    helpSpeed: 2500,
+    berryType: 12,
+    foodPer: 16.7,
+    skillPer: 3.5,
+    food: {
+      type: [16, 11, 13],
+      count: {
+        16: {
+          num: [2, 5, 7]
+        },
+        11: {
+          num: [0, 6, 9]
+        },
+        13: {
+          num: [0, 0, 7]
+        }
+      }
+    }
+  },
+  777: {
+    id: 777,
+    // name: '托戈德瑪爾',
+    friendship: 16,
+    sleepType: 3,
+    skillType: 30,
+    pokeType: 3,
+    maxcarry: 18,
+    helpSpeed: 2700,
+    berryType: 2,
+    foodPer: 16.9,
+    skillPer: 5.5,
+    food: {
+      type: [8, 19, 13],
+      count: {
+        8: {
+          num: [1, 2, 4]
+        },
+        19: {
+          num: [0, 1, 2]
+        },
+        13: {
+          num: [0, 0, 2]
+        }
+      }
+    }
+  },
+  778: {
+    id: 778,
+    // name: '謎擬Ｑ',
+    friendship: 16,
+    sleepType: 1,
+    skillType: 17,
+    pokeType: 3,
+    maxcarry: 19,
+    helpSpeed: 2500,
+    berryType: 8,
+    foodPer: 15.3,
+    skillPer: 3.5,
+    food: {
+      type: [5, 17, 2],
+      count: {
+        5: {
+          num: [1, 2, 4]
+        },
+        17: {
+          num: [0, 1, 2]
+        },
+        2: {
+          num: [0, 0, 2]
+        }
+      }
+    }
+  },
+  780: {
+    id: 780,
+    // name: '老翁龍',
+    friendship: 16,
+    sleepType: 1,
+    skillType: 14,
+    pokeType: 2,
+    maxcarry: 25,
+    helpSpeed: 3500,
+    berryType: 3,
+    foodPer: 29.4,
+    skillPer: 4.6,
+    food: {
+      type: [15, 19, 7],
+      count: {
+        15: {
+          num: [2, 5, 7]
+        },
+        19: {
+          num: [0, 3, 4]
+        },
+        7: {
+          num: [0, 0, 7]
+        }
+      }
+    }
+  },
+  845: {
+    id: 845,
+    // name: '古月鳥',
+    friendship: 16,
+    sleepType: 3,
+    skillType: 14,
+    pokeType: 2,
+    maxcarry: 19,
+    helpSpeed: 2700,
+    berryType: 16,
+    foodPer: 16.5,
+    skillPer: 3.9,
+    food: {
+      type: [10, 4, 3],
+      count: {
+        10: {
+          num: [2, 5, 7]
+        },
+        4: {
+          num: [0, 4, 7]
+        },
+        3: {
+          num: [0, 0, 8]
+        }
+      }
+    }
+  },
+  848: {
+    id: 848,
+    // name: '毒電嬰',
+    friendship: 5,
+    sleepType: 3,
+    skillType: 10,
+    pokeType: 3,
+    maxcarry: 6,
+    helpSpeed: 5600,
+    berryType: 5,
+    foodPer: 20.9,
+    skillPer: 4.8,
+    food: {
+      type: [8, 5, 1],
+      count: {
+        8: {
+          num: [1, 2, 4]
+        },
+        5: {
+          num: [0, 2, 4]
+        },
+        1: {
+          num: [0, 0, 2]
+        }
+      }
+    }
+  },
+  849: {
+    id: 849,
+    // name: '顫弦蠑螈（高調的樣子）',
+    friendship: 20,
+    sleepType: 1,
+    skillType: 26,
+    pokeType: 3,
+    maxcarry: 23,
+    helpSpeed: 3100,
+    berryType: 5,
+    foodPer: 23.9,
+    skillPer: 6.4
+  },
+  8001: {
+    id: 8001,
+    // name: '顫弦蠑螈（低調的樣子）',
+    friendship: 20,
+    sleepType: 1,
+    skillType: 27,
+    pokeType: 3,
+    maxcarry: 23,
+    helpSpeed: 3100,
+    berryType: 5,
+    foodPer: 23.9,
+    skillPer: 6.4
+  },
+  906: {
+    id: 906,
+    // name: '新葉喵',
+    friendship: 5,
+    sleepType: 1,
+    skillType: 11,
+    pokeType: 2,
+    maxcarry: 10,
+    helpSpeed: 4600,
+    berryType: 4,
+    foodPer: 20.8,
+    skillPer: 2.3,
+    food: {
+      type: [4, 8, 11],
+      count: {
+        4: {
+          num: [2, 5, 7]
+        },
+        8: {
+          num: [0, 6, 9]
+        },
+        11: {
+          num: [0, 0, 8]
+        }
+      }
+    }
+  },
+  907: {
+    id: 907,
+    // name: '蒂蕾喵',
+    friendship: 12,
+    sleepType: 1,
+    skillType: 11,
+    pokeType: 2,
+    maxcarry: 19,
+    helpSpeed: 3500,
+    berryType: 4,
+    foodPer: 20.9,
+    skillPer: 2.3
+  },
+  908: {
+    id: 908,
+    // name: '魔幻假面喵',
+    friendship: 20,
+    sleepType: 1,
+    skillType: 11,
+    pokeType: 2,
+    maxcarry: 28,
+    helpSpeed: 2600,
+    berryType: 17,
+    foodPer: 19,
+    skillPer: 2.2
+  },
+  909: {
+    id: 909,
+    // name: '呆火鱷',
+    friendship: 5,
+    sleepType: 2,
+    skillType: 7,
+    pokeType: 2,
+    maxcarry: 11,
+    helpSpeed: 4200,
+    berryType: 10,
+    foodPer: 25.4,
+    skillPer: 5.3,
+    food: {
+      type: [5, 7, 6],
+      count: {
+        5: {
+          num: [2, 5, 7]
+        },
+        7: {
+          num: [0, 4, 6]
+        },
+        6: {
+          num: [0, 0, 5]
+        }
+      }
+    }
+  },
+  910: {
+    id: 910,
+    // name: '炙燙鱷',
+    friendship: 12,
+    sleepType: 2,
+    skillType: 7,
+    pokeType: 2,
+    maxcarry: 21,
+    helpSpeed: 3100,
+    berryType: 10,
+    foodPer: 24.7,
+    skillPer: 5
+  },
+  911: {
+    id: 911,
+    // name: '骨紋巨聲鱷',
+    friendship: 20,
+    sleepType: 1,
+    skillType: 7,
+    pokeType: 2,
+    maxcarry: 29,
+    helpSpeed: 2700,
+    berryType: 8,
+    foodPer: 26.8,
+    skillPer: 6.2
+  },
+  912: {
+    id: 912,
+    // name: '潤水鴨',
+    friendship: 5,
+    sleepType: 3,
+    skillType: 2,
+    pokeType: 2,
+    maxcarry: 10,
+    helpSpeed: 4800,
+    berryType: 1,
+    foodPer: 26.1,
+    skillPer: 2.8,
+    food: {
+      type: [15, 1, 10],
+      count: {
+        15: {
+          num: [2, 5, 7]
+        },
+        1: {
+          num: [0, 2, 4]
+        },
+        10: {
+          num: [0, 0, 6]
+        }
+      }
+    }
+  },
+  913: {
+    id: 913,
+    // name: '湧躍鴨',
+    friendship: 12,
+    sleepType: 3,
+    skillType: 2,
+    pokeType: 2,
+    maxcarry: 19,
+    helpSpeed: 3600,
+    berryType: 1,
+    foodPer: 25.9,
+    skillPer: 2.7
+  },
+  914: {
+    id: 914,
+    // name: '狂歡浪舞鴨',
+    friendship: 20,
+    sleepType: 3,
+    skillType: 2,
+    pokeType: 2,
+    maxcarry: 29,
+    helpSpeed: 2600,
+    berryType: 18,
+    foodPer: 23.2,
+    skillPer: 2.4
+  },
+  921: {
+    id: 921,
+    // name: '布撥',
+    friendship: 5,
+    sleepType: 2,
+    skillType: 8,
+    pokeType: 3,
+    maxcarry: 9,
+    helpSpeed: 4600,
+    berryType: 13,
+    foodPer: 11.1,
+    skillPer: 3.6,
+    food: {
+      type: [13, 8, 3],
+      count: {
+        13: {
+          num: [1, 2, 3]
+        },
+        8: {
+          num: [0, 3, 6]
+        },
+        3: {
+          num: [0, 0, 5]
+        }
+      }
+    }
+  },
+  922: {
+    id: 922,
+    // name: '布土撥',
+    friendship: 12,
+    sleepType: 2,
+    skillType: 8,
+    pokeType: 3,
+    maxcarry: 17,
+    helpSpeed: 3300,
+    berryType: 13,
+    foodPer: 10.9,
+    skillPer: 3.6
+  },
+  923: {
+    id: 923,
+    // name: '巴布土撥',
+    friendship: 22,
+    sleepType: 2,
+    skillType: 8,
+    pokeType: 3,
+    maxcarry: 28,
+    helpSpeed: 2400,
+    berryType: 13,
+    foodPer: 14.1,
+    skillPer: 3.9
+  },
+  957: {
+    id: 957,
+    // name: '小鍛匠',
+    friendship: 5,
+    sleepType: 2,
+    skillType: 2,
+    pokeType: 1,
+    maxcarry: 12,
+    helpSpeed: 4500,
+    berryType: 12,
+    foodPer: 20.2,
+    skillPer: 1.6,
+    food: {
+      type: [12, 13, 4],
+      count: {
+        12: {
+          num: [1, 2, 4]
+        },
+        13: {
+          num: [0, 2, 3]
+        },
+        4: {
+          num: [0, 0, 3]
+        }
+      }
+    }
+  },
+  958: {
+    id: 958,
+    // name: '巧鍛匠',
+    friendship: 12,
+    sleepType: 2,
+    skillType: 2,
+    pokeType: 1,
+    maxcarry: 21,
+    helpSpeed: 3300,
+    berryType: 12,
+    foodPer: 18.6,
+    skillPer: 1.8
+  },
+  959: {
+    id: 959,
+    // name: '巨鍛匠',
+    friendship: 20,
+    sleepType: 2,
+    skillType: 2,
+    pokeType: 1,
+    maxcarry: 30,
+    helpSpeed: 2400,
+    berryType: 12,
+    foodPer: 18.5,
+    skillPer: 2
+  },
+  974: {
+    id: 974,
+    // name: '走鯨',
+    friendship: 5,
+    sleepType: 3,
+    skillType: 7,
+    pokeType: 2,
+    maxcarry: 12,
+    helpSpeed: 5100,
+    berryType: 7,
+    foodPer: 22.3,
+    skillPer: 4.2,
+    food: {
+      type: [4, 7, 18],
+      count: {
+        4: {
+          num: [2, 5, 7]
+        },
+        7: {
+          num: [0, 5, 9]
+        },
+        18: {
+          num: [0, 0, 4]
+        }
+      }
+    }
+  },
+  975: {
+    id: 975,
+    // name: '浩大鯨',
+    friendship: 20,
+    sleepType: 3,
+    skillType: 7,
+    pokeType: 2,
+    maxcarry: 30,
+    helpSpeed: 2800,
+    berryType: 7,
+    foodPer: 20.9,
+    skillPer: 4.2
+  },
+  980: {
+    id: 980,
+    // name: '土王',
+    friendship: 12,
+    sleepType: 1,
+    skillType: 7,
+    pokeType: 2,
+    maxcarry: 25,
+    helpSpeed: 3500,
+    berryType: 5,
+    foodPer: 20.8,
+    skillPer: 5.5
+  }
+}
+const initPokedex = () => {
+  for (const key in pokedex) {
+    if (Object.prototype.hasOwnProperty.call(pokedex, key)) {
+      pokedex[key].evoLineKey = 0
+    }
+  }
+  evoLine.forEach(evoItem => {
+    evoItem.forEach((pm, pmKey) => {
+      if ((+pm !== 9001) && (+pm !== 9002) && (+pm !== 9004) && (+pm !== 9007)) {
+        pokedex[pm].evoLineKey = 1
+      }
+      if (pmKey > 0) {
+        pokedex[pm].food = pokedex[evoItem[0]].food
+        if (pokedex[evoItem[0]].skillFood) {
+          pokedex[pm].skillFood = pokedex[evoItem[0]].skillFood
+        }
+      }
+    })
+  })
+}
+initPokedex()
+const updatePoke = [{
+  time: '2023/8/01',
+  pokemons: [439, 122]
+}, {
+  time: '2023/9/01',
+  pokemons: [173, 35, 36]
+}, {
+  time: '2023/10/01',
+  pokemons: [353, 354, 9001]
+}, {
+  time: '2023/11/01',
+  pokemons: [95, 208]
+}, {
+  time: '2023/12/01',
+  pokemons: [225, 459, 460, 9002]
+}, {
+  time: '2024/01/01',
+  pokemons: [147, 148, 149, 280, 281, 282, 475, 759, 760]
+}, {
+  time: '2024/03/01',
+  pokemons: [702, 243]
+}, {
+  time: '2024/04/01',
+  pokemons: [764]
+}, {
+  time: '2024/05/01',
+  pokemons: [37, 38, 244]
+}, {
+  time: '2024/06/01',
+  pokemons: [845]
+}, {
+  time: '2024/07/01',
+  pokemons: [906, 907, 908, 909, 910, 911, 912, 913, 914]
+}, {
+  time: '2024/08/01',
+  pokemons: [194, 195]
+}, {
+  time: '2024/09/01',
+  pokemons: [245]
+}, {
+  time: '2024/10/01',
+  pokemons: [304, 305, 306, 403, 404, 405, 736, 737, 738, 425, 426, 778]
+}, {
+  time: '2024/12/01',
+  pokemons: [215, 461, 921, 922, 923, 7006, 7007, 9004]
+}, {
+  time: '2025/01/01',
+  pokemons: [627, 628]
+}, {
+  time: '2025/02/01',
+  pokemons: [7054, 980]
+}, {
+  time: '2025/03/01',
+  pokemons: [517, 518, 488]
+}, {
+  time: '2025/04/01',
+  pokemons: [491]
+}, {
+  time: '2025/05/01',
+  pokemons: [440, 113, 242, 198, 430]
+}, {
+  time: '2025/06/01',
+  pokemons: [303, 83]
+}, {
+  time: '2025/07/01',
+  pokemons: [252, 253, 254, 255, 256, 257, 258, 259, 260, 311, 312]
+}, {
+  time: '2025/08/01',
+  pokemons: [848, 849, 8001]
+}, {
+  time: '2025/09/01',
+  pokemons: [177, 178]
+}, {
+  time: '2025/10/01',
+  pokemons: [710, 711, 9005]
+}, {
+  time: '2025/11/01',
+  pokemons: [328, 329, 330, 371, 372, 373, 557, 558]
+}, {
+  time: '2025/12/01',
+  pokemons: [442, 777, 974, 975, 9006]
+}, {
+  time: '2026/01/01',
+  pokemons: [213]
+}, {
+  time: '2026/02/01',
+  pokemons: [742, 743]
+}, {
+  time: '2026/03/01',
+  pokemons: [151, 714, 715]
+}, {
+  time: '2026/04/01',
+  pokemons: [380, 27, 28]
+}, {
+  time: '2026/05/01',
+  pokemons: [696, 697, 780]
+}, {
+  time: '2026/06/01',
+  pokemons: [381]
+}, {
+  time: '2026/07/01',
+  pokemons: [387, 388, 389, 390, 391, 392, 393, 394, 395]
+}, {
+  time: '2026/08/01',
+  pokemons: [701, 9007, 957, 958, 959]
+}]
+// console.log(pokedex)
+export {
+  pokedex,
+  updatePoke
+}

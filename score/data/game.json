@@ -1,0 +1,28 @@
+{
+ "POKEMON_MAX_LEVEL": 70,
+ "EX_HELP_SPEED": {
+  "greenex": {
+   "bonus": 10,
+   "penalty": 15
+  },
+  "beachex": {
+   "bonus": 20,
+   "penalty": 35
+  }
+ },
+ "FMB_MAP_INDEXES": [
+  0,
+  7,
+  8
+ ],
+ "SHINY_LOCK_POKEMONS": [
+  491,
+  151,
+  9007
+ ],
+ "SP_POKEMONS": [
+  491,
+  151
+ ],
+ "areaBonusMax": 85
+}

@@ -1,0 +1,10575 @@
+{
+ "1": {
+  "id": 1,
+  "friendship": 5,
+  "sleepType": 1,
+  "skillType": 10,
+  "pokeType": 2,
+  "berryType": 4,
+  "maxcarry": 11,
+  "helpSpeed": 4400,
+  "foodPer": 25.7,
+  "skillPer": 1.9,
+  "food": {
+   "type": [
+    9,
+    12,
+    4
+   ],
+   "count": {
+    "4": {
+     "num": [
+      0,
+      0,
+      6
+     ]
+    },
+    "9": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "12": {
+     "num": [
+      0,
+      4,
+      7
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "2": {
+  "id": 2,
+  "friendship": 12,
+  "sleepType": 1,
+  "skillType": 10,
+  "pokeType": 2,
+  "berryType": 4,
+  "maxcarry": 19,
+  "helpSpeed": 3300,
+  "foodPer": 25.5,
+  "skillPer": 1.9,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    9,
+    12,
+    4
+   ],
+   "count": {
+    "4": {
+     "num": [
+      0,
+      0,
+      6
+     ]
+    },
+    "9": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "12": {
+     "num": [
+      0,
+      4,
+      7
+     ]
+    }
+   }
+  }
+ },
+ "3": {
+  "id": 3,
+  "friendship": 20,
+  "sleepType": 1,
+  "skillType": 10,
+  "pokeType": 2,
+  "berryType": 4,
+  "maxcarry": 27,
+  "helpSpeed": 2800,
+  "foodPer": 26.6,
+  "skillPer": 2.1,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    9,
+    12,
+    4
+   ],
+   "count": {
+    "4": {
+     "num": [
+      0,
+      0,
+      6
+     ]
+    },
+    "9": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "12": {
+     "num": [
+      0,
+      4,
+      7
+     ]
+    }
+   }
+  }
+ },
+ "4": {
+  "id": 4,
+  "friendship": 5,
+  "sleepType": 2,
+  "skillType": 10,
+  "pokeType": 2,
+  "berryType": 10,
+  "maxcarry": 12,
+  "helpSpeed": 3500,
+  "foodPer": 20.1,
+  "skillPer": 1.1,
+  "food": {
+   "type": [
+    7,
+    11,
+    6
+   ],
+   "count": {
+    "6": {
+     "num": [
+      0,
+      0,
+      6
+     ]
+    },
+    "7": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "11": {
+     "num": [
+      0,
+      4,
+      7
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "5": {
+  "id": 5,
+  "friendship": 12,
+  "sleepType": 2,
+  "skillType": 10,
+  "pokeType": 2,
+  "berryType": 10,
+  "maxcarry": 20,
+  "helpSpeed": 3000,
+  "foodPer": 22.7,
+  "skillPer": 1.6,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    7,
+    11,
+    6
+   ],
+   "count": {
+    "6": {
+     "num": [
+      0,
+      0,
+      6
+     ]
+    },
+    "7": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "11": {
+     "num": [
+      0,
+      4,
+      7
+     ]
+    }
+   }
+  }
+ },
+ "6": {
+  "id": 6,
+  "friendship": 20,
+  "sleepType": 2,
+  "skillType": 10,
+  "pokeType": 2,
+  "berryType": 10,
+  "maxcarry": 29,
+  "helpSpeed": 2400,
+  "foodPer": 22.4,
+  "skillPer": 1.6,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    7,
+    11,
+    6
+   ],
+   "count": {
+    "6": {
+     "num": [
+      0,
+      0,
+      6
+     ]
+    },
+    "7": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "11": {
+     "num": [
+      0,
+      4,
+      7
+     ]
+    }
+   }
+  }
+ },
+ "7": {
+  "id": 7,
+  "friendship": 5,
+  "sleepType": 3,
+  "skillType": 10,
+  "pokeType": 2,
+  "berryType": 1,
+  "maxcarry": 10,
+  "helpSpeed": 4500,
+  "foodPer": 27.1,
+  "skillPer": 2,
+  "food": {
+   "type": [
+    8,
+    13,
+    7
+   ],
+   "count": {
+    "7": {
+     "num": [
+      0,
+      0,
+      7
+     ]
+    },
+    "8": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "13": {
+     "num": [
+      0,
+      3,
+      5
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "8": {
+  "id": 8,
+  "friendship": 12,
+  "sleepType": 3,
+  "skillType": 10,
+  "pokeType": 2,
+  "berryType": 1,
+  "maxcarry": 19,
+  "helpSpeed": 3400,
+  "foodPer": 27.1,
+  "skillPer": 2,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    8,
+    13,
+    7
+   ],
+   "count": {
+    "7": {
+     "num": [
+      0,
+      0,
+      7
+     ]
+    },
+    "8": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "13": {
+     "num": [
+      0,
+      3,
+      5
+     ]
+    }
+   }
+  }
+ },
+ "9": {
+  "id": 9,
+  "friendship": 20,
+  "sleepType": 3,
+  "skillType": 10,
+  "pokeType": 2,
+  "berryType": 1,
+  "maxcarry": 27,
+  "helpSpeed": 2800,
+  "foodPer": 27.5,
+  "skillPer": 2.1,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    8,
+    13,
+    7
+   ],
+   "count": {
+    "7": {
+     "num": [
+      0,
+      0,
+      7
+     ]
+    },
+    "8": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "13": {
+     "num": [
+      0,
+      3,
+      5
+     ]
+    }
+   }
+  }
+ },
+ "10": {
+  "id": 10,
+  "friendship": 5,
+  "sleepType": 1,
+  "skillType": 10,
+  "pokeType": 1,
+  "berryType": 9,
+  "maxcarry": 11,
+  "helpSpeed": 4400,
+  "foodPer": 17.9,
+  "skillPer": 0.8,
+  "food": {
+   "type": [
+    9,
+    12,
+    15
+   ],
+   "count": {
+    "9": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "12": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    },
+    "15": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "11": {
+  "id": 11,
+  "friendship": 7,
+  "sleepType": 1,
+  "skillType": 10,
+  "pokeType": 1,
+  "berryType": 9,
+  "maxcarry": 18,
+  "helpSpeed": 4200,
+  "foodPer": 20.8,
+  "skillPer": 1.8,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    9,
+    12,
+    15
+   ],
+   "count": {
+    "9": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "12": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    },
+    "15": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "12": {
+  "id": 12,
+  "friendship": 15,
+  "sleepType": 1,
+  "skillType": 10,
+  "pokeType": 1,
+  "berryType": 9,
+  "maxcarry": 31,
+  "helpSpeed": 2500,
+  "foodPer": 19.7,
+  "skillPer": 1.4,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    9,
+    12,
+    15
+   ],
+   "count": {
+    "9": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "12": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    },
+    "15": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "19": {
+  "id": 19,
+  "friendship": 5,
+  "sleepType": 2,
+  "skillType": 7,
+  "pokeType": 1,
+  "berryType": 11,
+  "maxcarry": 10,
+  "helpSpeed": 4900,
+  "foodPer": 23.7,
+  "skillPer": 3,
+  "food": {
+   "type": [
+    5,
+    15,
+    7
+   ],
+   "count": {
+    "5": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "7": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "15": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "20": {
+  "id": 20,
+  "friendship": 12,
+  "sleepType": 2,
+  "skillType": 7,
+  "pokeType": 1,
+  "berryType": 11,
+  "maxcarry": 21,
+  "helpSpeed": 2950,
+  "foodPer": 23.7,
+  "skillPer": 3,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    5,
+    15,
+    7
+   ],
+   "count": {
+    "5": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "7": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "15": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    }
+   }
+  }
+ },
+ "23": {
+  "id": 23,
+  "friendship": 5,
+  "sleepType": 1,
+  "skillType": 7,
+  "pokeType": 1,
+  "berryType": 5,
+  "maxcarry": 10,
+  "helpSpeed": 5000,
+  "foodPer": 23.5,
+  "skillPer": 3.3,
+  "food": {
+   "type": [
+    7,
+    3,
+    6
+   ],
+   "count": {
+    "3": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    },
+    "6": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "7": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "24": {
+  "id": 24,
+  "friendship": 12,
+  "sleepType": 1,
+  "skillType": 7,
+  "pokeType": 1,
+  "berryType": 5,
+  "maxcarry": 19,
+  "helpSpeed": 3400,
+  "foodPer": 26.4,
+  "skillPer": 5.7,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    7,
+    3,
+    6
+   ],
+   "count": {
+    "3": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    },
+    "6": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "7": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "25": {
+  "id": 25,
+  "friendship": 7,
+  "sleepType": 2,
+  "skillType": 1,
+  "pokeType": 1,
+  "berryType": 13,
+  "maxcarry": 22,
+  "helpSpeed": 2700,
+  "foodPer": 20.7,
+  "skillPer": 2.1,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    5,
+    11,
+    3
+   ],
+   "count": {
+    "3": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "5": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "11": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    }
+   }
+  }
+ },
+ "26": {
+  "id": 26,
+  "friendship": 18,
+  "sleepType": 2,
+  "skillType": 1,
+  "pokeType": 1,
+  "berryType": 13,
+  "maxcarry": 31,
+  "helpSpeed": 2200,
+  "foodPer": 22.4,
+  "skillPer": 3.2,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    5,
+    11,
+    3
+   ],
+   "count": {
+    "3": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "5": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "11": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    }
+   }
+  }
+ },
+ "27": {
+  "id": 27,
+  "friendship": 5,
+  "sleepType": 3,
+  "skillType": 28,
+  "pokeType": 3,
+  "berryType": 15,
+  "maxcarry": 11,
+  "helpSpeed": 5300,
+  "foodPer": 10,
+  "skillPer": 4.6,
+  "food": {
+   "type": [
+    18,
+    16,
+    4
+   ],
+   "count": {
+    "4": {
+     "num": [
+      0,
+      0,
+      7
+     ]
+    },
+    "16": {
+     "num": [
+      0,
+      4,
+      6
+     ]
+    },
+    "18": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  },
+  "skillFood": [
+   4,
+   16,
+   18
+  ],
+  "evoLineKey": 1
+ },
+ "28": {
+  "id": 28,
+  "friendship": 12,
+  "sleepType": 3,
+  "skillType": 28,
+  "pokeType": 3,
+  "berryType": 15,
+  "maxcarry": 22,
+  "helpSpeed": 2800,
+  "foodPer": 10.8,
+  "skillPer": 4.3,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    18,
+    16,
+    4
+   ],
+   "count": {
+    "4": {
+     "num": [
+      0,
+      0,
+      7
+     ]
+    },
+    "16": {
+     "num": [
+      0,
+      4,
+      6
+     ]
+    },
+    "18": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  },
+  "skillFood": [
+   4,
+   16,
+   18
+  ]
+ },
+ "35": {
+  "id": 35,
+  "friendship": 7,
+  "sleepType": 2,
+  "skillType": 13,
+  "pokeType": 1,
+  "berryType": 12,
+  "maxcarry": 21,
+  "helpSpeed": 4000,
+  "foodPer": 16.8,
+  "skillPer": 3.6,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    5,
+    9,
+    15
+   ],
+   "count": {
+    "5": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "9": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    },
+    "15": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    }
+   }
+  }
+ },
+ "36": {
+  "id": 36,
+  "friendship": 20,
+  "sleepType": 2,
+  "skillType": 13,
+  "pokeType": 1,
+  "berryType": 12,
+  "maxcarry": 34,
+  "helpSpeed": 2800,
+  "foodPer": 16.8,
+  "skillPer": 4,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    5,
+    9,
+    15
+   ],
+   "count": {
+    "5": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "9": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    },
+    "15": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    }
+   }
+  }
+ },
+ "37": {
+  "id": 37,
+  "friendship": 5,
+  "sleepType": 2,
+  "skillType": 4,
+  "pokeType": 1,
+  "berryType": 10,
+  "maxcarry": 13,
+  "helpSpeed": 4700,
+  "foodPer": 16.8,
+  "skillPer": 3.2,
+  "food": {
+   "type": [
+    15,
+    16,
+    4
+   ],
+   "count": {
+    "4": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "15": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "16": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "38": {
+  "id": 38,
+  "friendship": 20,
+  "sleepType": 2,
+  "skillType": 4,
+  "pokeType": 1,
+  "berryType": 10,
+  "maxcarry": 28,
+  "helpSpeed": 2600,
+  "foodPer": 16.4,
+  "skillPer": 2.9,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    15,
+    16,
+    4
+   ],
+   "count": {
+    "4": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "15": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "16": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    }
+   }
+  }
+ },
+ "39": {
+  "id": 39,
+  "friendship": 7,
+  "sleepType": 2,
+  "skillType": 8,
+  "pokeType": 3,
+  "berryType": 12,
+  "maxcarry": 14,
+  "helpSpeed": 3900,
+  "foodPer": 18.2,
+  "skillPer": 4.3,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    9,
+    10,
+    13
+   ],
+   "count": {
+    "9": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "10": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    },
+    "13": {
+     "num": [
+      0,
+      0,
+      2
+     ]
+    }
+   }
+  }
+ },
+ "40": {
+  "id": 40,
+  "friendship": 16,
+  "sleepType": 2,
+  "skillType": 8,
+  "pokeType": 3,
+  "berryType": 12,
+  "maxcarry": 32,
+  "helpSpeed": 2750,
+  "foodPer": 19.1,
+  "skillPer": 4,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    9,
+    10,
+    13
+   ],
+   "count": {
+    "9": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "10": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    },
+    "13": {
+     "num": [
+      0,
+      0,
+      2
+     ]
+    }
+   }
+  }
+ },
+ "50": {
+  "id": 50,
+  "friendship": 5,
+  "sleepType": 2,
+  "skillType": 1,
+  "pokeType": 2,
+  "berryType": 15,
+  "maxcarry": 10,
+  "helpSpeed": 4300,
+  "foodPer": 19.2,
+  "skillPer": 2.1,
+  "food": {
+   "type": [
+    12,
+    1,
+    15
+   ],
+   "count": {
+    "1": {
+     "num": [
+      0,
+      3,
+      4
+     ]
+    },
+    "12": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "15": {
+     "num": [
+      0,
+      0,
+      8
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "51": {
+  "id": 51,
+  "friendship": 12,
+  "sleepType": 2,
+  "skillType": 1,
+  "pokeType": 2,
+  "berryType": 15,
+  "maxcarry": 21,
+  "helpSpeed": 2650,
+  "foodPer": 19,
+  "skillPer": 2,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    12,
+    1,
+    15
+   ],
+   "count": {
+    "1": {
+     "num": [
+      0,
+      3,
+      4
+     ]
+    },
+    "12": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "15": {
+     "num": [
+      0,
+      0,
+      8
+     ]
+    }
+   }
+  }
+ },
+ "52": {
+  "id": 52,
+  "friendship": 5,
+  "sleepType": 2,
+  "skillType": 3,
+  "pokeType": 3,
+  "berryType": 11,
+  "maxcarry": 9,
+  "helpSpeed": 4400,
+  "foodPer": 16.3,
+  "skillPer": 4.2,
+  "food": {
+   "type": [
+    8,
+    7
+   ],
+   "count": {
+    "7": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    },
+    "8": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "53": {
+  "id": 53,
+  "friendship": 12,
+  "sleepType": 2,
+  "skillType": 3,
+  "pokeType": 3,
+  "berryType": 11,
+  "maxcarry": 17,
+  "helpSpeed": 2800,
+  "foodPer": 16.9,
+  "skillPer": 4.4,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    8,
+    7
+   ],
+   "count": {
+    "7": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    },
+    "8": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "54": {
+  "id": 54,
+  "friendship": 5,
+  "sleepType": 1,
+  "skillType": 5,
+  "pokeType": 3,
+  "berryType": 1,
+  "maxcarry": 8,
+  "helpSpeed": 5400,
+  "foodPer": 13.6,
+  "skillPer": 12.6,
+  "food": {
+   "type": [
+    13,
+    5,
+    7
+   ],
+   "count": {
+    "5": {
+     "num": [
+      0,
+      4,
+      6
+     ]
+    },
+    "7": {
+     "num": [
+      0,
+      0,
+      5
+     ]
+    },
+    "13": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "55": {
+  "id": 55,
+  "friendship": 12,
+  "sleepType": 3,
+  "skillType": 5,
+  "pokeType": 3,
+  "berryType": 1,
+  "maxcarry": 19,
+  "helpSpeed": 3400,
+  "foodPer": 16.2,
+  "skillPer": 12.5,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    13,
+    5,
+    7
+   ],
+   "count": {
+    "5": {
+     "num": [
+      0,
+      4,
+      6
+     ]
+    },
+    "7": {
+     "num": [
+      0,
+      0,
+      5
+     ]
+    },
+    "13": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "56": {
+  "id": 56,
+  "friendship": 5,
+  "sleepType": 1,
+  "skillType": 5,
+  "pokeType": 1,
+  "berryType": 18,
+  "maxcarry": 12,
+  "helpSpeed": 4200,
+  "foodPer": 19.7,
+  "skillPer": 2.2,
+  "food": {
+   "type": [
+    7,
+    2,
+    9
+   ],
+   "count": {
+    "2": {
+     "num": [
+      0,
+      1,
+      2
+     ]
+    },
+    "7": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "9": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "57": {
+  "id": 57,
+  "friendship": 12,
+  "sleepType": 1,
+  "skillType": 5,
+  "pokeType": 1,
+  "berryType": 18,
+  "maxcarry": 22,
+  "helpSpeed": 2800,
+  "foodPer": 20,
+  "skillPer": 2.4,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    7,
+    2,
+    9
+   ],
+   "count": {
+    "2": {
+     "num": [
+      0,
+      1,
+      2
+     ]
+    },
+    "7": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "9": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "58": {
+  "id": 58,
+  "friendship": 5,
+  "sleepType": 2,
+  "skillType": 9,
+  "pokeType": 3,
+  "berryType": 10,
+  "maxcarry": 8,
+  "helpSpeed": 4300,
+  "foodPer": 13.8,
+  "skillPer": 5,
+  "food": {
+   "type": [
+    6,
+    7,
+    8
+   ],
+   "count": {
+    "6": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "7": {
+     "num": [
+      0,
+      3,
+      5
+     ]
+    },
+    "8": {
+     "num": [
+      0,
+      0,
+      5
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "59": {
+  "id": 59,
+  "friendship": 20,
+  "sleepType": 2,
+  "skillType": 9,
+  "pokeType": 3,
+  "berryType": 10,
+  "maxcarry": 21,
+  "helpSpeed": 2500,
+  "foodPer": 13.6,
+  "skillPer": 4.9,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    6,
+    7,
+    8
+   ],
+   "count": {
+    "6": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "7": {
+     "num": [
+      0,
+      3,
+      5
+     ]
+    },
+    "8": {
+     "num": [
+      0,
+      0,
+      5
+     ]
+    }
+   }
+  }
+ },
+ "69": {
+  "id": 69,
+  "friendship": 5,
+  "sleepType": 1,
+  "skillType": 7,
+  "pokeType": 2,
+  "berryType": 4,
+  "maxcarry": 8,
+  "helpSpeed": 5200,
+  "foodPer": 23.3,
+  "skillPer": 3.9,
+  "food": {
+   "type": [
+    12,
+    4,
+    1
+   ],
+   "count": {
+    "1": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    },
+    "4": {
+     "num": [
+      0,
+      4,
+      6
+     ]
+    },
+    "12": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "70": {
+  "id": 70,
+  "friendship": 12,
+  "sleepType": 1,
+  "skillType": 7,
+  "pokeType": 2,
+  "berryType": 4,
+  "maxcarry": 17,
+  "helpSpeed": 3800,
+  "foodPer": 23.5,
+  "skillPer": 4,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    12,
+    4,
+    1
+   ],
+   "count": {
+    "1": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    },
+    "4": {
+     "num": [
+      0,
+      4,
+      6
+     ]
+    },
+    "12": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    }
+   }
+  }
+ },
+ "71": {
+  "id": 71,
+  "friendship": 20,
+  "sleepType": 1,
+  "skillType": 7,
+  "pokeType": 2,
+  "berryType": 4,
+  "maxcarry": 27,
+  "helpSpeed": 2800,
+  "foodPer": 23.3,
+  "skillPer": 3.9,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    12,
+    4,
+    1
+   ],
+   "count": {
+    "1": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    },
+    "4": {
+     "num": [
+      0,
+      4,
+      6
+     ]
+    },
+    "12": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    }
+   }
+  }
+ },
+ "74": {
+  "id": 74,
+  "friendship": 5,
+  "sleepType": 3,
+  "skillType": 5,
+  "pokeType": 2,
+  "berryType": 14,
+  "maxcarry": 9,
+  "helpSpeed": 5700,
+  "foodPer": 28.1,
+  "skillPer": 5.2,
+  "food": {
+   "type": [
+    15,
+    4,
+    2
+   ],
+   "count": {
+    "2": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    },
+    "4": {
+     "num": [
+      0,
+      4,
+      6
+     ]
+    },
+    "15": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "75": {
+  "id": 75,
+  "friendship": 12,
+  "sleepType": 3,
+  "skillType": 5,
+  "pokeType": 2,
+  "berryType": 14,
+  "maxcarry": 17,
+  "helpSpeed": 4000,
+  "foodPer": 27.2,
+  "skillPer": 4.8,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    15,
+    4,
+    2
+   ],
+   "count": {
+    "2": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    },
+    "4": {
+     "num": [
+      0,
+      4,
+      6
+     ]
+    },
+    "15": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    }
+   }
+  }
+ },
+ "76": {
+  "id": 76,
+  "friendship": 22,
+  "sleepType": 3,
+  "skillType": 5,
+  "pokeType": 2,
+  "berryType": 14,
+  "maxcarry": 26,
+  "helpSpeed": 3100,
+  "foodPer": 28,
+  "skillPer": 5.2,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    15,
+    4,
+    2
+   ],
+   "count": {
+    "2": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    },
+    "4": {
+     "num": [
+      0,
+      4,
+      6
+     ]
+    },
+    "15": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    }
+   }
+  }
+ },
+ "79": {
+  "id": 79,
+  "friendship": 5,
+  "sleepType": 2,
+  "skillType": 4,
+  "pokeType": 3,
+  "berryType": 1,
+  "maxcarry": 9,
+  "helpSpeed": 5700,
+  "foodPer": 15.1,
+  "skillPer": 7.8,
+  "food": {
+   "type": [
+    13,
+    14,
+    12
+   ],
+   "count": {
+    "12": {
+     "num": [
+      0,
+      0,
+      5
+     ]
+    },
+    "13": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "14": {
+     "num": [
+      0,
+      1,
+      2
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "80": {
+  "id": 80,
+  "friendship": 12,
+  "sleepType": 2,
+  "skillType": 4,
+  "pokeType": 3,
+  "berryType": 1,
+  "maxcarry": 21,
+  "helpSpeed": 3800,
+  "foodPer": 19.7,
+  "skillPer": 8,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    13,
+    14,
+    12
+   ],
+   "count": {
+    "12": {
+     "num": [
+      0,
+      0,
+      5
+     ]
+    },
+    "13": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "14": {
+     "num": [
+      0,
+      1,
+      2
+     ]
+    }
+   }
+  }
+ },
+ "81": {
+  "id": 81,
+  "friendship": 5,
+  "sleepType": 3,
+  "skillType": 11,
+  "pokeType": 3,
+  "berryType": 2,
+  "maxcarry": 8,
+  "helpSpeed": 5800,
+  "foodPer": 18.2,
+  "skillPer": 6.4,
+  "food": {
+   "type": [
+    10,
+    6
+   ],
+   "count": {
+    "6": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    },
+    "10": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "82": {
+  "id": 82,
+  "friendship": 12,
+  "sleepType": 3,
+  "skillType": 11,
+  "pokeType": 3,
+  "berryType": 2,
+  "maxcarry": 16,
+  "helpSpeed": 4000,
+  "foodPer": 18.2,
+  "skillPer": 6.3,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    10,
+    6
+   ],
+   "count": {
+    "6": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    },
+    "10": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "83": {
+  "id": 83,
+  "friendship": 16,
+  "sleepType": 3,
+  "skillType": 1,
+  "pokeType": 2,
+  "berryType": 16,
+  "maxcarry": 18,
+  "helpSpeed": 3000,
+  "foodPer": 16,
+  "skillPer": 4.3,
+  "food": {
+   "type": [
+    1,
+    7,
+    11
+   ],
+   "count": {
+    "1": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "7": {
+     "num": [
+      0,
+      8,
+      13
+     ]
+    },
+    "11": {
+     "num": [
+      0,
+      0,
+      12
+     ]
+    }
+   }
+  },
+  "evoLineKey": 0
+ },
+ "84": {
+  "id": 84,
+  "friendship": 5,
+  "sleepType": 3,
+  "skillType": 7,
+  "pokeType": 1,
+  "berryType": 16,
+  "maxcarry": 13,
+  "helpSpeed": 3800,
+  "foodPer": 18.4,
+  "skillPer": 2,
+  "food": {
+   "type": [
+    15,
+    13,
+    7
+   ],
+   "count": {
+    "7": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "13": {
+     "num": [
+      0,
+      1,
+      2
+     ]
+    },
+    "15": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "85": {
+  "id": 85,
+  "friendship": 12,
+  "sleepType": 3,
+  "skillType": 7,
+  "pokeType": 1,
+  "berryType": 16,
+  "maxcarry": 26,
+  "helpSpeed": 2300,
+  "foodPer": 18.4,
+  "skillPer": 2,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    15,
+    13,
+    7
+   ],
+   "count": {
+    "7": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "13": {
+     "num": [
+      0,
+      1,
+      2
+     ]
+    },
+    "15": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "92": {
+  "id": 92,
+  "friendship": 5,
+  "sleepType": 1,
+  "skillType": 5,
+  "pokeType": 2,
+  "berryType": 8,
+  "maxcarry": 10,
+  "helpSpeed": 3800,
+  "foodPer": 14.4,
+  "skillPer": 1.5,
+  "food": {
+   "type": [
+    6,
+    2,
+    10
+   ],
+   "count": {
+    "2": {
+     "num": [
+      0,
+      4,
+      6
+     ]
+    },
+    "6": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "10": {
+     "num": [
+      0,
+      0,
+      8
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "93": {
+  "id": 93,
+  "friendship": 12,
+  "sleepType": 1,
+  "skillType": 5,
+  "pokeType": 2,
+  "berryType": 8,
+  "maxcarry": 19,
+  "helpSpeed": 3000,
+  "foodPer": 15.7,
+  "skillPer": 2.2,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    6,
+    2,
+    10
+   ],
+   "count": {
+    "2": {
+     "num": [
+      0,
+      4,
+      6
+     ]
+    },
+    "6": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "10": {
+     "num": [
+      0,
+      0,
+      8
+     ]
+    }
+   }
+  }
+ },
+ "94": {
+  "id": 94,
+  "friendship": 22,
+  "sleepType": 1,
+  "skillType": 5,
+  "pokeType": 2,
+  "berryType": 8,
+  "maxcarry": 28,
+  "helpSpeed": 2200,
+  "foodPer": 16.1,
+  "skillPer": 2.4,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    6,
+    2,
+    10
+   ],
+   "count": {
+    "2": {
+     "num": [
+      0,
+      4,
+      6
+     ]
+    },
+    "6": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "10": {
+     "num": [
+      0,
+      0,
+      8
+     ]
+    }
+   }
+  }
+ },
+ "95": {
+  "id": 95,
+  "friendship": 16,
+  "sleepType": 3,
+  "skillType": 10,
+  "pokeType": 1,
+  "maxcarry": 22,
+  "helpSpeed": 3100,
+  "berryType": 14,
+  "foodPer": 13.2,
+  "skillPer": 2.3,
+  "food": {
+   "type": [
+    12,
+    7,
+    4
+   ],
+   "count": {
+    "4": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "7": {
+     "num": [
+      0,
+      2,
+      4
+     ]
+    },
+    "12": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "104": {
+  "id": 104,
+  "friendship": 5,
+  "sleepType": 3,
+  "skillType": 7,
+  "pokeType": 1,
+  "berryType": 15,
+  "maxcarry": 10,
+  "helpSpeed": 4800,
+  "foodPer": 22.3,
+  "skillPer": 4.4,
+  "food": {
+   "type": [
+    11,
+    13
+   ],
+   "count": {
+    "11": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "13": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "105": {
+  "id": 105,
+  "friendship": 12,
+  "sleepType": 3,
+  "skillType": 7,
+  "pokeType": 1,
+  "berryType": 15,
+  "maxcarry": 20,
+  "helpSpeed": 3300,
+  "foodPer": 22.5,
+  "skillPer": 4.5,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    11,
+    13
+   ],
+   "count": {
+    "11": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "13": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    }
+   }
+  }
+ },
+ "113": {
+  "id": 113,
+  "friendship": 16,
+  "sleepType": 2,
+  "skillType": 8,
+  "pokeType": 2,
+  "berryType": 11,
+  "maxcarry": 20,
+  "helpSpeed": 3300,
+  "foodPer": 23.6,
+  "skillPer": 2.3,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    3,
+    4,
+    9
+   ],
+   "count": {
+    "3": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "4": {
+     "num": [
+      0,
+      4,
+      7
+     ]
+    },
+    "9": {
+     "num": [
+      0,
+      0,
+      8
+     ]
+    }
+   }
+  }
+ },
+ "115": {
+  "id": 115,
+  "friendship": 16,
+  "sleepType": 2,
+  "skillType": 10,
+  "pokeType": 2,
+  "berryType": 11,
+  "maxcarry": 21,
+  "helpSpeed": 2650,
+  "foodPer": 22.2,
+  "skillPer": 3.2,
+  "food": {
+   "type": [
+    11,
+    4,
+    15
+   ],
+   "count": {
+    "4": {
+     "num": [
+      0,
+      4,
+      6
+     ]
+    },
+    "11": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "15": {
+     "num": [
+      0,
+      0,
+      8
+     ]
+    }
+   }
+  },
+  "evoLineKey": 0
+ },
+ "122": {
+  "id": 122,
+  "friendship": 12,
+  "sleepType": 2,
+  "skillType": 20,
+  "pokeType": 2,
+  "berryType": 6,
+  "maxcarry": 22,
+  "helpSpeed": 2800,
+  "foodPer": 21.6,
+  "skillPer": 3.9,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    12,
+    4,
+    1
+   ],
+   "count": {
+    "1": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    },
+    "4": {
+     "num": [
+      0,
+      4,
+      6
+     ]
+    },
+    "12": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    }
+   }
+  }
+ },
+ "127": {
+  "id": 127,
+  "friendship": 16,
+  "sleepType": 1,
+  "skillType": 2,
+  "pokeType": 2,
+  "berryType": 9,
+  "maxcarry": 24,
+  "helpSpeed": 2400,
+  "foodPer": 21.6,
+  "skillPer": 3.1,
+  "food": {
+   "type": [
+    9,
+    5,
+    7
+   ],
+   "count": {
+    "5": {
+     "num": [
+      0,
+      5,
+      8
+     ]
+    },
+    "7": {
+     "num": [
+      0,
+      0,
+      7
+     ]
+    },
+    "9": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    }
+   }
+  },
+  "evoLineKey": 0
+ },
+ "132": {
+  "id": 132,
+  "friendship": 16,
+  "sleepType": 2,
+  "skillType": 19,
+  "pokeType": 2,
+  "berryType": 11,
+  "maxcarry": 17,
+  "helpSpeed": 3500,
+  "foodPer": 20.1,
+  "skillPer": 3.6,
+  "food": {
+   "type": [
+    10,
+    1,
+    14
+   ],
+   "count": {
+    "1": {
+     "num": [
+      0,
+      3,
+      5
+     ]
+    },
+    "10": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "14": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    }
+   }
+  },
+  "evoLineKey": 0
+ },
+ "133": {
+  "id": 133,
+  "friendship": 5,
+  "sleepType": 2,
+  "skillType": 10,
+  "pokeType": 3,
+  "berryType": 11,
+  "maxcarry": 12,
+  "helpSpeed": 3700,
+  "foodPer": 19.2,
+  "skillPer": 5.5,
+  "food": {
+   "type": [
+    8,
+    13,
+    7
+   ],
+   "count": {
+    "7": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "8": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "13": {
+     "num": [
+      0,
+      1,
+      2
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "134": {
+  "id": 134,
+  "friendship": 20,
+  "sleepType": 3,
+  "skillType": 10,
+  "pokeType": 3,
+  "berryType": 1,
+  "maxcarry": 18,
+  "helpSpeed": 3100,
+  "foodPer": 21.2,
+  "skillPer": 6.1,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    8,
+    13,
+    7
+   ],
+   "count": {
+    "7": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "8": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "13": {
+     "num": [
+      0,
+      1,
+      2
+     ]
+    }
+   }
+  }
+ },
+ "135": {
+  "id": 135,
+  "friendship": 20,
+  "sleepType": 2,
+  "skillType": 9,
+  "pokeType": 3,
+  "berryType": 13,
+  "maxcarry": 22,
+  "helpSpeed": 2200,
+  "foodPer": 15.1,
+  "skillPer": 3.9,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    8,
+    13,
+    7
+   ],
+   "count": {
+    "7": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "8": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "13": {
+     "num": [
+      0,
+      1,
+      2
+     ]
+    }
+   }
+  }
+ },
+ "136": {
+  "id": 136,
+  "friendship": 20,
+  "sleepType": 2,
+  "skillType": 11,
+  "pokeType": 3,
+  "berryType": 10,
+  "maxcarry": 19,
+  "helpSpeed": 2700,
+  "foodPer": 18.5,
+  "skillPer": 5.2,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    8,
+    13,
+    7
+   ],
+   "count": {
+    "7": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "8": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "13": {
+     "num": [
+      0,
+      1,
+      2
+     ]
+    }
+   }
+  }
+ },
+ "147": {
+  "id": 147,
+  "friendship": 5,
+  "sleepType": 1,
+  "skillType": 7,
+  "pokeType": 2,
+  "berryType": 3,
+  "maxcarry": 9,
+  "helpSpeed": 5000,
+  "foodPer": 25,
+  "skillPer": 2,
+  "food": {
+   "type": [
+    6,
+    16,
+    10
+   ],
+   "count": {
+    "6": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "10": {
+     "num": [
+      0,
+      0,
+      8
+     ]
+    },
+    "16": {
+     "num": [
+      0,
+      4,
+      7
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "148": {
+  "id": 148,
+  "friendship": 12,
+  "sleepType": 1,
+  "skillType": 7,
+  "pokeType": 2,
+  "berryType": 3,
+  "maxcarry": 17,
+  "helpSpeed": 3800,
+  "foodPer": 26.2,
+  "skillPer": 2.5,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    6,
+    16,
+    10
+   ],
+   "count": {
+    "6": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "10": {
+     "num": [
+      0,
+      0,
+      8
+     ]
+    },
+    "16": {
+     "num": [
+      0,
+      4,
+      7
+     ]
+    }
+   }
+  }
+ },
+ "149": {
+  "id": 149,
+  "friendship": 25,
+  "sleepType": 1,
+  "skillType": 7,
+  "pokeType": 2,
+  "berryType": 3,
+  "maxcarry": 30,
+  "helpSpeed": 2600,
+  "foodPer": 26.4,
+  "skillPer": 2.6,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    6,
+    16,
+    10
+   ],
+   "count": {
+    "6": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "10": {
+     "num": [
+      0,
+      0,
+      8
+     ]
+    },
+    "16": {
+     "num": [
+      0,
+      4,
+      7
+     ]
+    }
+   }
+  }
+ },
+ "151": {
+  "id": 151,
+  "friendship": 25,
+  "sleepType": 2,
+  "skillType": 33,
+  "pokeType": 4,
+  "berryType": 6,
+  "maxcarry": 26,
+  "helpSpeed": 2900,
+  "foodPer": 20,
+  "skillPer": 4,
+  "food": {
+   "type": [
+    1,
+    3,
+    6,
+    7,
+    10,
+    15,
+    19,
+    14
+   ],
+   "count": {
+    "1": {
+     "num": [
+      2,
+      3,
+      4
+     ]
+    },
+    "3": {
+     "num": [
+      2,
+      4,
+      6
+     ]
+    },
+    "6": {
+     "num": [
+      2,
+      4,
+      5
+     ]
+    },
+    "7": {
+     "num": [
+      2,
+      4,
+      7
+     ]
+    },
+    "10": {
+     "num": [
+      2,
+      4,
+      6
+     ]
+    },
+    "14": {
+     "num": [
+      0,
+      0,
+      2
+     ]
+    },
+    "15": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "19": {
+     "num": [
+      2,
+      3,
+      4
+     ]
+    }
+   }
+  },
+  "evoLineKey": 0
+ },
+ "152": {
+  "id": 152,
+  "friendship": 5,
+  "sleepType": 1,
+  "skillType": 5,
+  "pokeType": 1,
+  "berryType": 4,
+  "maxcarry": 12,
+  "helpSpeed": 4400,
+  "foodPer": 16.9,
+  "skillPer": 3.9,
+  "food": {
+   "type": [
+    13,
+    9,
+    1
+   ],
+   "count": {
+    "1": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "9": {
+     "num": [
+      0,
+      3,
+      5
+     ]
+    },
+    "13": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "153": {
+  "id": 153,
+  "friendship": 12,
+  "sleepType": 1,
+  "skillType": 5,
+  "pokeType": 1,
+  "berryType": 4,
+  "maxcarry": 22,
+  "helpSpeed": 3300,
+  "foodPer": 16.8,
+  "skillPer": 3.8,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    13,
+    9,
+    1
+   ],
+   "count": {
+    "1": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "9": {
+     "num": [
+      0,
+      3,
+      5
+     ]
+    },
+    "13": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "154": {
+  "id": 154,
+  "friendship": 20,
+  "sleepType": 1,
+  "skillType": 5,
+  "pokeType": 1,
+  "berryType": 4,
+  "maxcarry": 30,
+  "helpSpeed": 2800,
+  "foodPer": 17.5,
+  "skillPer": 4.6,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    13,
+    9,
+    1
+   ],
+   "count": {
+    "1": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "9": {
+     "num": [
+      0,
+      3,
+      5
+     ]
+    },
+    "13": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "155": {
+  "id": 155,
+  "friendship": 5,
+  "sleepType": 2,
+  "skillType": 5,
+  "pokeType": 1,
+  "berryType": 10,
+  "maxcarry": 14,
+  "helpSpeed": 3500,
+  "foodPer": 18.6,
+  "skillPer": 2.1,
+  "food": {
+   "type": [
+    11,
+    6,
+    10
+   ],
+   "count": {
+    "6": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    },
+    "10": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "11": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "156": {
+  "id": 156,
+  "friendship": 12,
+  "sleepType": 2,
+  "skillType": 5,
+  "pokeType": 1,
+  "berryType": 10,
+  "maxcarry": 23,
+  "helpSpeed": 3000,
+  "foodPer": 21.1,
+  "skillPer": 4.1,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    11,
+    6,
+    10
+   ],
+   "count": {
+    "6": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    },
+    "10": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "11": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "157": {
+  "id": 157,
+  "friendship": 20,
+  "sleepType": 2,
+  "skillType": 5,
+  "pokeType": 1,
+  "berryType": 10,
+  "maxcarry": 33,
+  "helpSpeed": 2400,
+  "foodPer": 20.8,
+  "skillPer": 3.9,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    11,
+    6,
+    10
+   ],
+   "count": {
+    "6": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    },
+    "10": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "11": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "158": {
+  "id": 158,
+  "friendship": 5,
+  "sleepType": 3,
+  "skillType": 5,
+  "pokeType": 1,
+  "berryType": 1,
+  "maxcarry": 11,
+  "helpSpeed": 4500,
+  "foodPer": 25.3,
+  "skillPer": 5.2,
+  "food": {
+   "type": [
+    7,
+    10
+   ],
+   "count": {
+    "7": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "10": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "159": {
+  "id": 159,
+  "friendship": 12,
+  "sleepType": 3,
+  "skillType": 5,
+  "pokeType": 1,
+  "berryType": 1,
+  "maxcarry": 20,
+  "helpSpeed": 3400,
+  "foodPer": 25.3,
+  "skillPer": 5.2,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    7,
+    10
+   ],
+   "count": {
+    "7": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "10": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    }
+   }
+  }
+ },
+ "160": {
+  "id": 160,
+  "friendship": 20,
+  "sleepType": 3,
+  "skillType": 5,
+  "pokeType": 1,
+  "berryType": 1,
+  "maxcarry": 29,
+  "helpSpeed": 2800,
+  "foodPer": 25.7,
+  "skillPer": 5.5,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    7,
+    10
+   ],
+   "count": {
+    "7": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "10": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    }
+   }
+  }
+ },
+ "172": {
+  "id": 172,
+  "friendship": 5,
+  "sleepType": 3,
+  "skillType": 1,
+  "pokeType": 1,
+  "berryType": 13,
+  "maxcarry": 10,
+  "helpSpeed": 4300,
+  "foodPer": 21,
+  "skillPer": 2.3,
+  "food": {
+   "type": [
+    5,
+    11,
+    3
+   ],
+   "count": {
+    "3": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "5": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "11": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "173": {
+  "id": 173,
+  "friendship": 5,
+  "sleepType": 3,
+  "skillType": 13,
+  "pokeType": 1,
+  "berryType": 12,
+  "maxcarry": 10,
+  "helpSpeed": 5600,
+  "foodPer": 16.4,
+  "skillPer": 3.4,
+  "food": {
+   "type": [
+    5,
+    9,
+    15
+   ],
+   "count": {
+    "5": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "9": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    },
+    "15": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "174": {
+  "id": 174,
+  "friendship": 5,
+  "sleepType": 3,
+  "skillType": 8,
+  "pokeType": 3,
+  "berryType": 12,
+  "maxcarry": 8,
+  "helpSpeed": 5200,
+  "foodPer": 17,
+  "skillPer": 3.8,
+  "food": {
+   "type": [
+    9,
+    10,
+    13
+   ],
+   "count": {
+    "9": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "10": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    },
+    "13": {
+     "num": [
+      0,
+      0,
+      2
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "175": {
+  "id": 175,
+  "friendship": 5,
+  "sleepType": 3,
+  "skillType": 13,
+  "pokeType": 3,
+  "berryType": 12,
+  "maxcarry": 8,
+  "helpSpeed": 4800,
+  "foodPer": 15.1,
+  "skillPer": 4.9,
+  "food": {
+   "type": [
+    3,
+    11,
+    13
+   ],
+   "count": {
+    "3": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "11": {
+     "num": [
+      0,
+      2,
+      4
+     ]
+    },
+    "13": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "176": {
+  "id": 176,
+  "friendship": 12,
+  "sleepType": 2,
+  "skillType": 13,
+  "pokeType": 3,
+  "berryType": 12,
+  "maxcarry": 15,
+  "helpSpeed": 3800,
+  "foodPer": 16.3,
+  "skillPer": 5.6,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    3,
+    11,
+    13
+   ],
+   "count": {
+    "3": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "11": {
+     "num": [
+      0,
+      2,
+      4
+     ]
+    },
+    "13": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    }
+   }
+  }
+ },
+ "177": {
+  "id": 177,
+  "friendship": 5,
+  "sleepType": 2,
+  "skillType": 10,
+  "pokeType": 1,
+  "berryType": 6,
+  "maxcarry": 11,
+  "helpSpeed": 4500,
+  "foodPer": 18.5,
+  "skillPer": 1.6,
+  "food": {
+   "type": [
+    3,
+    13,
+    5
+   ],
+   "count": {
+    "3": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "5": {
+     "num": [
+      0,
+      0,
+      5
+     ]
+    },
+    "13": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "178": {
+  "id": 178,
+  "friendship": 12,
+  "sleepType": 2,
+  "skillType": 10,
+  "pokeType": 1,
+  "berryType": 6,
+  "maxcarry": 24,
+  "helpSpeed": 2500,
+  "foodPer": 19.1,
+  "skillPer": 2.5,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    3,
+    13,
+    5
+   ],
+   "count": {
+    "3": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "5": {
+     "num": [
+      0,
+      0,
+      5
+     ]
+    },
+    "13": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    }
+   }
+  }
+ },
+ "179": {
+  "id": 179,
+  "friendship": 5,
+  "sleepType": 2,
+  "skillType": 2,
+  "pokeType": 3,
+  "berryType": 13,
+  "maxcarry": 9,
+  "helpSpeed": 4600,
+  "foodPer": 12.8,
+  "skillPer": 4.7,
+  "food": {
+   "type": [
+    6,
+    3
+   ],
+   "count": {
+    "3": {
+     "num": [
+      0,
+      3,
+      4
+     ]
+    },
+    "6": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "180": {
+  "id": 180,
+  "friendship": 12,
+  "sleepType": 2,
+  "skillType": 2,
+  "pokeType": 3,
+  "berryType": 13,
+  "maxcarry": 16,
+  "helpSpeed": 3300,
+  "foodPer": 12.7,
+  "skillPer": 4.6,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    6,
+    3
+   ],
+   "count": {
+    "3": {
+     "num": [
+      0,
+      3,
+      4
+     ]
+    },
+    "6": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "181": {
+  "id": 181,
+  "friendship": 20,
+  "sleepType": 2,
+  "skillType": 2,
+  "pokeType": 3,
+  "berryType": 13,
+  "maxcarry": 25,
+  "helpSpeed": 2500,
+  "foodPer": 13,
+  "skillPer": 4.7,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    6,
+    3
+   ],
+   "count": {
+    "3": {
+     "num": [
+      0,
+      3,
+      4
+     ]
+    },
+    "6": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "185": {
+  "id": 185,
+  "friendship": 7,
+  "sleepType": 3,
+  "skillType": 2,
+  "pokeType": 3,
+  "berryType": 14,
+  "maxcarry": 21,
+  "helpSpeed": 4000,
+  "foodPer": 21.7,
+  "skillPer": 7.2,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    12,
+    15,
+    2
+   ],
+   "count": {
+    "2": {
+     "num": [
+      0,
+      0,
+      2
+     ]
+    },
+    "12": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "15": {
+     "num": [
+      0,
+      2,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "194": {
+  "id": 194,
+  "friendship": 5,
+  "sleepType": 3,
+  "skillType": 7,
+  "pokeType": 2,
+  "berryType": 1,
+  "maxcarry": 10,
+  "helpSpeed": 5900,
+  "foodPer": 20.1,
+  "skillPer": 3.8,
+  "food": {
+   "type": [
+    2,
+    4,
+    7
+   ],
+   "count": {
+    "2": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "4": {
+     "num": [
+      0,
+      6,
+      10
+     ]
+    },
+    "7": {
+     "num": [
+      0,
+      0,
+      12
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "195": {
+  "id": 195,
+  "friendship": 12,
+  "sleepType": 3,
+  "skillType": 7,
+  "pokeType": 2,
+  "berryType": 1,
+  "maxcarry": 21,
+  "helpSpeed": 3400,
+  "foodPer": 19,
+  "skillPer": 3.2,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    2,
+    4,
+    7
+   ],
+   "count": {
+    "2": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "4": {
+     "num": [
+      0,
+      6,
+      10
+     ]
+    },
+    "7": {
+     "num": [
+      0,
+      0,
+      12
+     ]
+    }
+   }
+  }
+ },
+ "196": {
+  "id": 196,
+  "friendship": 20,
+  "sleepType": 2,
+  "skillType": 2,
+  "berryType": 6,
+  "pokeType": 3,
+  "maxcarry": 21,
+  "helpSpeed": 2400,
+  "foodPer": 16.4,
+  "skillPer": 4.4,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    8,
+    13,
+    7
+   ],
+   "count": {
+    "7": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "8": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "13": {
+     "num": [
+      0,
+      1,
+      2
+     ]
+    }
+   }
+  }
+ },
+ "197": {
+  "id": 197,
+  "friendship": 20,
+  "sleepType": 1,
+  "skillType": 18,
+  "pokeType": 3,
+  "berryType": 17,
+  "maxcarry": 19,
+  "helpSpeed": 3200,
+  "foodPer": 21.9,
+  "skillPer": 10.1,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    8,
+    13,
+    7
+   ],
+   "count": {
+    "7": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "8": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "13": {
+     "num": [
+      0,
+      1,
+      2
+     ]
+    }
+   }
+  }
+ },
+ "198": {
+  "id": 198,
+  "friendship": 16,
+  "sleepType": 1,
+  "skillType": 24,
+  "pokeType": 3,
+  "maxcarry": 13,
+  "helpSpeed": 3600,
+  "berryType": 17,
+  "foodPer": 14.1,
+  "skillPer": 6.2,
+  "food": {
+   "type": [
+    17,
+    15,
+    6
+   ],
+   "count": {
+    "6": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    },
+    "15": {
+     "num": [
+      0,
+      3,
+      6
+     ]
+    },
+    "17": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "199": {
+  "id": 199,
+  "friendship": 20,
+  "sleepType": 2,
+  "skillType": 4,
+  "pokeType": 3,
+  "berryType": 1,
+  "maxcarry": 22,
+  "helpSpeed": 3400,
+  "foodPer": 16.6,
+  "skillPer": 8.7,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    13,
+    14,
+    12
+   ],
+   "count": {
+    "12": {
+     "num": [
+      0,
+      0,
+      5
+     ]
+    },
+    "13": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "14": {
+     "num": [
+      0,
+      1,
+      2
+     ]
+    }
+   }
+  }
+ },
+ "202": {
+  "id": 202,
+  "friendship": 7,
+  "sleepType": 2,
+  "skillType": 4,
+  "pokeType": 3,
+  "berryType": 6,
+  "maxcarry": 21,
+  "helpSpeed": 3500,
+  "foodPer": 21.1,
+  "skillPer": 8.2,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    5,
+    2,
+    10
+   ],
+   "count": {
+    "2": {
+     "num": [
+      0,
+      1,
+      2
+     ]
+    },
+    "5": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "10": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    }
+   }
+  }
+ },
+ "208": {
+  "id": 208,
+  "friendship": 20,
+  "sleepType": 3,
+  "skillType": 10,
+  "pokeType": 1,
+  "berryType": 2,
+  "maxcarry": 30,
+  "helpSpeed": 3000,
+  "foodPer": 15.4,
+  "skillPer": 3.2,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    12,
+    7,
+    4
+   ],
+   "count": {
+    "4": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "7": {
+     "num": [
+      0,
+      2,
+      4
+     ]
+    },
+    "12": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "213": {
+  "id": 213,
+  "friendship": 16,
+  "sleepType": 1,
+  "skillType": 31,
+  "pokeType": 3,
+  "berryType": 9,
+  "maxcarry": 16,
+  "helpSpeed": 3600,
+  "foodPer": 20.5,
+  "skillPer": 5.9,
+  "food": {
+   "type": [
+    10,
+    17,
+    9
+   ],
+   "count": {
+    "9": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    },
+    "10": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "17": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "214": {
+  "id": 214,
+  "friendship": 16,
+  "sleepType": 1,
+  "skillType": 32,
+  "pokeType": 3,
+  "berryType": 9,
+  "maxcarry": 20,
+  "helpSpeed": 2300,
+  "foodPer": 15.8,
+  "skillPer": 4.7,
+  "food": {
+   "type": [
+    9,
+    2,
+    7
+   ],
+   "count": {
+    "2": {
+     "num": [
+      0,
+      1,
+      2
+     ]
+    },
+    "7": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    },
+    "9": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  },
+  "evoLineKey": 0
+ },
+ "215": {
+  "id": 215,
+  "friendship": 16,
+  "sleepType": 1,
+  "skillType": 14,
+  "pokeType": 1,
+  "berryType": 17,
+  "maxcarry": 17,
+  "helpSpeed": 3200,
+  "foodPer": 25.5,
+  "skillPer": 1.9,
+  "food": {
+   "type": [
+    7,
+    3,
+    15
+   ],
+   "count": {
+    "3": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    },
+    "7": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "15": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "225": {
+  "id": 225,
+  "friendship": 16,
+  "sleepType": 1,
+  "skillType": 29,
+  "pokeType": 2,
+  "berryType": 16,
+  "maxcarry": 20,
+  "helpSpeed": 2500,
+  "foodPer": 18.8,
+  "skillPer": 3,
+  "food": {
+   "type": [
+    3,
+    5,
+    13
+   ],
+   "count": {
+    "3": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "5": {
+     "num": [
+      0,
+      6,
+      9
+     ]
+    },
+    "13": {
+     "num": [
+      0,
+      0,
+      5
+     ]
+    }
+   }
+  },
+  "evoLineKey": 0
+ },
+ "228": {
+  "id": 228,
+  "friendship": 5,
+  "sleepType": 1,
+  "skillType": 2,
+  "pokeType": 1,
+  "berryType": 17,
+  "maxcarry": 10,
+  "helpSpeed": 4900,
+  "foodPer": 20.1,
+  "skillPer": 3.7,
+  "food": {
+   "type": [
+    6,
+    11,
+    1
+   ],
+   "count": {
+    "1": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "6": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "11": {
+     "num": [
+      0,
+      3,
+      4
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "229": {
+  "id": 229,
+  "friendship": 12,
+  "sleepType": 1,
+  "skillType": 2,
+  "pokeType": 1,
+  "berryType": 17,
+  "maxcarry": 21,
+  "helpSpeed": 3300,
+  "foodPer": 20.3,
+  "skillPer": 4,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    6,
+    11,
+    1
+   ],
+   "count": {
+    "1": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "6": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "11": {
+     "num": [
+      0,
+      3,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "242": {
+  "id": 242,
+  "friendship": 20,
+  "sleepType": 2,
+  "skillType": 8,
+  "pokeType": 2,
+  "berryType": 11,
+  "maxcarry": 31,
+  "helpSpeed": 3100,
+  "foodPer": 23.8,
+  "skillPer": 2.3,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    3,
+    4,
+    9
+   ],
+   "count": {
+    "3": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "4": {
+     "num": [
+      0,
+      4,
+      7
+     ]
+    },
+    "9": {
+     "num": [
+      0,
+      0,
+      8
+     ]
+    }
+   }
+  }
+ },
+ "243": {
+  "id": 243,
+  "friendship": 30,
+  "sleepType": 2,
+  "skillType": 15,
+  "pokeType": 3,
+  "berryType": 13,
+  "maxcarry": 22,
+  "helpSpeed": 2100,
+  "foodPer": 19.2,
+  "skillPer": 1.9,
+  "food": {
+   "type": [
+    7,
+    6,
+    1
+   ],
+   "count": {
+    "1": {
+     "num": [
+      0,
+      0,
+      2
+     ]
+    },
+    "6": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    },
+    "7": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  },
+  "evoLineKey": 0
+ },
+ "244": {
+  "id": 244,
+  "friendship": 30,
+  "sleepType": 2,
+  "skillType": 15,
+  "pokeType": 3,
+  "berryType": 10,
+  "maxcarry": 19,
+  "helpSpeed": 2400,
+  "foodPer": 18.7,
+  "skillPer": 2.3,
+  "food": {
+   "type": [
+    10,
+    12,
+    2
+   ],
+   "count": {
+    "2": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "10": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "12": {
+     "num": [
+      0,
+      2,
+      4
+     ]
+    }
+   }
+  },
+  "evoLineKey": 0
+ },
+ "245": {
+  "id": 245,
+  "friendship": 30,
+  "sleepType": 3,
+  "skillType": 15,
+  "pokeType": 3,
+  "berryType": 1,
+  "maxcarry": 17,
+  "helpSpeed": 2700,
+  "foodPer": 27.7,
+  "skillPer": 2.6,
+  "food": {
+   "type": [
+    5,
+    10,
+    16
+   ],
+   "count": {
+    "5": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "10": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    },
+    "16": {
+     "num": [
+      0,
+      0,
+      2
+     ]
+    }
+   }
+  },
+  "evoLineKey": 0
+ },
+ "246": {
+  "id": 246,
+  "friendship": 5,
+  "sleepType": 3,
+  "skillType": 7,
+  "pokeType": 2,
+  "berryType": 14,
+  "maxcarry": 9,
+  "helpSpeed": 4800,
+  "foodPer": 23.8,
+  "skillPer": 4.1,
+  "food": {
+   "type": [
+    11,
+    15,
+    7
+   ],
+   "count": {
+    "7": {
+     "num": [
+      0,
+      0,
+      8
+     ]
+    },
+    "11": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "15": {
+     "num": [
+      0,
+      5,
+      8
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "247": {
+  "id": 247,
+  "friendship": 12,
+  "sleepType": 3,
+  "skillType": 7,
+  "pokeType": 2,
+  "berryType": 14,
+  "maxcarry": 18,
+  "helpSpeed": 3600,
+  "foodPer": 24.7,
+  "skillPer": 4.5,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    11,
+    15,
+    7
+   ],
+   "count": {
+    "7": {
+     "num": [
+      0,
+      0,
+      8
+     ]
+    },
+    "11": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "15": {
+     "num": [
+      0,
+      5,
+      8
+     ]
+    }
+   }
+  }
+ },
+ "248": {
+  "id": 248,
+  "friendship": 25,
+  "sleepType": 1,
+  "skillType": 7,
+  "pokeType": 2,
+  "berryType": 17,
+  "maxcarry": 29,
+  "helpSpeed": 2700,
+  "foodPer": 26.6,
+  "skillPer": 5.2,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    11,
+    15,
+    7
+   ],
+   "count": {
+    "7": {
+     "num": [
+      0,
+      0,
+      8
+     ]
+    },
+    "11": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "15": {
+     "num": [
+      0,
+      5,
+      8
+     ]
+    }
+   }
+  }
+ },
+ "252": {
+  "id": 252,
+  "friendship": 5,
+  "sleepType": 1,
+  "skillType": 21,
+  "pokeType": 3,
+  "berryType": 4,
+  "maxcarry": 8,
+  "helpSpeed": 4500,
+  "foodPer": 17.2,
+  "skillPer": 3.5,
+  "food": {
+   "type": [
+    3,
+    17,
+    1
+   ],
+   "count": {
+    "1": {
+     "num": [
+      0,
+      0,
+      2
+     ]
+    },
+    "3": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "17": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "253": {
+  "id": 253,
+  "friendship": 12,
+  "sleepType": 1,
+  "skillType": 21,
+  "pokeType": 3,
+  "berryType": 4,
+  "maxcarry": 16,
+  "helpSpeed": 3300,
+  "foodPer": 15,
+  "skillPer": 3.5,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    3,
+    17,
+    1
+   ],
+   "count": {
+    "1": {
+     "num": [
+      0,
+      0,
+      2
+     ]
+    },
+    "3": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "17": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    }
+   }
+  }
+ },
+ "254": {
+  "id": 254,
+  "friendship": 20,
+  "sleepType": 1,
+  "skillType": 21,
+  "pokeType": 3,
+  "berryType": 4,
+  "maxcarry": 27,
+  "helpSpeed": 2300,
+  "foodPer": 10.7,
+  "skillPer": 3,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    3,
+    17,
+    1
+   ],
+   "count": {
+    "1": {
+     "num": [
+      0,
+      0,
+      2
+     ]
+    },
+    "3": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "17": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    }
+   }
+  }
+ },
+ "255": {
+  "id": 255,
+  "friendship": 5,
+  "sleepType": 2,
+  "skillType": 7,
+  "pokeType": 1,
+  "berryType": 10,
+  "maxcarry": 12,
+  "helpSpeed": 4300,
+  "foodPer": 16,
+  "skillPer": 4.4,
+  "food": {
+   "type": [
+    2,
+    15,
+    10
+   ],
+   "count": {
+    "2": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "10": {
+     "num": [
+      0,
+      0,
+      5
+     ]
+    },
+    "15": {
+     "num": [
+      0,
+      4,
+      6
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "256": {
+  "id": 256,
+  "friendship": 12,
+  "sleepType": 3,
+  "skillType": 7,
+  "pokeType": 1,
+  "berryType": 18,
+  "maxcarry": 21,
+  "helpSpeed": 3400,
+  "foodPer": 17,
+  "skillPer": 5.2,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    2,
+    15,
+    10
+   ],
+   "count": {
+    "2": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "10": {
+     "num": [
+      0,
+      0,
+      5
+     ]
+    },
+    "15": {
+     "num": [
+      0,
+      4,
+      6
+     ]
+    }
+   }
+  }
+ },
+ "257": {
+  "id": 257,
+  "friendship": 20,
+  "sleepType": 3,
+  "skillType": 7,
+  "pokeType": 1,
+  "berryType": 18,
+  "maxcarry": 32,
+  "helpSpeed": 2600,
+  "foodPer": 15.3,
+  "skillPer": 4.9,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    2,
+    15,
+    10
+   ],
+   "count": {
+    "2": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "10": {
+     "num": [
+      0,
+      0,
+      5
+     ]
+    },
+    "15": {
+     "num": [
+      0,
+      4,
+      6
+     ]
+    }
+   }
+  }
+ },
+ "258": {
+  "id": 258,
+  "friendship": 5,
+  "sleepType": 3,
+  "skillType": 14,
+  "pokeType": 1,
+  "berryType": 1,
+  "maxcarry": 11,
+  "helpSpeed": 4700,
+  "foodPer": 19.2,
+  "skillPer": 2.4,
+  "food": {
+   "type": [
+    16,
+    8,
+    2
+   ],
+   "count": {
+    "2": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "8": {
+     "num": [
+      0,
+      3,
+      5
+     ]
+    },
+    "16": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "259": {
+  "id": 259,
+  "friendship": 12,
+  "sleepType": 3,
+  "skillType": 14,
+  "pokeType": 1,
+  "berryType": 15,
+  "maxcarry": 21,
+  "helpSpeed": 3500,
+  "foodPer": 16.8,
+  "skillPer": 2.8,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    16,
+    8,
+    2
+   ],
+   "count": {
+    "2": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "8": {
+     "num": [
+      0,
+      3,
+      5
+     ]
+    },
+    "16": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "260": {
+  "id": 260,
+  "friendship": 20,
+  "sleepType": 3,
+  "skillType": 14,
+  "pokeType": 1,
+  "berryType": 15,
+  "maxcarry": 30,
+  "helpSpeed": 2800,
+  "foodPer": 14.6,
+  "skillPer": 3.4,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    16,
+    8,
+    2
+   ],
+   "count": {
+    "2": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "8": {
+     "num": [
+      0,
+      3,
+      5
+     ]
+    },
+    "16": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "280": {
+  "id": 280,
+  "friendship": 5,
+  "sleepType": 2,
+  "skillType": 8,
+  "pokeType": 3,
+  "berryType": 6,
+  "maxcarry": 9,
+  "helpSpeed": 4800,
+  "foodPer": 14.5,
+  "skillPer": 4.3,
+  "food": {
+   "type": [
+    5,
+    16,
+    1
+   ],
+   "count": {
+    "1": {
+     "num": [
+      0,
+      0,
+      2
+     ]
+    },
+    "5": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "16": {
+     "num": [
+      0,
+      1,
+      2
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "281": {
+  "id": 281,
+  "friendship": 12,
+  "sleepType": 2,
+  "skillType": 8,
+  "pokeType": 3,
+  "berryType": 6,
+  "maxcarry": 18,
+  "helpSpeed": 3500,
+  "foodPer": 14.6,
+  "skillPer": 4.3,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    5,
+    16,
+    1
+   ],
+   "count": {
+    "1": {
+     "num": [
+      0,
+      0,
+      2
+     ]
+    },
+    "5": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "16": {
+     "num": [
+      0,
+      1,
+      2
+     ]
+    }
+   }
+  }
+ },
+ "282": {
+  "id": 282,
+  "friendship": 20,
+  "sleepType": 2,
+  "skillType": 8,
+  "pokeType": 3,
+  "berryType": 6,
+  "maxcarry": 28,
+  "helpSpeed": 2400,
+  "foodPer": 14.4,
+  "skillPer": 4.2,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    5,
+    16,
+    1
+   ],
+   "count": {
+    "1": {
+     "num": [
+      0,
+      0,
+      2
+     ]
+    },
+    "5": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "16": {
+     "num": [
+      0,
+      1,
+      2
+     ]
+    }
+   }
+  }
+ },
+ "287": {
+  "id": 287,
+  "friendship": 5,
+  "sleepType": 2,
+  "skillType": 10,
+  "pokeType": 1,
+  "berryType": 11,
+  "maxcarry": 7,
+  "helpSpeed": 4900,
+  "foodPer": 21.6,
+  "skillPer": 1.9,
+  "food": {
+   "type": [
+    12,
+    9,
+    5
+   ],
+   "count": {
+    "5": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    },
+    "9": {
+     "num": [
+      0,
+      2,
+      4
+     ]
+    },
+    "12": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "288": {
+  "id": 288,
+  "friendship": 12,
+  "sleepType": 1,
+  "skillType": 10,
+  "pokeType": 1,
+  "berryType": 11,
+  "maxcarry": 14,
+  "helpSpeed": 3200,
+  "foodPer": 20.4,
+  "skillPer": 1.5,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    12,
+    9,
+    5
+   ],
+   "count": {
+    "5": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    },
+    "9": {
+     "num": [
+      0,
+      2,
+      4
+     ]
+    },
+    "12": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "289": {
+  "id": 289,
+  "friendship": 22,
+  "sleepType": 2,
+  "skillType": 10,
+  "pokeType": 1,
+  "berryType": 11,
+  "maxcarry": 26,
+  "helpSpeed": 3600,
+  "foodPer": 33.9,
+  "skillPer": 6.7,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    12,
+    9,
+    5
+   ],
+   "count": {
+    "5": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    },
+    "9": {
+     "num": [
+      0,
+      2,
+      4
+     ]
+    },
+    "12": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "302": {
+  "id": 302,
+  "friendship": 16,
+  "sleepType": 1,
+  "skillType": 6,
+  "pokeType": 3,
+  "berryType": 17,
+  "maxcarry": 16,
+  "helpSpeed": 3600,
+  "foodPer": 18.8,
+  "skillPer": 6.8,
+  "food": {
+   "type": [
+    10,
+    2,
+    13
+   ],
+   "count": {
+    "2": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    },
+    "10": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "13": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    }
+   }
+  },
+  "evoLineKey": 0
+ },
+ "303": {
+  "id": 303,
+  "friendship": 16,
+  "sleepType": 3,
+  "skillType": 25,
+  "pokeType": 2,
+  "berryType": 2,
+  "maxcarry": 17,
+  "helpSpeed": 3200,
+  "foodPer": 20.4,
+  "skillPer": 3.8,
+  "food": {
+   "type": [
+    10,
+    16,
+    12
+   ],
+   "count": {
+    "10": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "12": {
+     "num": [
+      0,
+      0,
+      8
+     ]
+    },
+    "16": {
+     "num": [
+      0,
+      4,
+      6
+     ]
+    }
+   }
+  },
+  "evoLineKey": 0
+ },
+ "304": {
+  "id": 304,
+  "friendship": 5,
+  "sleepType": 3,
+  "skillType": 7,
+  "pokeType": 2,
+  "berryType": 2,
+  "maxcarry": 10,
+  "helpSpeed": 5700,
+  "foodPer": 27.3,
+  "skillPer": 4.6,
+  "food": {
+   "type": [
+    7,
+    17,
+    15
+   ],
+   "count": {
+    "7": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "15": {
+     "num": [
+      0,
+      0,
+      7
+     ]
+    },
+    "17": {
+     "num": [
+      0,
+      3,
+      5
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "305": {
+  "id": 305,
+  "friendship": 12,
+  "sleepType": 3,
+  "skillType": 7,
+  "pokeType": 2,
+  "berryType": 2,
+  "maxcarry": 18,
+  "helpSpeed": 4200,
+  "foodPer": 27.7,
+  "skillPer": 4.8,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    7,
+    17,
+    15
+   ],
+   "count": {
+    "7": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "15": {
+     "num": [
+      0,
+      0,
+      7
+     ]
+    },
+    "17": {
+     "num": [
+      0,
+      3,
+      5
+     ]
+    }
+   }
+  }
+ },
+ "306": {
+  "id": 306,
+  "friendship": 20,
+  "sleepType": 3,
+  "skillType": 7,
+  "pokeType": 2,
+  "berryType": 2,
+  "maxcarry": 28,
+  "helpSpeed": 3000,
+  "foodPer": 28.5,
+  "skillPer": 5.2,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    7,
+    17,
+    15
+   ],
+   "count": {
+    "7": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "15": {
+     "num": [
+      0,
+      0,
+      7
+     ]
+    },
+    "17": {
+     "num": [
+      0,
+      3,
+      5
+     ]
+    }
+   }
+  }
+ },
+ "311": {
+  "id": 311,
+  "friendship": 10,
+  "sleepType": 2,
+  "skillType": 26,
+  "pokeType": 3,
+  "berryType": 13,
+  "maxcarry": 16,
+  "helpSpeed": 2400,
+  "foodPer": 10.3,
+  "skillPer": 4.9,
+  "food": {
+   "type": [
+    17,
+    1,
+    8
+   ],
+   "count": {
+    "1": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    },
+    "8": {
+     "num": [
+      0,
+      0,
+      6
+     ]
+    },
+    "17": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  },
+  "evoLineKey": 0
+ },
+ "312": {
+  "id": 312,
+  "friendship": 10,
+  "sleepType": 2,
+  "skillType": 27,
+  "pokeType": 3,
+  "berryType": 13,
+  "maxcarry": 16,
+  "helpSpeed": 2400,
+  "foodPer": 17.4,
+  "skillPer": 4.9,
+  "food": {
+   "type": [
+    9,
+    3,
+    8
+   ],
+   "count": {
+    "3": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    },
+    "8": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    },
+    "9": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  },
+  "evoLineKey": 0
+ },
+ "316": {
+  "id": 316,
+  "friendship": 5,
+  "sleepType": 1,
+  "skillType": 6,
+  "pokeType": 3,
+  "berryType": 5,
+  "maxcarry": 8,
+  "helpSpeed": 5900,
+  "foodPer": 21.4,
+  "skillPer": 6.3,
+  "food": {
+   "type": [
+    15,
+    2,
+    9
+   ],
+   "count": {
+    "2": {
+     "num": [
+      0,
+      1,
+      2
+     ]
+    },
+    "9": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    },
+    "15": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "317": {
+  "id": 317,
+  "friendship": 12,
+  "sleepType": 1,
+  "skillType": 6,
+  "pokeType": 3,
+  "berryType": 5,
+  "maxcarry": 24,
+  "helpSpeed": 3500,
+  "foodPer": 21,
+  "skillPer": 7,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    15,
+    2,
+    9
+   ],
+   "count": {
+    "2": {
+     "num": [
+      0,
+      1,
+      2
+     ]
+    },
+    "9": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    },
+    "15": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "328": {
+  "id": 328,
+  "friendship": 5,
+  "sleepType": 3,
+  "skillType": 1,
+  "pokeType": 2,
+  "berryType": 15,
+  "maxcarry": 8,
+  "helpSpeed": 5000,
+  "foodPer": 15.2,
+  "skillPer": 3.1,
+  "food": {
+   "type": [
+    19,
+    6,
+    15
+   ],
+   "count": {
+    "6": {
+     "num": [
+      0,
+      6,
+      9
+     ]
+    },
+    "15": {
+     "num": [
+      0,
+      0,
+      12
+     ]
+    },
+    "19": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "329": {
+  "id": 329,
+  "friendship": 12,
+  "sleepType": 3,
+  "skillType": 1,
+  "pokeType": 2,
+  "berryType": 15,
+  "maxcarry": 17,
+  "helpSpeed": 3700,
+  "foodPer": 15.5,
+  "skillPer": 3.4,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    19,
+    6,
+    15
+   ],
+   "count": {
+    "6": {
+     "num": [
+      0,
+      6,
+      9
+     ]
+    },
+    "15": {
+     "num": [
+      0,
+      0,
+      12
+     ]
+    },
+    "19": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    }
+   }
+  }
+ },
+ "330": {
+  "id": 330,
+  "friendship": 20,
+  "sleepType": 3,
+  "skillType": 1,
+  "pokeType": 2,
+  "berryType": 15,
+  "maxcarry": 27,
+  "helpSpeed": 2700,
+  "foodPer": 17.2,
+  "skillPer": 3.9,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    19,
+    6,
+    15
+   ],
+   "count": {
+    "6": {
+     "num": [
+      0,
+      6,
+      9
+     ]
+    },
+    "15": {
+     "num": [
+      0,
+      0,
+      12
+     ]
+    },
+    "19": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    }
+   }
+  }
+ },
+ "333": {
+  "id": 333,
+  "friendship": 5,
+  "sleepType": 3,
+  "skillType": 7,
+  "pokeType": 1,
+  "berryType": 16,
+  "maxcarry": 12,
+  "helpSpeed": 4200,
+  "foodPer": 17.7,
+  "skillPer": 3.2,
+  "food": {
+   "type": [
+    3,
+    15,
+    5
+   ],
+   "count": {
+    "3": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "5": {
+     "num": [
+      0,
+      0,
+      5
+     ]
+    },
+    "15": {
+     "num": [
+      0,
+      3,
+      4
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "334": {
+  "id": 334,
+  "friendship": 12,
+  "sleepType": 1,
+  "skillType": 7,
+  "pokeType": 1,
+  "berryType": 3,
+  "maxcarry": 19,
+  "helpSpeed": 3500,
+  "foodPer": 25.8,
+  "skillPer": 6.1,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    3,
+    15,
+    5
+   ],
+   "count": {
+    "3": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "5": {
+     "num": [
+      0,
+      0,
+      5
+     ]
+    },
+    "15": {
+     "num": [
+      0,
+      3,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "353": {
+  "id": 353,
+  "friendship": 5,
+  "sleepType": 1,
+  "skillType": 5,
+  "pokeType": 1,
+  "berryType": 8,
+  "maxcarry": 11,
+  "helpSpeed": 3900,
+  "foodPer": 17.1,
+  "skillPer": 2.6,
+  "food": {
+   "type": [
+    10,
+    11,
+    2
+   ],
+   "count": {
+    "2": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "10": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "11": {
+     "num": [
+      0,
+      2,
+      4
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "354": {
+  "id": 354,
+  "friendship": 16,
+  "sleepType": 1,
+  "skillType": 5,
+  "pokeType": 1,
+  "berryType": 8,
+  "maxcarry": 24,
+  "helpSpeed": 2600,
+  "foodPer": 17.9,
+  "skillPer": 3.3,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    10,
+    11,
+    2
+   ],
+   "count": {
+    "2": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "10": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "11": {
+     "num": [
+      0,
+      2,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "359": {
+  "id": 359,
+  "friendship": 16,
+  "sleepType": 1,
+  "skillType": 2,
+  "pokeType": 2,
+  "berryType": 17,
+  "maxcarry": 21,
+  "helpSpeed": 2950,
+  "foodPer": 17.8,
+  "skillPer": 3.8,
+  "food": {
+   "type": [
+    13,
+    5,
+    2
+   ],
+   "count": {
+    "2": {
+     "num": [
+      0,
+      0,
+      7
+     ]
+    },
+    "5": {
+     "num": [
+      0,
+      8,
+      12
+     ]
+    },
+    "13": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    }
+   }
+  },
+  "evoLineKey": 0
+ },
+ "360": {
+  "id": 360,
+  "friendship": 5,
+  "sleepType": 3,
+  "skillType": 4,
+  "pokeType": 3,
+  "maxcarry": 7,
+  "helpSpeed": 5800,
+  "berryType": 6,
+  "foodPer": 21.3,
+  "skillPer": 6.9,
+  "food": {
+   "type": [
+    5,
+    2,
+    10
+   ],
+   "count": {
+    "2": {
+     "num": [
+      0,
+      1,
+      2
+     ]
+    },
+    "5": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "10": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "363": {
+  "id": 363,
+  "friendship": 5,
+  "sleepType": 3,
+  "skillType": 10,
+  "pokeType": 1,
+  "maxcarry": 9,
+  "helpSpeed": 5600,
+  "berryType": 7,
+  "foodPer": 22.4,
+  "skillPer": 2.3,
+  "food": {
+   "type": [
+    10,
+    7,
+    11
+   ],
+   "count": {
+    "7": {
+     "num": [
+      0,
+      3,
+      4
+     ]
+    },
+    "10": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "11": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "364": {
+  "id": 364,
+  "friendship": 12,
+  "sleepType": 3,
+  "skillType": 10,
+  "pokeType": 1,
+  "maxcarry": 18,
+  "helpSpeed": 4000,
+  "berryType": 7,
+  "foodPer": 22.1,
+  "skillPer": 2.1,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    10,
+    7,
+    11
+   ],
+   "count": {
+    "7": {
+     "num": [
+      0,
+      3,
+      4
+     ]
+    },
+    "10": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "11": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "365": {
+  "id": 365,
+  "friendship": 20,
+  "sleepType": 3,
+  "skillType": 10,
+  "pokeType": 1,
+  "maxcarry": 28,
+  "helpSpeed": 3000,
+  "berryType": 7,
+  "foodPer": 22.3,
+  "skillPer": 2.2,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    10,
+    7,
+    11
+   ],
+   "count": {
+    "7": {
+     "num": [
+      0,
+      3,
+      4
+     ]
+    },
+    "10": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "11": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "371": {
+  "id": 371,
+  "friendship": 5,
+  "sleepType": 1,
+  "skillType": 11,
+  "pokeType": 1,
+  "berryType": 3,
+  "maxcarry": 9,
+  "helpSpeed": 5300,
+  "foodPer": 20.9,
+  "skillPer": 2.7,
+  "food": {
+   "type": [
+    4,
+    11,
+    7
+   ],
+   "count": {
+    "4": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "7": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    },
+    "11": {
+     "num": [
+      0,
+      3,
+      4
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "372": {
+  "id": 372,
+  "friendship": 12,
+  "sleepType": 1,
+  "skillType": 11,
+  "pokeType": 1,
+  "berryType": 3,
+  "maxcarry": 19,
+  "helpSpeed": 3800,
+  "foodPer": 20.6,
+  "skillPer": 2.7,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    4,
+    11,
+    7
+   ],
+   "count": {
+    "4": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "7": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    },
+    "11": {
+     "num": [
+      0,
+      3,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "373": {
+  "id": 373,
+  "friendship": 25,
+  "sleepType": 1,
+  "skillType": 11,
+  "pokeType": 1,
+  "berryType": 3,
+  "maxcarry": 32,
+  "helpSpeed": 2800,
+  "foodPer": 21.7,
+  "skillPer": 3.4,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    4,
+    11,
+    7
+   ],
+   "count": {
+    "4": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "7": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    },
+    "11": {
+     "num": [
+      0,
+      3,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "380": {
+  "id": 380,
+  "friendship": 30,
+  "sleepType": 1,
+  "skillType": 34,
+  "pokeType": 3,
+  "berryType": 3,
+  "maxcarry": 19,
+  "helpSpeed": 2800,
+  "foodPer": 11.4,
+  "skillPer": 4.9,
+  "food": {
+   "type": [
+    12,
+    18,
+    2
+   ],
+   "count": {
+    "2": {
+     "num": [
+      0,
+      0,
+      2
+     ]
+    },
+    "12": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "18": {
+     "num": [
+      0,
+      1,
+      2
+     ]
+    }
+   }
+  },
+  "evoLineKey": 0
+ },
+ "381": {
+  "id": 381,
+  "friendship": 30,
+  "sleepType": 1,
+  "skillType": 35,
+  "pokeType": 3,
+  "berryType": 3,
+  "maxcarry": 19,
+  "helpSpeed": 2800,
+  "foodPer": 19.8,
+  "skillPer": 3,
+  "food": {
+   "type": [
+    12,
+    3,
+    8
+   ],
+   "count": {
+    "3": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    },
+    "8": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    },
+    "12": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  },
+  "evoLineKey": 0
+ },
+ "387": {
+  "id": 387,
+  "friendship": 5,
+  "sleepType": 1,
+  "skillType": 8,
+  "pokeType": 3,
+  "berryType": 4,
+  "maxcarry": 12,
+  "helpSpeed": 4500,
+  "foodPer": 13.2,
+  "skillPer": 4.1,
+  "food": {
+   "type": [
+    2,
+    4,
+    11
+   ],
+   "count": {
+    "2": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "4": {
+     "num": [
+      0,
+      3,
+      5
+     ]
+    },
+    "11": {
+     "num": [
+      0,
+      0,
+      6
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "388": {
+  "id": 388,
+  "friendship": 12,
+  "sleepType": 1,
+  "skillType": 8,
+  "pokeType": 3,
+  "berryType": 4,
+  "maxcarry": 19,
+  "helpSpeed": 3700,
+  "foodPer": 15,
+  "skillPer": 4.6,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    2,
+    4,
+    11
+   ],
+   "count": {
+    "2": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "4": {
+     "num": [
+      0,
+      3,
+      5
+     ]
+    },
+    "11": {
+     "num": [
+      0,
+      0,
+      6
+     ]
+    }
+   }
+  }
+ },
+ "389": {
+  "id": 389,
+  "friendship": 20,
+  "sleepType": 3,
+  "skillType": 8,
+  "pokeType": 3,
+  "berryType": 15,
+  "maxcarry": 27,
+  "helpSpeed": 2900,
+  "foodPer": 15.6,
+  "skillPer": 4.8,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    2,
+    4,
+    11
+   ],
+   "count": {
+    "2": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "4": {
+     "num": [
+      0,
+      3,
+      5
+     ]
+    },
+    "11": {
+     "num": [
+      0,
+      0,
+      6
+     ]
+    }
+   }
+  }
+ },
+ "390": {
+  "id": 390,
+  "friendship": 5,
+  "sleepType": 2,
+  "skillType": 21,
+  "pokeType": 3,
+  "berryType": 10,
+  "maxcarry": 10,
+  "helpSpeed": 4100,
+  "foodPer": 11.4,
+  "skillPer": 3.3,
+  "food": {
+   "type": [
+    6,
+    11,
+    17
+   ],
+   "count": {
+    "6": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "11": {
+     "num": [
+      0,
+      3,
+      4
+     ]
+    },
+    "17": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "391": {
+  "id": 391,
+  "friendship": 12,
+  "sleepType": 3,
+  "skillType": 21,
+  "pokeType": 3,
+  "berryType": 18,
+  "maxcarry": 19,
+  "helpSpeed": 3100,
+  "foodPer": 11.4,
+  "skillPer": 3.3,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    6,
+    11,
+    17
+   ],
+   "count": {
+    "6": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "11": {
+     "num": [
+      0,
+      3,
+      4
+     ]
+    },
+    "17": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    }
+   }
+  }
+ },
+ "392": {
+  "id": 392,
+  "friendship": 20,
+  "sleepType": 3,
+  "skillType": 21,
+  "pokeType": 3,
+  "berryType": 18,
+  "maxcarry": 28,
+  "helpSpeed": 2400,
+  "foodPer": 10.6,
+  "skillPer": 3.3,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    6,
+    11,
+    17
+   ],
+   "count": {
+    "6": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "11": {
+     "num": [
+      0,
+      3,
+      4
+     ]
+    },
+    "17": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    }
+   }
+  }
+ },
+ "393": {
+  "id": 393,
+  "friendship": 5,
+  "sleepType": 3,
+  "skillType": 9,
+  "pokeType": 1,
+  "berryType": 1,
+  "maxcarry": 11,
+  "helpSpeed": 4500,
+  "foodPer": 15.9,
+  "skillPer": 2.6,
+  "food": {
+   "type": [
+    3,
+    1,
+    9
+   ],
+   "count": {
+    "1": {
+     "num": [
+      0,
+      1,
+      2
+     ]
+    },
+    "3": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "9": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "394": {
+  "id": 394,
+  "friendship": 12,
+  "sleepType": 3,
+  "skillType": 9,
+  "pokeType": 1,
+  "berryType": 1,
+  "maxcarry": 20,
+  "helpSpeed": 3700,
+  "foodPer": 16.3,
+  "skillPer": 3.5,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    3,
+    1,
+    9
+   ],
+   "count": {
+    "1": {
+     "num": [
+      0,
+      1,
+      2
+     ]
+    },
+    "3": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "9": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "395": {
+  "id": 395,
+  "friendship": 20,
+  "sleepType": 3,
+  "skillType": 9,
+  "pokeType": 1,
+  "berryType": 2,
+  "maxcarry": 28,
+  "helpSpeed": 3200,
+  "foodPer": 16.8,
+  "skillPer": 3.8,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    3,
+    1,
+    9
+   ],
+   "count": {
+    "1": {
+     "num": [
+      0,
+      1,
+      2
+     ]
+    },
+    "3": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "9": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "403": {
+  "id": 403,
+  "friendship": 5,
+  "sleepType": 2,
+  "skillType": 11,
+  "pokeType": 2,
+  "berryType": 13,
+  "maxcarry": 11,
+  "helpSpeed": 4400,
+  "foodPer": 18.1,
+  "skillPer": 1.8,
+  "food": {
+   "type": [
+    12,
+    10,
+    17
+   ],
+   "count": {
+    "10": {
+     "num": [
+      0,
+      4,
+      7
+     ]
+    },
+    "12": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "17": {
+     "num": [
+      0,
+      0,
+      5
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "404": {
+  "id": 404,
+  "friendship": 12,
+  "sleepType": 2,
+  "skillType": 11,
+  "pokeType": 2,
+  "berryType": 13,
+  "maxcarry": 21,
+  "helpSpeed": 3200,
+  "foodPer": 18.2,
+  "skillPer": 1.8,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    12,
+    10,
+    17
+   ],
+   "count": {
+    "10": {
+     "num": [
+      0,
+      4,
+      7
+     ]
+    },
+    "12": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "17": {
+     "num": [
+      0,
+      0,
+      5
+     ]
+    }
+   }
+  }
+ },
+ "405": {
+  "id": 405,
+  "friendship": 20,
+  "sleepType": 2,
+  "skillType": 11,
+  "pokeType": 2,
+  "berryType": 13,
+  "maxcarry": 31,
+  "helpSpeed": 2400,
+  "foodPer": 20,
+  "skillPer": 2.3,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    12,
+    10,
+    17
+   ],
+   "count": {
+    "10": {
+     "num": [
+      0,
+      4,
+      7
+     ]
+    },
+    "12": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "17": {
+     "num": [
+      0,
+      0,
+      5
+     ]
+    }
+   }
+  }
+ },
+ "425": {
+  "id": 425,
+  "friendship": 5,
+  "sleepType": 1,
+  "skillType": 16,
+  "pokeType": 3,
+  "maxcarry": 9,
+  "helpSpeed": 4800,
+  "berryType": 8,
+  "foodPer": 13.7,
+  "skillPer": 7.1,
+  "food": {
+   "type": [
+    16,
+    10,
+    4
+   ],
+   "count": {
+    "4": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    },
+    "10": {
+     "num": [
+      0,
+      3,
+      4
+     ]
+    },
+    "16": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "426": {
+  "id": 426,
+  "friendship": 12,
+  "sleepType": 1,
+  "skillType": 16,
+  "pokeType": 3,
+  "maxcarry": 22,
+  "helpSpeed": 2500,
+  "berryType": 8,
+  "foodPer": 12.8,
+  "skillPer": 6.3,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    16,
+    10,
+    4
+   ],
+   "count": {
+    "4": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    },
+    "10": {
+     "num": [
+      0,
+      3,
+      4
+     ]
+    },
+    "16": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "430": {
+  "id": 430,
+  "friendship": 20,
+  "sleepType": 1,
+  "skillType": 24,
+  "pokeType": 3,
+  "maxcarry": 23,
+  "helpSpeed": 3200,
+  "berryType": 17,
+  "foodPer": 14.3,
+  "skillPer": 6.7,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    17,
+    15,
+    6
+   ],
+   "count": {
+    "6": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    },
+    "15": {
+     "num": [
+      0,
+      3,
+      6
+     ]
+    },
+    "17": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "438": {
+  "id": 438,
+  "friendship": 5,
+  "sleepType": 3,
+  "skillType": 2,
+  "pokeType": 3,
+  "maxcarry": 8,
+  "helpSpeed": 6300,
+  "berryType": 14,
+  "foodPer": 18.9,
+  "skillPer": 6.1,
+  "food": {
+   "type": [
+    12,
+    15,
+    2
+   ],
+   "count": {
+    "2": {
+     "num": [
+      0,
+      0,
+      2
+     ]
+    },
+    "12": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "15": {
+     "num": [
+      0,
+      2,
+      4
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "439": {
+  "id": 439,
+  "friendship": 5,
+  "sleepType": 3,
+  "skillType": 20,
+  "pokeType": 2,
+  "berryType": 6,
+  "maxcarry": 10,
+  "helpSpeed": 4300,
+  "foodPer": 20.1,
+  "skillPer": 3.2,
+  "food": {
+   "type": [
+    12,
+    4,
+    1
+   ],
+   "count": {
+    "1": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    },
+    "4": {
+     "num": [
+      0,
+      4,
+      6
+     ]
+    },
+    "12": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "440": {
+  "id": 440,
+  "friendship": 5,
+  "sleepType": 3,
+  "skillType": 8,
+  "pokeType": 2,
+  "berryType": 11,
+  "maxcarry": 7,
+  "helpSpeed": 5400,
+  "foodPer": 21,
+  "skillPer": 1.3,
+  "food": {
+   "type": [
+    3,
+    4,
+    9
+   ],
+   "count": {
+    "3": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "4": {
+     "num": [
+      0,
+      4,
+      7
+     ]
+    },
+    "9": {
+     "num": [
+      0,
+      0,
+      8
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "442": {
+  "id": 442,
+  "friendship": 16,
+  "sleepType": 1,
+  "skillType": 9,
+  "pokeType": 2,
+  "berryType": 17,
+  "maxcarry": 27,
+  "helpSpeed": 3500,
+  "foodPer": 19.8,
+  "skillPer": 3.6,
+  "food": {
+   "type": [
+    2,
+    18,
+    1
+   ],
+   "count": {
+    "1": {
+     "num": [
+      0,
+      0,
+      6
+     ]
+    },
+    "2": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "18": {
+     "num": [
+      0,
+      3,
+      5
+     ]
+    }
+   }
+  },
+  "evoLineKey": 0
+ },
+ "447": {
+  "id": 447,
+  "friendship": 5,
+  "sleepType": 3,
+  "skillType": 3,
+  "pokeType": 3,
+  "maxcarry": 9,
+  "helpSpeed": 4200,
+  "berryType": 18,
+  "foodPer": 12.6,
+  "skillPer": 3.8,
+  "food": {
+   "type": [
+    10,
+    4,
+    3
+   ],
+   "count": {
+    "3": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    },
+    "4": {
+     "num": [
+      0,
+      2,
+      4
+     ]
+    },
+    "10": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "448": {
+  "id": 448,
+  "friendship": 20,
+  "sleepType": 3,
+  "skillType": 36,
+  "pokeType": 3,
+  "maxcarry": 19,
+  "helpSpeed": 2600,
+  "berryType": 18,
+  "foodPer": 15,
+  "skillPer": 5.1,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    10,
+    4,
+    3
+   ],
+   "count": {
+    "3": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    },
+    "4": {
+     "num": [
+      0,
+      2,
+      4
+     ]
+    },
+    "10": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "453": {
+  "id": 453,
+  "friendship": 5,
+  "sleepType": 1,
+  "skillType": 1,
+  "pokeType": 2,
+  "berryType": 5,
+  "maxcarry": 10,
+  "helpSpeed": 5600,
+  "foodPer": 22.8,
+  "skillPer": 4.2,
+  "food": {
+   "type": [
+    10,
+    7
+   ],
+   "count": {
+    "7": {
+     "num": [
+      0,
+      5,
+      8
+     ]
+    },
+    "10": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "454": {
+  "id": 454,
+  "friendship": 12,
+  "sleepType": 1,
+  "skillType": 1,
+  "pokeType": 2,
+  "berryType": 5,
+  "maxcarry": 19,
+  "helpSpeed": 3400,
+  "foodPer": 22.9,
+  "skillPer": 4.3,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    10,
+    7
+   ],
+   "count": {
+    "7": {
+     "num": [
+      0,
+      5,
+      8
+     ]
+    },
+    "10": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    }
+   }
+  }
+ },
+ "459": {
+  "id": 459,
+  "friendship": 5,
+  "sleepType": 3,
+  "skillType": 5,
+  "pokeType": 2,
+  "berryType": 7,
+  "maxcarry": 10,
+  "helpSpeed": 5600,
+  "foodPer": 25.1,
+  "skillPer": 4.4,
+  "food": {
+   "type": [
+    12,
+    3,
+    2
+   ],
+   "count": {
+    "2": {
+     "num": [
+      0,
+      0,
+      5
+     ]
+    },
+    "3": {
+     "num": [
+      0,
+      4,
+      7
+     ]
+    },
+    "12": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "460": {
+  "id": 460,
+  "friendship": 12,
+  "sleepType": 3,
+  "skillType": 5,
+  "pokeType": 2,
+  "berryType": 7,
+  "maxcarry": 26,
+  "helpSpeed": 3000,
+  "foodPer": 25,
+  "skillPer": 4.4,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    12,
+    3,
+    2
+   ],
+   "count": {
+    "2": {
+     "num": [
+      0,
+      0,
+      5
+     ]
+    },
+    "3": {
+     "num": [
+      0,
+      4,
+      7
+     ]
+    },
+    "12": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    }
+   }
+  }
+ },
+ "461": {
+  "id": 461,
+  "friendship": 20,
+  "sleepType": 1,
+  "skillType": 14,
+  "pokeType": 1,
+  "berryType": 17,
+  "maxcarry": 26,
+  "helpSpeed": 2700,
+  "foodPer": 25.1,
+  "skillPer": 1.8,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    7,
+    3,
+    15
+   ],
+   "count": {
+    "3": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    },
+    "7": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "15": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "462": {
+  "id": 462,
+  "friendship": 22,
+  "sleepType": 3,
+  "skillType": 11,
+  "pokeType": 3,
+  "berryType": 2,
+  "maxcarry": 23,
+  "helpSpeed": 3100,
+  "foodPer": 17.9,
+  "skillPer": 6.2,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    10,
+    6
+   ],
+   "count": {
+    "6": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    },
+    "10": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "468": {
+  "id": 468,
+  "friendship": 22,
+  "sleepType": 2,
+  "skillType": 13,
+  "pokeType": 3,
+  "berryType": 12,
+  "maxcarry": 26,
+  "helpSpeed": 2600,
+  "foodPer": 15.8,
+  "skillPer": 5.3,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    3,
+    11,
+    13
+   ],
+   "count": {
+    "3": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "11": {
+     "num": [
+      0,
+      2,
+      4
+     ]
+    },
+    "13": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    }
+   }
+  }
+ },
+ "470": {
+  "id": 470,
+  "friendship": 20,
+  "sleepType": 1,
+  "skillType": 4,
+  "pokeType": 3,
+  "berryType": 4,
+  "maxcarry": 18,
+  "helpSpeed": 3000,
+  "foodPer": 20.5,
+  "skillPer": 6.9,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    8,
+    13,
+    7
+   ],
+   "count": {
+    "7": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "8": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "13": {
+     "num": [
+      0,
+      1,
+      2
+     ]
+    }
+   }
+  }
+ },
+ "471": {
+  "id": 471,
+  "friendship": 20,
+  "sleepType": 3,
+  "skillType": 11,
+  "pokeType": 3,
+  "berryType": 7,
+  "maxcarry": 17,
+  "helpSpeed": 3200,
+  "foodPer": 21.9,
+  "skillPer": 6.3,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    8,
+    13,
+    7
+   ],
+   "count": {
+    "7": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "8": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "13": {
+     "num": [
+      0,
+      1,
+      2
+     ]
+    }
+   }
+  }
+ },
+ "475": {
+  "id": 475,
+  "friendship": 22,
+  "sleepType": 3,
+  "skillType": 9,
+  "pokeType": 3,
+  "berryType": 18,
+  "maxcarry": 29,
+  "helpSpeed": 2400,
+  "foodPer": 14.7,
+  "skillPer": 5.4,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    5,
+    16,
+    1
+   ],
+   "count": {
+    "1": {
+     "num": [
+      0,
+      0,
+      2
+     ]
+    },
+    "5": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "16": {
+     "num": [
+      0,
+      1,
+      2
+     ]
+    }
+   }
+  }
+ },
+ "488": {
+  "id": 488,
+  "friendship": 30,
+  "sleepType": 2,
+  "skillType": 22,
+  "pokeType": 3,
+  "berryType": 6,
+  "maxcarry": 22,
+  "helpSpeed": 2300,
+  "foodPer": 23.9,
+  "skillPer": 4.1,
+  "food": {
+   "type": [
+    11,
+    13,
+    12
+   ],
+   "count": {
+    "11": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "12": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    },
+    "13": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    }
+   }
+  },
+  "evoLineKey": 0
+ },
+ "491": {
+  "id": 491,
+  "friendship": 25,
+  "sleepType": 1,
+  "skillType": 23,
+  "pokeType": 4,
+  "berryType": 17,
+  "maxcarry": 28,
+  "helpSpeed": 2900,
+  "foodPer": 19.2,
+  "skillPer": 2.3,
+  "food": {
+   "type": [
+    7,
+    17,
+    5,
+    6,
+    8,
+    9,
+    15,
+    16
+   ],
+   "count": {
+    "5": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "6": {
+     "num": [
+      2,
+      3,
+      5
+     ]
+    },
+    "7": {
+     "num": [
+      2,
+      4,
+      6
+     ]
+    },
+    "8": {
+     "num": [
+      2,
+      4,
+      6
+     ]
+    },
+    "9": {
+     "num": [
+      2,
+      4,
+      6
+     ]
+    },
+    "15": {
+     "num": [
+      2,
+      4,
+      6
+     ]
+    },
+    "16": {
+     "num": [
+      2,
+      3,
+      4
+     ]
+    },
+    "17": {
+     "num": [
+      2,
+      3,
+      4
+     ]
+    }
+   }
+  },
+  "evoLineKey": 0
+ },
+ "517": {
+  "id": 517,
+  "friendship": 5,
+  "sleepType": 2,
+  "skillType": 6,
+  "pokeType": 1,
+  "berryType": 6,
+  "maxcarry": 12,
+  "helpSpeed": 5700,
+  "foodPer": 19.7,
+  "skillPer": 4.3,
+  "food": {
+   "type": [
+    8,
+    9,
+    17
+   ],
+   "count": {
+    "8": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "9": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    },
+    "17": {
+     "num": [
+      0,
+      0,
+      2
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "518": {
+  "id": 518,
+  "friendship": 20,
+  "sleepType": 2,
+  "skillType": 6,
+  "pokeType": 1,
+  "berryType": 6,
+  "maxcarry": 29,
+  "helpSpeed": 2800,
+  "foodPer": 18.8,
+  "skillPer": 4.1,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    8,
+    9,
+    17
+   ],
+   "count": {
+    "8": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "9": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    },
+    "17": {
+     "num": [
+      0,
+      0,
+      2
+     ]
+    }
+   }
+  }
+ },
+ "557": {
+  "id": 557,
+  "friendship": 5,
+  "sleepType": 1,
+  "skillType": 28,
+  "pokeType": 3,
+  "berryType": 9,
+  "maxcarry": 8,
+  "helpSpeed": 4300,
+  "foodPer": 17.5,
+  "skillPer": 5.4,
+  "food": {
+   "type": [
+    19,
+    4,
+    10
+   ],
+   "count": {
+    "4": {
+     "num": [
+      0,
+      3,
+      5
+     ]
+    },
+    "10": {
+     "num": [
+      0,
+      0,
+      5
+     ]
+    },
+    "19": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  },
+  "skillFood": [
+   4,
+   10,
+   19
+  ],
+  "evoLineKey": 1
+ },
+ "558": {
+  "id": 558,
+  "friendship": 12,
+  "sleepType": 1,
+  "skillType": 28,
+  "pokeType": 3,
+  "berryType": 9,
+  "maxcarry": 22,
+  "helpSpeed": 3200,
+  "foodPer": 23.9,
+  "skillPer": 6.4,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    19,
+    4,
+    10
+   ],
+   "count": {
+    "4": {
+     "num": [
+      0,
+      3,
+      5
+     ]
+    },
+    "10": {
+     "num": [
+      0,
+      0,
+      5
+     ]
+    },
+    "19": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  },
+  "skillFood": [
+   4,
+   10,
+   19
+  ]
+ },
+ "627": {
+  "id": 627,
+  "friendship": 5,
+  "sleepType": 3,
+  "skillType": 21,
+  "pokeType": 3,
+  "berryType": 16,
+  "maxcarry": 10,
+  "helpSpeed": 3800,
+  "foodPer": 12.5,
+  "skillPer": 3.1,
+  "food": {
+   "type": [
+    7,
+    16,
+    17
+   ],
+   "count": {
+    "7": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "16": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    },
+    "17": {
+     "num": [
+      0,
+      0,
+      2
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "628": {
+  "id": 628,
+  "friendship": 12,
+  "sleepType": 3,
+  "skillType": 21,
+  "pokeType": 3,
+  "berryType": 16,
+  "maxcarry": 23,
+  "helpSpeed": 2400,
+  "foodPer": 12.1,
+  "skillPer": 3.5,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    7,
+    16,
+    17
+   ],
+   "count": {
+    "7": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "16": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    },
+    "17": {
+     "num": [
+      0,
+      0,
+      2
+     ]
+    }
+   }
+  }
+ },
+ "696": {
+  "id": 696,
+  "friendship": 5,
+  "sleepType": 3,
+  "skillType": 11,
+  "pokeType": 1,
+  "berryType": 14,
+  "maxcarry": 11,
+  "helpSpeed": 5200,
+  "foodPer": 20.3,
+  "skillPer": 2.4,
+  "food": {
+   "type": [
+    7,
+    5,
+    4
+   ],
+   "count": {
+    "4": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "5": {
+     "num": [
+      0,
+      3,
+      4
+     ]
+    },
+    "7": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "697": {
+  "id": 697,
+  "friendship": 20,
+  "sleepType": 3,
+  "skillType": 11,
+  "pokeType": 1,
+  "berryType": 14,
+  "maxcarry": 28,
+  "helpSpeed": 2800,
+  "foodPer": 17.8,
+  "skillPer": 2.9,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    7,
+    5,
+    4
+   ],
+   "count": {
+    "4": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "5": {
+     "num": [
+      0,
+      3,
+      4
+     ]
+    },
+    "7": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "700": {
+  "id": 700,
+  "friendship": 20,
+  "sleepType": 2,
+  "skillType": 8,
+  "pokeType": 3,
+  "berryType": 12,
+  "maxcarry": 20,
+  "helpSpeed": 2600,
+  "foodPer": 17.8,
+  "skillPer": 4,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    8,
+    13,
+    7
+   ],
+   "count": {
+    "7": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "8": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "13": {
+     "num": [
+      0,
+      1,
+      2
+     ]
+    }
+   }
+  }
+ },
+ "701": {
+  "id": 701,
+  "friendship": 16,
+  "sleepType": 3,
+  "skillType": 28,
+  "pokeType": 3,
+  "berryType": 16,
+  "maxcarry": 21,
+  "helpSpeed": 2400,
+  "foodPer": 19.2,
+  "skillPer": 5.2,
+  "food": {
+   "type": [
+    6,
+    11,
+    7
+   ],
+   "count": {
+    "6": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "7": {
+     "num": [
+      0,
+      0,
+      5
+     ]
+    },
+    "11": {
+     "num": [
+      0,
+      3,
+      4
+     ]
+    }
+   }
+  },
+  "skillFood": [
+   6,
+   11,
+   7
+  ],
+  "evoLineKey": 0
+ },
+ "702": {
+  "id": 702,
+  "friendship": 16,
+  "sleepType": 2,
+  "skillType": 14,
+  "pokeType": 3,
+  "berryType": 13,
+  "maxcarry": 19,
+  "helpSpeed": 2500,
+  "foodPer": 17.7,
+  "skillPer": 4.5,
+  "food": {
+   "type": [
+    5,
+    13,
+    16
+   ],
+   "count": {
+    "5": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "13": {
+     "num": [
+      0,
+      1,
+      2
+     ]
+    },
+    "16": {
+     "num": [
+      0,
+      0,
+      2
+     ]
+    }
+   }
+  },
+  "evoLineKey": 0
+ },
+ "710": {
+  "id": 710,
+  "friendship": 5,
+  "sleepType": 1,
+  "skillType": 1,
+  "pokeType": 2,
+  "berryType": 8,
+  "maxcarry": 11,
+  "helpSpeed": 5400,
+  "foodPer": 12,
+  "skillPer": 4.9,
+  "food": {
+   "type": [
+    18,
+    15,
+    4
+   ],
+   "count": {
+    "4": {
+     "num": [
+      0,
+      0,
+      15
+     ]
+    },
+    "15": {
+     "num": [
+      0,
+      11,
+      18
+     ]
+    },
+    "18": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "711": {
+  "id": 711,
+  "friendship": 20,
+  "sleepType": 1,
+  "skillType": 1,
+  "pokeType": 2,
+  "berryType": 8,
+  "maxcarry": 19,
+  "helpSpeed": 3200,
+  "foodPer": 13,
+  "skillPer": 4.9,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    18,
+    15,
+    4
+   ],
+   "count": {
+    "4": {
+     "num": [
+      0,
+      0,
+      15
+     ]
+    },
+    "15": {
+     "num": [
+      0,
+      11,
+      18
+     ]
+    },
+    "18": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    }
+   }
+  }
+ },
+ "714": {
+  "id": 714,
+  "friendship": 5,
+  "sleepType": 1,
+  "skillType": 2,
+  "pokeType": 3,
+  "berryType": 3,
+  "maxcarry": 7,
+  "helpSpeed": 5100,
+  "foodPer": 19.8,
+  "skillPer": 4.8,
+  "food": {
+   "type": [
+    5,
+    1,
+    7
+   ],
+   "count": {
+    "1": {
+     "num": [
+      0,
+      1,
+      2
+     ]
+    },
+    "5": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "7": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "715": {
+  "id": 715,
+  "friendship": 12,
+  "sleepType": 1,
+  "skillType": 2,
+  "pokeType": 3,
+  "berryType": 3,
+  "maxcarry": 23,
+  "helpSpeed": 2700,
+  "foodPer": 19.5,
+  "skillPer": 4.8,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    5,
+    1,
+    7
+   ],
+   "count": {
+    "1": {
+     "num": [
+      0,
+      1,
+      2
+     ]
+    },
+    "5": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "7": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    }
+   }
+  }
+ },
+ "736": {
+  "id": 736,
+  "friendship": 5,
+  "sleepType": 1,
+  "skillType": 1,
+  "pokeType": 2,
+  "berryType": 9,
+  "maxcarry": 11,
+  "helpSpeed": 4600,
+  "foodPer": 15.5,
+  "skillPer": 2.9,
+  "food": {
+   "type": [
+    17,
+    2,
+    9
+   ],
+   "count": {
+    "2": {
+     "num": [
+      0,
+      4,
+      7
+     ]
+    },
+    "9": {
+     "num": [
+      0,
+      0,
+      11
+     ]
+    },
+    "17": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "737": {
+  "id": 737,
+  "friendship": 12,
+  "sleepType": 1,
+  "skillType": 1,
+  "pokeType": 2,
+  "berryType": 9,
+  "maxcarry": 20,
+  "helpSpeed": 3300,
+  "foodPer": 15.4,
+  "skillPer": 2.8,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    17,
+    2,
+    9
+   ],
+   "count": {
+    "2": {
+     "num": [
+      0,
+      4,
+      7
+     ]
+    },
+    "9": {
+     "num": [
+      0,
+      0,
+      11
+     ]
+    },
+    "17": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    }
+   }
+  }
+ },
+ "738": {
+  "id": 738,
+  "friendship": 22,
+  "sleepType": 1,
+  "skillType": 1,
+  "pokeType": 2,
+  "berryType": 9,
+  "maxcarry": 29,
+  "helpSpeed": 2800,
+  "foodPer": 19.4,
+  "skillPer": 5.1,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    17,
+    2,
+    9
+   ],
+   "count": {
+    "2": {
+     "num": [
+      0,
+      4,
+      7
+     ]
+    },
+    "9": {
+     "num": [
+      0,
+      0,
+      11
+     ]
+    },
+    "17": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    }
+   }
+  }
+ },
+ "742": {
+  "id": 742,
+  "friendship": 5,
+  "sleepType": 2,
+  "skillType": 28,
+  "pokeType": 2,
+  "maxcarry": 9,
+  "helpSpeed": 4500,
+  "berryType": 12,
+  "foodPer": 19.9,
+  "skillPer": 1.9,
+  "food": {
+   "type": [
+    9,
+    10,
+    16
+   ],
+   "count": {
+    "9": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "10": {
+     "num": [
+      0,
+      4,
+      6
+     ]
+    },
+    "16": {
+     "num": [
+      0,
+      0,
+      5
+     ]
+    }
+   }
+  },
+  "skillFood": [
+   9,
+   10,
+   16
+  ],
+  "evoLineKey": 1
+ },
+ "743": {
+  "id": 743,
+  "friendship": 12,
+  "sleepType": 2,
+  "skillType": 28,
+  "pokeType": 2,
+  "maxcarry": 24,
+  "helpSpeed": 2300,
+  "berryType": 12,
+  "foodPer": 19.4,
+  "skillPer": 2.5,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    9,
+    10,
+    16
+   ],
+   "count": {
+    "9": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "10": {
+     "num": [
+      0,
+      4,
+      6
+     ]
+    },
+    "16": {
+     "num": [
+      0,
+      0,
+      5
+     ]
+    }
+   }
+  },
+  "skillFood": [
+   9,
+   10,
+   16
+  ]
+ },
+ "759": {
+  "id": 759,
+  "friendship": 5,
+  "sleepType": 3,
+  "skillType": 5,
+  "pokeType": 2,
+  "maxcarry": 13,
+  "helpSpeed": 4100,
+  "berryType": 18,
+  "foodPer": 22.5,
+  "skillPer": 1.1,
+  "food": {
+   "type": [
+    16,
+    7,
+    3
+   ],
+   "count": {
+    "3": {
+     "num": [
+      0,
+      0,
+      9
+     ]
+    },
+    "7": {
+     "num": [
+      0,
+      6,
+      10
+     ]
+    },
+    "16": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "760": {
+  "id": 760,
+  "friendship": 12,
+  "sleepType": 3,
+  "skillType": 5,
+  "pokeType": 2,
+  "maxcarry": 25,
+  "helpSpeed": 2800,
+  "berryType": 18,
+  "foodPer": 22.9,
+  "skillPer": 1.3,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    16,
+    7,
+    3
+   ],
+   "count": {
+    "3": {
+     "num": [
+      0,
+      0,
+      9
+     ]
+    },
+    "7": {
+     "num": [
+      0,
+      6,
+      10
+     ]
+    },
+    "16": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    }
+   }
+  }
+ },
+ "764": {
+  "id": 764,
+  "friendship": 16,
+  "sleepType": 2,
+  "skillType": 4,
+  "pokeType": 2,
+  "maxcarry": 20,
+  "helpSpeed": 2500,
+  "berryType": 12,
+  "foodPer": 16.7,
+  "skillPer": 3.5,
+  "food": {
+   "type": [
+    16,
+    11,
+    13
+   ],
+   "count": {
+    "11": {
+     "num": [
+      0,
+      6,
+      9
+     ]
+    },
+    "13": {
+     "num": [
+      0,
+      0,
+      7
+     ]
+    },
+    "16": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    }
+   }
+  },
+  "evoLineKey": 0
+ },
+ "777": {
+  "id": 777,
+  "friendship": 16,
+  "sleepType": 3,
+  "skillType": 30,
+  "pokeType": 3,
+  "maxcarry": 18,
+  "helpSpeed": 2700,
+  "berryType": 2,
+  "foodPer": 16.9,
+  "skillPer": 5.5,
+  "food": {
+   "type": [
+    8,
+    19,
+    13
+   ],
+   "count": {
+    "8": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "13": {
+     "num": [
+      0,
+      0,
+      2
+     ]
+    },
+    "19": {
+     "num": [
+      0,
+      1,
+      2
+     ]
+    }
+   }
+  },
+  "evoLineKey": 0
+ },
+ "778": {
+  "id": 778,
+  "friendship": 16,
+  "sleepType": 1,
+  "skillType": 17,
+  "pokeType": 3,
+  "maxcarry": 19,
+  "helpSpeed": 2500,
+  "berryType": 8,
+  "foodPer": 15.3,
+  "skillPer": 3.5,
+  "food": {
+   "type": [
+    5,
+    17,
+    2
+   ],
+   "count": {
+    "2": {
+     "num": [
+      0,
+      0,
+      2
+     ]
+    },
+    "5": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "17": {
+     "num": [
+      0,
+      1,
+      2
+     ]
+    }
+   }
+  },
+  "evoLineKey": 0
+ },
+ "780": {
+  "id": 780,
+  "friendship": 16,
+  "sleepType": 1,
+  "skillType": 14,
+  "pokeType": 2,
+  "maxcarry": 25,
+  "helpSpeed": 3500,
+  "berryType": 3,
+  "foodPer": 29.4,
+  "skillPer": 4.6,
+  "food": {
+   "type": [
+    15,
+    19,
+    7
+   ],
+   "count": {
+    "7": {
+     "num": [
+      0,
+      0,
+      7
+     ]
+    },
+    "15": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "19": {
+     "num": [
+      0,
+      3,
+      4
+     ]
+    }
+   }
+  },
+  "evoLineKey": 0
+ },
+ "845": {
+  "id": 845,
+  "friendship": 16,
+  "sleepType": 3,
+  "skillType": 14,
+  "pokeType": 2,
+  "maxcarry": 19,
+  "helpSpeed": 2700,
+  "berryType": 16,
+  "foodPer": 16.5,
+  "skillPer": 3.9,
+  "food": {
+   "type": [
+    10,
+    4,
+    3
+   ],
+   "count": {
+    "3": {
+     "num": [
+      0,
+      0,
+      8
+     ]
+    },
+    "4": {
+     "num": [
+      0,
+      4,
+      7
+     ]
+    },
+    "10": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    }
+   }
+  },
+  "evoLineKey": 0
+ },
+ "848": {
+  "id": 848,
+  "friendship": 5,
+  "sleepType": 3,
+  "skillType": 10,
+  "pokeType": 3,
+  "maxcarry": 6,
+  "helpSpeed": 5600,
+  "berryType": 5,
+  "foodPer": 20.9,
+  "skillPer": 4.8,
+  "food": {
+   "type": [
+    8,
+    5,
+    1
+   ],
+   "count": {
+    "1": {
+     "num": [
+      0,
+      0,
+      2
+     ]
+    },
+    "5": {
+     "num": [
+      0,
+      2,
+      4
+     ]
+    },
+    "8": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "849": {
+  "id": 849,
+  "friendship": 20,
+  "sleepType": 1,
+  "skillType": 26,
+  "pokeType": 3,
+  "maxcarry": 23,
+  "helpSpeed": 3100,
+  "berryType": 5,
+  "foodPer": 23.9,
+  "skillPer": 6.4,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    8,
+    5,
+    1
+   ],
+   "count": {
+    "1": {
+     "num": [
+      0,
+      0,
+      2
+     ]
+    },
+    "5": {
+     "num": [
+      0,
+      2,
+      4
+     ]
+    },
+    "8": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "906": {
+  "id": 906,
+  "friendship": 5,
+  "sleepType": 1,
+  "skillType": 11,
+  "pokeType": 2,
+  "maxcarry": 10,
+  "helpSpeed": 4600,
+  "berryType": 4,
+  "foodPer": 20.8,
+  "skillPer": 2.3,
+  "food": {
+   "type": [
+    4,
+    8,
+    11
+   ],
+   "count": {
+    "4": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "8": {
+     "num": [
+      0,
+      6,
+      9
+     ]
+    },
+    "11": {
+     "num": [
+      0,
+      0,
+      8
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "907": {
+  "id": 907,
+  "friendship": 12,
+  "sleepType": 1,
+  "skillType": 11,
+  "pokeType": 2,
+  "maxcarry": 19,
+  "helpSpeed": 3500,
+  "berryType": 4,
+  "foodPer": 20.9,
+  "skillPer": 2.3,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    4,
+    8,
+    11
+   ],
+   "count": {
+    "4": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "8": {
+     "num": [
+      0,
+      6,
+      9
+     ]
+    },
+    "11": {
+     "num": [
+      0,
+      0,
+      8
+     ]
+    }
+   }
+  }
+ },
+ "908": {
+  "id": 908,
+  "friendship": 20,
+  "sleepType": 1,
+  "skillType": 11,
+  "pokeType": 2,
+  "maxcarry": 28,
+  "helpSpeed": 2600,
+  "berryType": 17,
+  "foodPer": 19,
+  "skillPer": 2.2,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    4,
+    8,
+    11
+   ],
+   "count": {
+    "4": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "8": {
+     "num": [
+      0,
+      6,
+      9
+     ]
+    },
+    "11": {
+     "num": [
+      0,
+      0,
+      8
+     ]
+    }
+   }
+  }
+ },
+ "909": {
+  "id": 909,
+  "friendship": 5,
+  "sleepType": 2,
+  "skillType": 7,
+  "pokeType": 2,
+  "maxcarry": 11,
+  "helpSpeed": 4200,
+  "berryType": 10,
+  "foodPer": 25.4,
+  "skillPer": 5.3,
+  "food": {
+   "type": [
+    5,
+    7,
+    6
+   ],
+   "count": {
+    "5": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "6": {
+     "num": [
+      0,
+      0,
+      5
+     ]
+    },
+    "7": {
+     "num": [
+      0,
+      4,
+      6
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "910": {
+  "id": 910,
+  "friendship": 12,
+  "sleepType": 2,
+  "skillType": 7,
+  "pokeType": 2,
+  "maxcarry": 21,
+  "helpSpeed": 3100,
+  "berryType": 10,
+  "foodPer": 24.7,
+  "skillPer": 5,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    5,
+    7,
+    6
+   ],
+   "count": {
+    "5": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "6": {
+     "num": [
+      0,
+      0,
+      5
+     ]
+    },
+    "7": {
+     "num": [
+      0,
+      4,
+      6
+     ]
+    }
+   }
+  }
+ },
+ "911": {
+  "id": 911,
+  "friendship": 20,
+  "sleepType": 1,
+  "skillType": 7,
+  "pokeType": 2,
+  "maxcarry": 29,
+  "helpSpeed": 2700,
+  "berryType": 8,
+  "foodPer": 26.8,
+  "skillPer": 6.2,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    5,
+    7,
+    6
+   ],
+   "count": {
+    "5": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "6": {
+     "num": [
+      0,
+      0,
+      5
+     ]
+    },
+    "7": {
+     "num": [
+      0,
+      4,
+      6
+     ]
+    }
+   }
+  }
+ },
+ "912": {
+  "id": 912,
+  "friendship": 5,
+  "sleepType": 3,
+  "skillType": 2,
+  "pokeType": 2,
+  "maxcarry": 10,
+  "helpSpeed": 4800,
+  "berryType": 1,
+  "foodPer": 26.1,
+  "skillPer": 2.8,
+  "food": {
+   "type": [
+    15,
+    1,
+    10
+   ],
+   "count": {
+    "1": {
+     "num": [
+      0,
+      2,
+      4
+     ]
+    },
+    "10": {
+     "num": [
+      0,
+      0,
+      6
+     ]
+    },
+    "15": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "913": {
+  "id": 913,
+  "friendship": 12,
+  "sleepType": 3,
+  "skillType": 2,
+  "pokeType": 2,
+  "maxcarry": 19,
+  "helpSpeed": 3600,
+  "berryType": 1,
+  "foodPer": 25.9,
+  "skillPer": 2.7,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    15,
+    1,
+    10
+   ],
+   "count": {
+    "1": {
+     "num": [
+      0,
+      2,
+      4
+     ]
+    },
+    "10": {
+     "num": [
+      0,
+      0,
+      6
+     ]
+    },
+    "15": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    }
+   }
+  }
+ },
+ "914": {
+  "id": 914,
+  "friendship": 20,
+  "sleepType": 3,
+  "skillType": 2,
+  "pokeType": 2,
+  "maxcarry": 29,
+  "helpSpeed": 2600,
+  "berryType": 18,
+  "foodPer": 23.2,
+  "skillPer": 2.4,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    15,
+    1,
+    10
+   ],
+   "count": {
+    "1": {
+     "num": [
+      0,
+      2,
+      4
+     ]
+    },
+    "10": {
+     "num": [
+      0,
+      0,
+      6
+     ]
+    },
+    "15": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    }
+   }
+  }
+ },
+ "921": {
+  "id": 921,
+  "friendship": 5,
+  "sleepType": 2,
+  "skillType": 8,
+  "pokeType": 3,
+  "maxcarry": 9,
+  "helpSpeed": 4600,
+  "berryType": 13,
+  "foodPer": 11.1,
+  "skillPer": 3.6,
+  "food": {
+   "type": [
+    13,
+    8,
+    3
+   ],
+   "count": {
+    "3": {
+     "num": [
+      0,
+      0,
+      5
+     ]
+    },
+    "8": {
+     "num": [
+      0,
+      3,
+      6
+     ]
+    },
+    "13": {
+     "num": [
+      1,
+      2,
+      3
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "922": {
+  "id": 922,
+  "friendship": 12,
+  "sleepType": 2,
+  "skillType": 8,
+  "pokeType": 3,
+  "maxcarry": 17,
+  "helpSpeed": 3300,
+  "berryType": 13,
+  "foodPer": 10.9,
+  "skillPer": 3.6,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    13,
+    8,
+    3
+   ],
+   "count": {
+    "3": {
+     "num": [
+      0,
+      0,
+      5
+     ]
+    },
+    "8": {
+     "num": [
+      0,
+      3,
+      6
+     ]
+    },
+    "13": {
+     "num": [
+      1,
+      2,
+      3
+     ]
+    }
+   }
+  }
+ },
+ "923": {
+  "id": 923,
+  "friendship": 22,
+  "sleepType": 2,
+  "skillType": 8,
+  "pokeType": 3,
+  "maxcarry": 28,
+  "helpSpeed": 2400,
+  "berryType": 13,
+  "foodPer": 14.1,
+  "skillPer": 3.9,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    13,
+    8,
+    3
+   ],
+   "count": {
+    "3": {
+     "num": [
+      0,
+      0,
+      5
+     ]
+    },
+    "8": {
+     "num": [
+      0,
+      3,
+      6
+     ]
+    },
+    "13": {
+     "num": [
+      1,
+      2,
+      3
+     ]
+    }
+   }
+  }
+ },
+ "957": {
+  "id": 957,
+  "friendship": 5,
+  "sleepType": 2,
+  "skillType": 2,
+  "pokeType": 1,
+  "maxcarry": 12,
+  "helpSpeed": 4500,
+  "berryType": 12,
+  "foodPer": 20.2,
+  "skillPer": 1.6,
+  "food": {
+   "type": [
+    12,
+    13,
+    4
+   ],
+   "count": {
+    "4": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "12": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "13": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "958": {
+  "id": 958,
+  "friendship": 12,
+  "sleepType": 2,
+  "skillType": 2,
+  "pokeType": 1,
+  "maxcarry": 21,
+  "helpSpeed": 3300,
+  "berryType": 12,
+  "foodPer": 18.6,
+  "skillPer": 1.8,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    12,
+    13,
+    4
+   ],
+   "count": {
+    "4": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "12": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "13": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    }
+   }
+  }
+ },
+ "959": {
+  "id": 959,
+  "friendship": 20,
+  "sleepType": 2,
+  "skillType": 2,
+  "pokeType": 1,
+  "maxcarry": 30,
+  "helpSpeed": 2400,
+  "berryType": 12,
+  "foodPer": 18.5,
+  "skillPer": 2,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    12,
+    13,
+    4
+   ],
+   "count": {
+    "4": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "12": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "13": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    }
+   }
+  }
+ },
+ "974": {
+  "id": 974,
+  "friendship": 5,
+  "sleepType": 3,
+  "skillType": 7,
+  "pokeType": 2,
+  "maxcarry": 12,
+  "helpSpeed": 5100,
+  "berryType": 7,
+  "foodPer": 22.3,
+  "skillPer": 4.2,
+  "food": {
+   "type": [
+    4,
+    7,
+    18
+   ],
+   "count": {
+    "4": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "7": {
+     "num": [
+      0,
+      5,
+      9
+     ]
+    },
+    "18": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "975": {
+  "id": 975,
+  "friendship": 20,
+  "sleepType": 3,
+  "skillType": 7,
+  "pokeType": 2,
+  "maxcarry": 30,
+  "helpSpeed": 2800,
+  "berryType": 7,
+  "foodPer": 20.9,
+  "skillPer": 4.2,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    4,
+    7,
+    18
+   ],
+   "count": {
+    "4": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "7": {
+     "num": [
+      0,
+      5,
+      9
+     ]
+    },
+    "18": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "980": {
+  "id": 980,
+  "friendship": 12,
+  "sleepType": 1,
+  "skillType": 7,
+  "pokeType": 2,
+  "maxcarry": 25,
+  "helpSpeed": 3500,
+  "berryType": 5,
+  "foodPer": 20.8,
+  "skillPer": 5.5,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    13,
+    17,
+    4
+   ],
+   "count": {
+    "4": {
+     "num": [
+      0,
+      0,
+      9
+     ]
+    },
+    "13": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "17": {
+     "num": [
+      0,
+      4,
+      7
+     ]
+    }
+   }
+  }
+ },
+ "7006": {
+  "id": 7006,
+  "friendship": 5,
+  "sleepType": 3,
+  "skillType": 9,
+  "pokeType": 1,
+  "maxcarry": 10,
+  "helpSpeed": 5600,
+  "berryType": 7,
+  "foodPer": 23,
+  "skillPer": 2.8,
+  "food": {
+   "type": [
+    15,
+    16,
+    4
+   ],
+   "count": {
+    "4": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "15": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "16": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "7007": {
+  "id": 7007,
+  "friendship": 20,
+  "sleepType": 3,
+  "skillType": 9,
+  "pokeType": 1,
+  "maxcarry": 25,
+  "helpSpeed": 2900,
+  "berryType": 7,
+  "foodPer": 23.2,
+  "skillPer": 2.8,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    15,
+    16,
+    4
+   ],
+   "count": {
+    "4": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "15": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "16": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    }
+   }
+  }
+ },
+ "7054": {
+  "id": 7054,
+  "friendship": 5,
+  "sleepType": 1,
+  "skillType": 7,
+  "pokeType": 2,
+  "maxcarry": 9,
+  "helpSpeed": 6400,
+  "berryType": 5,
+  "foodPer": 20.9,
+  "skillPer": 5.6,
+  "food": {
+   "type": [
+    13,
+    17,
+    4
+   ],
+   "count": {
+    "4": {
+     "num": [
+      0,
+      0,
+      9
+     ]
+    },
+    "13": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    },
+    "17": {
+     "num": [
+      0,
+      4,
+      7
+     ]
+    }
+   }
+  },
+  "evoLineKey": 1
+ },
+ "8001": {
+  "id": 8001,
+  "friendship": 20,
+  "sleepType": 1,
+  "skillType": 27,
+  "pokeType": 3,
+  "maxcarry": 23,
+  "helpSpeed": 3100,
+  "berryType": 5,
+  "foodPer": 23.9,
+  "skillPer": 6.4,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    8,
+    5,
+    1
+   ],
+   "count": {
+    "1": {
+     "num": [
+      0,
+      0,
+      2
+     ]
+    },
+    "5": {
+     "num": [
+      0,
+      2,
+      4
+     ]
+    },
+    "8": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "9001": {
+  "id": 9001,
+  "friendship": 7,
+  "sleepType": 2,
+  "skillType": 5,
+  "pokeType": 1,
+  "berryType": 13,
+  "maxcarry": 18,
+  "helpSpeed": 2500,
+  "foodPer": 21.8,
+  "skillPer": 2.8,
+  "evoLineKey": 0,
+  "food": {
+   "type": [
+    5,
+    11,
+    3
+   ],
+   "count": {
+    "3": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "5": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "11": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    }
+   }
+  }
+ },
+ "9002": {
+  "id": 9002,
+  "friendship": 7,
+  "sleepType": 2,
+  "skillType": 3,
+  "pokeType": 3,
+  "berryType": 13,
+  "maxcarry": 20,
+  "helpSpeed": 2500,
+  "foodPer": 13.1,
+  "skillPer": 4.2,
+  "evoLineKey": 0,
+  "food": {
+   "type": [
+    5,
+    11,
+    3
+   ],
+   "count": {
+    "3": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "5": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "11": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    }
+   }
+  }
+ },
+ "9004": {
+  "id": 9004,
+  "friendship": 5,
+  "sleepType": 2,
+  "skillType": 3,
+  "pokeType": 1,
+  "berryType": 11,
+  "maxcarry": 20,
+  "helpSpeed": 3100,
+  "foodPer": 15.6,
+  "skillPer": 3.2,
+  "evoLineKey": 0,
+  "food": {
+   "type": [
+    8,
+    13,
+    7
+   ],
+   "count": {
+    "7": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "8": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "13": {
+     "num": [
+      0,
+      1,
+      2
+     ]
+    }
+   }
+  }
+ },
+ "9005": {
+  "id": 9005,
+  "friendship": 5,
+  "sleepType": 2,
+  "skillType": 10,
+  "pokeType": 3,
+  "berryType": 11,
+  "maxcarry": 18,
+  "helpSpeed": 3200,
+  "foodPer": 12,
+  "skillPer": 4.6,
+  "food": {
+   "type": [
+    18,
+    13,
+    8
+   ],
+   "count": {
+    "8": {
+     "num": [
+      0,
+      0,
+      9
+     ]
+    },
+    "13": {
+     "num": [
+      0,
+      4,
+      6
+     ]
+    },
+    "18": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    }
+   }
+  },
+  "evoLineKey": 0
+ },
+ "9006": {
+  "id": 9006,
+  "friendship": 5,
+  "sleepType": 3,
+  "skillType": 14,
+  "pokeType": 3,
+  "berryType": 7,
+  "maxcarry": 20,
+  "helpSpeed": 3300,
+  "foodPer": 21.4,
+  "skillPer": 5,
+  "food": {
+   "type": [
+    10,
+    7,
+    11
+   ],
+   "count": {
+    "7": {
+     "num": [
+      0,
+      3,
+      4
+     ]
+    },
+    "10": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "11": {
+     "num": [
+      0,
+      0,
+      4
+     ]
+    }
+   }
+  },
+  "evoLineKey": 0
+ },
+ "9007": {
+  "id": 9007,
+  "friendship": 7,
+  "sleepType": 2,
+  "skillType": 10,
+  "pokeType": 1,
+  "berryType": 13,
+  "maxcarry": 21,
+  "helpSpeed": 2500,
+  "foodPer": 17.5,
+  "skillPer": 1.8,
+  "evoLineKey": 0,
+  "food": {
+   "type": [
+    5,
+    11,
+    3
+   ],
+   "count": {
+    "3": {
+     "num": [
+      0,
+      0,
+      3
+     ]
+    },
+    "5": {
+     "num": [
+      1,
+      2,
+      4
+     ]
+    },
+    "11": {
+     "num": [
+      0,
+      2,
+      3
+     ]
+    }
+   }
+  }
+ },
+ "710-2": {
+  "id": "710-2",
+  "friendship": 5,
+  "sleepType": 1,
+  "skillType": 1,
+  "pokeType": 2,
+  "berryType": 8,
+  "maxcarry": 7,
+  "helpSpeed": 5300,
+  "foodPer": 12,
+  "skillPer": 4.9,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    18,
+    15,
+    4
+   ],
+   "count": {
+    "4": {
+     "num": [
+      0,
+      0,
+      15
+     ]
+    },
+    "15": {
+     "num": [
+      0,
+      11,
+      18
+     ]
+    },
+    "18": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    }
+   }
+  }
+ },
+ "710-3": {
+  "id": "710-3",
+  "friendship": 5,
+  "sleepType": 1,
+  "skillType": 1,
+  "pokeType": 2,
+  "berryType": 8,
+  "maxcarry": 15,
+  "helpSpeed": 5500,
+  "foodPer": 12,
+  "skillPer": 4.9,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    18,
+    15,
+    4
+   ],
+   "count": {
+    "4": {
+     "num": [
+      0,
+      0,
+      15
+     ]
+    },
+    "15": {
+     "num": [
+      0,
+      11,
+      18
+     ]
+    },
+    "18": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    }
+   }
+  }
+ },
+ "710-4": {
+  "id": "710-4",
+  "friendship": 5,
+  "sleepType": 1,
+  "skillType": 1,
+  "pokeType": 2,
+  "berryType": 8,
+  "maxcarry": 21,
+  "helpSpeed": 5600,
+  "foodPer": 12,
+  "skillPer": 4.9,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    18,
+    15,
+    4
+   ],
+   "count": {
+    "4": {
+     "num": [
+      0,
+      0,
+      15
+     ]
+    },
+    "15": {
+     "num": [
+      0,
+      11,
+      18
+     ]
+    },
+    "18": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    }
+   }
+  }
+ },
+ "711-2": {
+  "id": "711-2",
+  "friendship": 20,
+  "sleepType": 1,
+  "skillType": 1,
+  "pokeType": 2,
+  "berryType": 8,
+  "maxcarry": 15,
+  "helpSpeed": 3100,
+  "foodPer": 13,
+  "skillPer": 4.9,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    18,
+    15,
+    4
+   ],
+   "count": {
+    "4": {
+     "num": [
+      0,
+      0,
+      15
+     ]
+    },
+    "15": {
+     "num": [
+      0,
+      11,
+      18
+     ]
+    },
+    "18": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    }
+   }
+  }
+ },
+ "711-3": {
+  "id": "711-3",
+  "friendship": 20,
+  "sleepType": 1,
+  "skillType": 1,
+  "pokeType": 2,
+  "berryType": 8,
+  "maxcarry": 24,
+  "helpSpeed": 3300,
+  "foodPer": 13,
+  "skillPer": 4.9,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    18,
+    15,
+    4
+   ],
+   "count": {
+    "4": {
+     "num": [
+      0,
+      0,
+      15
+     ]
+    },
+    "15": {
+     "num": [
+      0,
+      11,
+      18
+     ]
+    },
+    "18": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    }
+   }
+  }
+ },
+ "711-4": {
+  "id": "711-4",
+  "friendship": 20,
+  "sleepType": 1,
+  "skillType": 1,
+  "pokeType": 2,
+  "berryType": 8,
+  "maxcarry": 30,
+  "helpSpeed": 3400,
+  "foodPer": 13,
+  "skillPer": 4.9,
+  "evoLineKey": 1,
+  "food": {
+   "type": [
+    18,
+    15,
+    4
+   ],
+   "count": {
+    "4": {
+     "num": [
+      0,
+      0,
+      15
+     ]
+    },
+    "15": {
+     "num": [
+      0,
+      11,
+      18
+     ]
+    },
+    "18": {
+     "num": [
+      2,
+      5,
+      7
+     ]
+    }
+   }
+  }
+ }
+}
