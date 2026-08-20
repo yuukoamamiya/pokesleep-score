@@ -17,6 +17,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 
 
+def configure_console() -> None:
+    """Keep Japanese/Chinese paths printable on non-UTF-8 Windows runners."""
+    for stream in (sys.stdout, sys.stderr):
+        reconfigure = getattr(stream, "reconfigure", None)
+        if reconfigure:
+            reconfigure(encoding="utf-8", errors="replace")
+
+
 def workspace_path(value: str | None) -> Path:
     return Path(value or os.environ.get("POKESLEEP_WORKSPACE", ROOT / "workspace")).expanduser().resolve()
 
@@ -90,6 +98,7 @@ def pipeline(command: str, workspace: Path, extra: list[str]) -> int:
 
 
 def main() -> None:
+    configure_console()
     parser = argparse.ArgumentParser(prog="pokesleep-score", description="Pokémon Sleep box OCR and scoring")
     parser.add_argument("--workspace", help="private runtime directory (default: ./workspace)")
     sub = parser.add_subparsers(dest="command", required=True)
